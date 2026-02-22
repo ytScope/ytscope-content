@@ -2,7 +2,7 @@
 title: "Dashboard Kullanımı"
 description: "YTScope dashboard'unu etkili kullanmayı öğrenin. Metrikler, grafikler ve veri analizi rehberi."
 order: 2
-lastUpdated: "2025-01-15"
+lastUpdated: "2026-02-22"
 ---
 
 # Dashboard Kullanımı
@@ -13,7 +13,7 @@ Dashboard, takip ettiğiniz YouTube kanallarının haftalık performansını tek
 
 ## Genel Bakış Kartları
 
-![Dashboard Genel Bakış](dashboard-images/dashboard-1.png)
+![Dashboard Genel Bakış](../images/academy/dashboard-images/tr/dashboard-panel.png)
 
 Sayfanın en üstünde, seçili kanala ait 4 temel metriği gösteren özet kartları yer alır. Sağ üst köşedeki kanal seçiciden, dashboardını görüntülemek istediğiniz kanalı (kendi kanalınız veya takip ettiğiniz rakip kanallar) seçebilirsiniz.
 
@@ -30,7 +30,7 @@ Her kartın alt satırında geçen haftaya kıyasla değişim yüzdesi yer alır
 
 ## Creator DNA
 
-![Creator DNA ve Kanal Sağlığı](dashboard-images/dashboard-2.png)
+![Creator DNA](../images/academy/dashboard-images/tr/dashboard-creator_dna.png)
 
 Creator DNA, kanalınızı **5 farklı boyutta** analiz ederek size özel bir içerik üretici profili çıkarır. Her boyut 0-100 arası puanlanır:
 
@@ -50,7 +50,7 @@ Toplam DNA puanı, bu 5 boyutun birleşiminden oluşur. Güçlü ve zayıf yönl
 
 ### Paylaşım
 
-![Creator DNA Paylaşım](dashboard-images/dashboard-2.1.png)
+![Creator DNA Paylaşım](../images/academy/dashboard-images/tr/dashboard-creator_dna_paylasim.png)
 
 Creator DNA kartının üzerindeki **paylaş** butonuna tıklayarak DNA profilinizi farklı platformlarda paylaşabilirsiniz:
 
@@ -63,6 +63,9 @@ Creator DNA kartının üzerindeki **paylaş** butonuna tıklayarak DNA profilin
 
 ### AI Analizi
 
+![AI Analizi](../images/academy/dashboard-images/tr/dashboard-ai_analizi.png)
+
+
 Creator DNA kartının alt kısmındaki **AI Analizi** butonuna tıkladığınızda, yapay zeka DNA metriklerinizi detaylı şekilde yorumlar. Bu analiz; içerik üretici arketipinizi, güçlü yönlerinizi, geliştirilmesi gereken alanları ve somut aksiyon önerilerini içerir.
 
 **Örnek AI Analizi:**
@@ -73,7 +76,7 @@ Creator DNA kartının alt kısmındaki **AI Analizi** butonuna tıkladığını
 
 ## Kanal Sağlığı
 
-![Kanal Sağlığı](dashboard-images/dashboard-2.png)
+![Kanal Sağlığı](../images/academy/dashboard-images/tr/dashboard-kanal_sagligi.png)
 
 Kanal Sağlığı, kanalınızın genel durumunu tek bir puan üzerinden gösterir. **5 temel faktör** analiz edilir:
 
@@ -96,7 +99,7 @@ Her faktör yatay bir çubuk grafikle gösterilir. Toplam skor bir daire grafik 
 
 ## AI Özeti
 
-![AI Özeti, Kanalım Nasıl ve Rakipler](dashboard-images/dashborad-3.png)
+![AI Özeti](../images/academy/dashboard-images/tr/dashboard-ai_özeti.png)
 
 Yapay zeka, kanalınızın **son 7 günlük verilerini** analiz ederek size kapsamlı bir özet sunar. Bu özette:
 
@@ -114,6 +117,9 @@ yer alır.
 
 ## Kanalım Nasıl?
 
+![Kanalım Nasıl?](../images/academy/dashboard-images/tr/dashboard-kanalim_nasil.png)
+
+
 Bu bölüm, kanalınızın son 7 günlük performans özetini kompakt bir biçimde gösterir:
 
 - **Bu hafta** kazanılan abone sayısı
@@ -125,6 +131,8 @@ Alt kısımdaki **Kanal Detayları** butonuna tıklayarak, ilgili kanalın detay
 ---
 
 ## Rakiplerin Bu Haftası
+
+![Rakiplerin Bu Haftası](../images/academy/dashboard-images/tr/dashboard-rakiplerin_bu_haftasi.png)
 
 Takip ettiğiniz rakip kanalların bu haftaki abone değişimlerini gösterir.
 
@@ -138,11 +146,14 @@ Rakipler, abone sayısına göre en büyükten en küçüğe sıralanır.
 
 ## Rakiplere Göre Neredeyim?
 
-![Rakip Skoru ve Rakipler](dashboard-images/dashboard-4.png)
+![Rakiplere Göre Neredeyim?](../images/academy/dashboard-images/tr/dashboard-rakiplere_gore_neredeyim.png)
 
 Bu bölüm iki ana kısımdan oluşur:
 
 ### Rakip Skoru
+
+![Rakip Skoru](../images/academy/dashboard-images/tr/dashboard-rakip_skoru.png)
+
 
 Abone, izlenme, etkileşim ve video sayısı olmak üzere **4 temel metrikte** rakip ortalamasına göre nerede olduğunuzu gösterir.
 
@@ -159,6 +170,8 @@ Alt kısımdaki **Detaylı Karşılaştırma** butonuna tıklayarak, kanalları 
 
 ### Rakipler
 
+![Rakipler](../images/academy/dashboard-images/tr/dashboard-rakipler.png)
+
 Takip ettiğiniz tüm rakipler abone sayısına göre büyükten küçüğe sıralanır. Her rakibin yanında:
 - Kanal adı ve profil görseli
 - Toplam abone sayısı
@@ -170,7 +183,7 @@ bilgileri gösterilir. **Tümünü Gör** butonuna tıklayarak tüm rakip listes
 
 ## Son Gelişmeler
 
-![Son Gelişmeler](dashboard-images/dashboard-5.png)
+![Son Gelişmeler](../images/academy/dashboard-images/tr/dashboard-son_gelismeler.png)
 
 Dashboard'un alt bölümünde, takip ettiğiniz kanallardaki son gelişmeleri 4 farklı kategoride görebilirsiniz:
 
