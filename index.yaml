@@ -1,6 +1,5 @@
 # YTScope Content Index
-# This file lists all published blog posts and academy articles
-# Add new entries here when creating new content
+# Academy articles are organized by locale (tr/en)
 
 blog:
   - slug: youtube-analytics-ai-algorithms
@@ -13,18 +12,23 @@ blog:
     published: true
 
 academy:
-  - slug: getting-started
-    published: true
-    order: 1
-  - slug: dashboard-kullanimi
-    published: true
-    order: 2
-  - slug: video-analizi
-    published: true
-    order: 3
-  - slug: metrikler
-    published: true
-    order: 4
-  - slug: rakip-analizi
-    published: true
-    order: 5
+  tr:
+    - slug: getting-started
+      published: true
+      order: 1
+    - slug: dashboard-kullanimi
+      published: true
+      order: 2
+    - slug: video-analizi
+      published: true
+      order: 3
+    - slug: metrikler
+      published: true
+      order: 4
+    - slug: rakip-analizi
+      published: true
+      order: 5
+  en:
+    - slug: getting-started
+      published: true
+      order: 1
