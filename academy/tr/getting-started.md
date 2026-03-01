@@ -5,7 +5,7 @@ lastUpdated: "2026-03-01"
 order: 1
 ---
 
-## YTScope Nedir?
+# İlk Adımlar
 
 YTScope, YouTube kanallarının performansını takip eden ve analiz eden bir platformdur. Abone değişimi, izlenme trendleri, rakip karşılaştırması ve yapay zeka destekli içgörüler sunar. Bu rehber, hesap oluşturma adımından ilk analizinize kadar tüm kurulum sürecini kapsar.
 
@@ -40,7 +40,7 @@ Kayıt işleminden sonra giriş sayfasına yönlendirilirsiniz. E-posta adresini
 
 ![Giriş Sayfası](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/gs-login.webp)
 
-Şifrenizi unuttuysanız, **"Forgot Password"** bağlantısından sıfırlama e-postası talep edebilirsiniz.
+> **Not:** Şifrenizi unuttuysanız, **"Forgot Password"** bağlantısından sıfırlama e-postası talep edebilirsiniz.
 
 ---
 
@@ -52,11 +52,11 @@ Kayıt işleminden sonra giriş sayfasına yönlendirilirsiniz. E-posta adresini
 
 | Özellik | Açıklama |
 |---------|----------|
-| **Detaylı Analitik** | Kanal performansını metriklerle takip edin |
-| **Büyüme Trendleri** | Abone ve izlenme trendlerini zaman içinde izleyin |
-| **Akıllı Bildirimler** | Kanaldaki önemli değişikliklerden haberdar olun |
+| **Detaylı Analitik** | Kanal performansını metriklerle takip edin. |
+| **Büyüme Trendleri** | Abone ve izlenme trendlerini zaman içinde izleyin. |
+| **Akıllı Bildirimler** | Kanaldaki önemli değişikliklerden haberdar olun. |
 
-Kurulum 3 adımdan oluşur: Hoş Geldiniz → Kanal Ekleme → Tamamlandı. **"Get Started"** butonuna tıklayarak kanal ekleme adımına geçin.
+Kurulum **3 adımdan** oluşur: **Hoş Geldiniz → Kanal Ekleme → Tamamlandı.** Devam etmek için **"Get Started"** butonuna tıklayın.
 
 ---
 
@@ -66,23 +66,25 @@ Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube k
 
 ![Kanal Ekleme Ekranı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-add-channels.webp)
 
-### Bilmeniz Gerekenler
+### Veri Toplama Hakkında
 
-- Veri toplama, kanalı eklediğiniz andan itibaren başlar. Geçmişe dönük veri çekilemez.
-- Yeni eklenen kanalların analitiği **48 saat** içinde oluşmaya başlar.
-- Sistemde zaten mevcut olan kanalların analitiği anında görüntülenir.
-- Free planda **3 kanala** kadar takip yapılabilir.
-- Ayda **1 kanal değişikliği** hakkınız vardır.
+| Konu | Detay |
+|------|-------|
+| **Veri başlangıcı** | Kanalı eklediğiniz andan itibaren başlar. Geçmişe dönük veri çekilemez. |
+| **Yeni kanal** | Analitiği **48 saat** içinde oluşmaya başlar. |
+| **Mevcut kanal** | Sistemde zaten kayıtlı olan kanalların analitiği anında görüntülenir. |
+| **Free plan limiti** | En fazla **3 kanal** takip edilebilir. |
+| **Kanal değişikliği** | Ayda **1 kanal** değiştirme hakkı vardır. |
 
 ### Ekleme Yöntemleri
 
-**URL ile ekleme:** Kanal URL'sini veya handle'ını girin (örn: `youtube.com/@kanaladi` veya `@kanaladi`) ve **"Validate"** butonuna tıklayın.
+**1. URL ile ekleme:** Kanal URL'sini veya handle'ını girin (örn: `youtube.com/@kanaladi` veya `@kanaladi`) ve **"Validate"** butonuna tıklayın.
 
-**Arama ile ekleme:** Kanal adını arama kutusuna yazın. Sonuçlarda kanalın adı, abone sayısı ve video sayısı görüntülenir. İstediğiniz kanalın yanındaki **"+ Add"** butonuna tıklayın.
+**2. Arama ile ekleme:** Kanal adını arama kutusuna yazın. Sonuçlarda kanalın adı, abone sayısı ve video sayısı görüntülenir. İstediğiniz kanalın yanındaki **"+ Add"** butonuna tıklayın.
 
 ![Kanal Arama](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-search-channels.webp)
 
-> Sistemde zaten kayıtlı olan kanalların analitiği hemen kullanılabilir olur.
+> **İpucu:** Sistemde zaten kayıtlı olan kanalların analitiği hemen kullanılabilir olur. Popüler kanallar genellikle sistemde mevcuttur.
 
 ---
 
@@ -94,16 +96,19 @@ Kanallarınızı seçtikten sonra, ekleme öncesi son ayarları yapabilirsiniz.
 
 ### "Bu Benim Kanalım" Seçeneği
 
-Tek bir kanal seçtiğinizde **"This is my own channel"** onay kutusu görünür. Bu seçeneği işaretlerseniz:
+Tek bir kanal seçtiğinizde **"This is my own channel"** onay kutusu görünür.
 
-- Kanal sahibine özel içgörüler ve öneriler alırsınız.
-- Dashboard'da kanalınız **"My Channel"** etiketi ile ayrışır.
+| Bu seçenek işaretlenirse | Etki |
+|--------------------------|------|
+| **Kişisel içgörüler** | Kanal sahibine özel öneri ve analizler sunulur. |
+| **Dashboard etiketi** | Kanalınız **"My Channel"** etiketi ile ayrışır. |
+| **AI analizi** | Yapay zeka, önerilerini kanal sahibi perspektifinden verir. |
 
-Bu seçenek yalnızca tek kanal eklendiğinde görünür.
+> **Not:** Bu seçenek yalnızca tek kanal eklendiğinde görünür.
 
 ### Kanalları Onayla
 
-Seçtiğiniz kanallar **"Channels to Add"** bölümünde listelenir. Listeyi gözden geçirdikten sonra **"Add Channels"** butonuna tıklayarak ekleme işlemini tamamlayın. Free planda en fazla 3 kanal eklenebilir.
+Seçtiğiniz kanallar **"Channels to Add"** bölümünde listelenir. Listeyi gözden geçirdikten sonra **"Add Channels"** butonuna tıklayarak ekleme işlemini tamamlayın.
 
 ---
 
@@ -113,10 +118,10 @@ Kanallarınız başarıyla eklendikten sonra onay ekranı görünür. Eklenen ka
 
 ![Kurulum Tamamlandı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-complete.webp)
 
-İki seçenek sunulur:
-
-- **"Start Analyzing"** — Dashboard'a giderek analizlere başlayın.
-- **"Add More Channels"** — Hakkınız varsa ek kanal ekleyin.
+| Buton | İşlev |
+|-------|-------|
+| **Start Analyzing** | Dashboard'a giderek analizlere başlayın. |
+| **Add More Channels** | Hakkınız varsa ek kanal ekleyin. |
 
 ---
 
@@ -126,22 +131,25 @@ Tüm özellikleri denemek için **30 günlük ücretsiz Pro deneme** başlatabil
 
 ### Nasıl Başlatılır
 
-1. Sağ üst köşedeki profil simgesine tıklayın.
+1. Sağ üst köşedeki **profil simgesine** tıklayın.
 2. Sol menüden **"Settings"** seçeneğine gidin.
 3. **"Subscription"** bölümünde **"Try Pro Free"** butonuna tıklayın.
 
 ![Ayarlar ve Abonelik](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/gs-settings-subscription.webp)
 
-### Pro Planın Farkları
+### Plan Karşılaştırması
 
 ![Plan Karşılaştırma](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/gs-subscription-plans.webp)
 
 | Özellik | Free | Pro |
 |---------|------|-----|
-| Takip edilebilir kanal | 3 | Sınırsız |
-| Gelişmiş analitik | — | Dahil |
-| Rakip analizi | Temel | Gelişmiş |
-| AI Chat | — | Dahil |
+| **Takip edilebilir kanal** | 3 | Sınırsız |
+| **Gelişmiş analitik** | — | Dahil |
+| **Rakip analizi** | Temel | Gelişmiş |
+| **AI Chat** | — | Dahil |
+| **Büyüme tahminleri** | — | Dahil |
+
+> **İpucu:** Pro deneme süresi boyunca tüm özellikler eksiksiz kullanılabilir. Deneme bittiğinde otomatik ücretlendirme yapılmaz.
 
 ---
 
@@ -151,28 +159,30 @@ Tüm özellikleri denemek için **30 günlük ücretsiz Pro deneme** başlatabil
 
 | Özellik | Limit |
 |---------|-------|
-| Takip edilen kanal | 3 |
-| Aylık kanal değişikliği | 1 |
-| Temel analitik | Dahil |
-| Büyüme trendleri | Dahil |
+| **Takip edilen kanal** | 3 |
+| **Aylık kanal değişikliği** | 1 |
+| **Temel analitik** | Dahil |
+| **Büyüme trendleri** | Dahil |
 
-### Navigasyon
+### Platform Navigasyonu
 
-Kurulum tamamlandıktan sonra sol menüdeki bölümleri kullanarak platforma göz atabilirsiniz:
-
-- **Dashboard** — Tüm kanalların haftalık özet performansı
-- **Channels** — Kanal detayları ve karşılaştırma
-- **Videos** — Video performans analizi
-- **Rankings** — Kanal sıralamaları
-- **Settings** — Hesap ve tercih yönetimi
+| Menü | İçerik |
+|------|--------|
+| **Dashboard** | Tüm kanalların haftalık özet performansı |
+| **Channels** | Kanal detayları ve karşılaştırma |
+| **Videos** | Video performans analizi |
+| **Rankings** | Kanal sıralamaları |
+| **Settings** | Hesap ve tercih yönetimi |
 
 ---
 
 ## Sırada Ne Var?
 
-Kurulumunuz tamamlandı. Platformun diğer özelliklerini keşfetmek için bu rehberlere göz atın:
+Kurulumunuz tamamlandı. Platformun diğer özelliklerini keşfetmek için aşağıdaki rehberlere göz atın:
 
-- [Dashboard Kullanımı](/academy/tr/dashboard-kullanimi) — Dashboard'un sunduğu veriler ve yorumlama
-- [Video Analizi](/academy/tr/video-analizi) — Video performans metrikleri
-- [Metrikleri Anlama](/academy/tr/metrikler) — Her metriğin anlamı ve yorumu
-- [Rakip Analizi](/academy/tr/rakip-analizi) — Rakip takibi ve karşılaştırma
+| Rehber | Konu |
+|--------|------|
+| [Dashboard Kullanımı](/academy/tr/dashboard-kullanimi) | Dashboard'un sunduğu veriler ve yorumlama |
+| [Video Analizi](/academy/tr/video-analizi) | Video performans metrikleri |
+| [Metrikleri Anlama](/academy/tr/metrikler) | Her metriğin anlamı ve yorumu |
+| [Rakip Analizi](/academy/tr/rakip-analizi) | Rakip takibi ve karşılaştırma |

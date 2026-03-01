@@ -5,7 +5,7 @@ lastUpdated: "2026-03-01"
 order: 1
 ---
 
-## What Is YTScope?
+# Getting Started
 
 YTScope is a platform that tracks and analyzes YouTube channel performance. It provides subscriber trends, view analytics, competitor comparisons, and AI-powered insights. This guide covers the entire setup process, from account creation to your first analysis.
 
@@ -40,7 +40,7 @@ After registration, you are redirected to the login page. Enter your email and p
 
 ![Login Page](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/gs-login.webp)
 
-If you forgot your password, use the **"Forgot Password"** link to request a reset email.
+> **Note:** If you forgot your password, use the **"Forgot Password"** link to request a reset email.
 
 ---
 
@@ -52,11 +52,11 @@ On your first login, a welcome screen introduces the platform's three core capab
 
 | Feature | Description |
 |---------|-------------|
-| **Detailed Analytics** | Track channel performance with comprehensive metrics |
-| **Growth Trends** | Monitor subscriber and view trends over time |
-| **Smart Notifications** | Stay informed about significant changes |
+| **Detailed Analytics** | Track channel performance with comprehensive metrics. |
+| **Growth Trends** | Monitor subscriber and view trends over time. |
+| **Smart Notifications** | Stay informed about significant changes. |
 
-The setup consists of 3 steps: Welcome → Add Channels → Complete. Click **"Get Started"** to proceed to channel setup.
+The setup consists of **3 steps**: **Welcome → Add Channels → Complete.** Click **"Get Started"** to proceed.
 
 ---
 
@@ -66,23 +66,25 @@ This is the most critical step. You add the YouTube channels you want to track h
 
 ![Add Channels Screen](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-add-channels.webp)
 
-### Key Points
+### About Data Collection
 
-- Data collection starts from the moment you add a channel. Historical data cannot be retrieved retroactively.
-- Analytics for newly added channels begin appearing within **48 hours**.
-- Channels already in the system have analytics available immediately.
-- The Free plan allows tracking up to **3 channels**.
-- You have **1 channel swap** per month.
+| Topic | Detail |
+|-------|--------|
+| **Data start** | Collection begins from the moment you add a channel. Historical data cannot be retrieved. |
+| **New channel** | Analytics begin appearing within **48 hours**. |
+| **Existing channel** | Channels already in the system have analytics available immediately. |
+| **Free plan limit** | Up to **3 channels** can be tracked. |
+| **Channel swaps** | **1 swap** per month is allowed. |
 
 ### How to Add
 
-**By URL:** Enter the channel URL or handle (e.g., `youtube.com/@channelname` or `@channelname`) and click **"Validate"**.
+**1. By URL:** Enter the channel URL or handle (e.g., `youtube.com/@channelname` or `@channelname`) and click **"Validate"**.
 
-**By search:** Type the channel name in the search box. Results display the channel name, subscriber count, and video count. Click **"+ Add"** next to the channel you want.
+**2. By search:** Type the channel name in the search box. Results display the channel name, subscriber count, and video count. Click **"+ Add"** next to the channel you want.
 
 ![Channel Search](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-search-channels.webp)
 
-> Channels already in the system have analytics available instantly.
+> **Tip:** Channels already in the system have analytics available instantly. Popular channels are usually pre-indexed.
 
 ---
 
@@ -94,16 +96,19 @@ After selecting your channels, you can configure settings before finalizing.
 
 ### "This Is My Own Channel" Option
 
-When you select a single channel, a **"This is my own channel"** checkbox appears. Enabling this:
+When you select a single channel, a **"This is my own channel"** checkbox appears.
 
-- Unlocks owner-specific insights and recommendations.
-- Marks the channel with a **"My Channel"** badge on your dashboard.
+| When enabled | Effect |
+|--------------|--------|
+| **Personalized insights** | Owner-specific recommendations and analysis are provided. |
+| **Dashboard badge** | Your channel is marked with a **"My Channel"** label. |
+| **AI analysis** | AI tailors its suggestions from the channel owner's perspective. |
 
-This option is only available when adding a single channel.
+> **Note:** This option is only available when adding a single channel.
 
 ### Confirm Your Channels
 
-Your selected channels appear in the **"Channels to Add"** section. Review the list and click **"Add Channels"** to finalize. The Free plan supports up to 3 channels.
+Your selected channels appear in the **"Channels to Add"** section. Review the list and click **"Add Channels"** to finalize.
 
 ---
 
@@ -113,10 +118,10 @@ After adding your channels, a confirmation screen displays your added channels w
 
 ![Setup Complete](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-complete.webp)
 
-Two options are presented:
-
-- **"Start Analyzing"** — Go to your dashboard and begin exploring analytics.
-- **"Add More Channels"** — Add additional channels if slots are available.
+| Button | Action |
+|--------|--------|
+| **Start Analyzing** | Go to your dashboard and begin exploring analytics. |
+| **Add More Channels** | Add additional channels if slots are available. |
 
 ---
 
@@ -126,22 +131,25 @@ To access all features, you can start a **30-day free Pro trial**. No credit car
 
 ### How to Start
 
-1. Click the profile icon in the top-right corner.
+1. Click the **profile icon** in the top-right corner.
 2. Navigate to **"Settings"** from the sidebar.
 3. In the **"Subscription"** section, click **"Try Pro Free"**.
 
 ![Settings and Subscription](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/gs-settings-subscription.webp)
 
-### Pro Plan Comparison
+### Plan Comparison
 
 ![Plan Comparison](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/gs-subscription-plans.webp)
 
 | Feature | Free | Pro |
 |---------|------|-----|
-| Tracked channels | 3 | Unlimited |
-| Advanced analytics | — | Included |
-| Competitor analysis | Basic | Advanced |
-| AI Chat | — | Included |
+| **Tracked channels** | 3 | Unlimited |
+| **Advanced analytics** | — | Included |
+| **Competitor analysis** | Basic | Advanced |
+| **AI Chat** | — | Included |
+| **Growth predictions** | — | Included |
+
+> **Tip:** All features are fully available during the Pro trial. There is no automatic charge when the trial ends.
 
 ---
 
@@ -151,20 +159,20 @@ To access all features, you can start a **30-day free Pro trial**. No credit car
 
 | Feature | Limit |
 |---------|-------|
-| Tracked channels | 3 |
-| Monthly channel swaps | 1 |
-| Basic analytics | Included |
-| Growth trends | Included |
+| **Tracked channels** | 3 |
+| **Monthly channel swaps** | 1 |
+| **Basic analytics** | Included |
+| **Growth trends** | Included |
 
-### Navigation
+### Platform Navigation
 
-After setup, use the sidebar to navigate the platform:
-
-- **Dashboard** — Weekly performance summary for all channels
-- **Channels** — Channel details and comparisons
-- **Videos** — Video performance analysis
-- **Rankings** — Channel rankings
-- **Settings** — Account and preference management
+| Menu | Content |
+|------|---------|
+| **Dashboard** | Weekly performance summary for all channels |
+| **Channels** | Channel details and comparisons |
+| **Videos** | Video performance analysis |
+| **Rankings** | Channel rankings |
+| **Settings** | Account and preference management |
 
 ---
 
@@ -172,7 +180,9 @@ After setup, use the sidebar to navigate the platform:
 
 Your setup is complete. Explore these guides to get the most out of the platform:
 
-- [Dashboard Guide](/academy/en/dashboard-guide) — Understanding dashboard data and metrics
-- [Video Analysis](/academy/en/video-analysis) — Video performance metrics
-- [Understanding Metrics](/academy/en/metrics) — What each metric means
-- [Competitor Analysis](/academy/en/competitor-analysis) — Tracking and comparing competitors
+| Guide | Topic |
+|-------|-------|
+| [Dashboard Guide](/academy/en/dashboard-guide) | Understanding dashboard data and metrics |
+| [Video Analysis](/academy/en/video-analysis) | Video performance metrics |
+| [Understanding Metrics](/academy/en/metrics) | What each metric means |
+| [Competitor Analysis](/academy/en/competitor-analysis) | Tracking and comparing competitors |
