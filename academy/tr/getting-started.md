@@ -15,7 +15,7 @@ YTScope, YouTube kanallarının performansını takip eden ve analiz eden bir pl
 
 [ytscope.com](https://ytscope.com) adresine gidin ve **"Start Free"** butonuna tıklayın.
 
-![YTScope Ana Sayfa](/images/academy/tr/gs-homepage.webp)
+![YTScope Ana Sayfa](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/gs-homepage.webp)
 
 Kayıt formunda aşağıdaki bilgileri doldurun:
 
@@ -26,7 +26,7 @@ Kayıt formunda aşağıdaki bilgileri doldurun:
 | **Şifre** | En az 8 karakter |
 | **Şifre Tekrar** | Şifrenizi doğrulayın |
 
-![Kayıt Sayfası](/images/academy/tr/gs-register.webp)
+![Kayıt Sayfası](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/gs-register.webp)
 
 **"Register"** butonuna tıklayarak hesabınızı oluşturun.
 
@@ -38,7 +38,7 @@ Kayıt formunda aşağıdaki bilgileri doldurun:
 
 Kayıt işleminden sonra giriş sayfasına yönlendirilirsiniz. E-posta adresinizi ve şifrenizi girerek **"Login"** butonuna tıklayın.
 
-![Giriş Sayfası](/images/academy/tr/gs-login.webp)
+![Giriş Sayfası](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/gs-login.webp)
 
 Şifrenizi unuttuysanız, **"Forgot Password"** bağlantısından sıfırlama e-postası talep edebilirsiniz.
 
@@ -48,7 +48,7 @@ Kayıt işleminden sonra giriş sayfasına yönlendirilirsiniz. E-posta adresini
 
 İlk girişinizde karşılama ekranı görünür. Bu ekran, platformun üç temel özelliğini tanıtır:
 
-![Onboarding Karşılama Ekranı](/images/academy/getting-started/onboarding-welcome.png)
+![Onboarding Karşılama Ekranı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-welcome.png)
 
 | Özellik | Açıklama |
 |---------|----------|
@@ -64,7 +64,7 @@ Kurulum 3 adımdan oluşur: Hoş Geldiniz → Kanal Ekleme → Tamamlandı. **"G
 
 Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube kanallarını buradan eklersiniz.
 
-![Kanal Ekleme Ekranı](/images/academy/getting-started/onboarding-add-channels.png)
+![Kanal Ekleme Ekranı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-add-channels.png)
 
 ### Bilmeniz Gerekenler
 
@@ -80,7 +80,7 @@ Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube k
 
 **Arama ile ekleme:** Kanal adını arama kutusuna yazın. Sonuçlarda kanalın adı, abone sayısı ve video sayısı görüntülenir. İstediğiniz kanalın yanındaki **"+ Add"** butonuna tıklayın.
 
-![Kanal Arama](/images/academy/getting-started/onboarding-search-channels.png)
+![Kanal Arama](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-search-channels.png)
 
 > Sistemde zaten kayıtlı olan kanalların analitiği hemen kullanılabilir olur.
 
@@ -90,7 +90,7 @@ Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube k
 
 Kanallarınızı seçtikten sonra, ekleme öncesi son ayarları yapabilirsiniz.
 
-![Kanal Seçildi](/images/academy/getting-started/onboarding-channel-selected.png)
+![Kanal Seçildi](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-channel-selected.png)
 
 ### "Bu Benim Kanalım" Seçeneği
 
@@ -111,7 +111,7 @@ Seçtiğiniz kanallar **"Channels to Add"** bölümünde listelenir. Listeyi gö
 
 Kanallarınız başarıyla eklendikten sonra onay ekranı görünür. Eklenen kanallar, avatar ve kanal adıyla birlikte listelenir. Kendi kanalınız olarak işaretlediğiniz kanal **"My Channel"** etiketi taşır.
 
-![Kurulum Tamamlandı](/images/academy/getting-started/onboarding-complete.png)
+![Kurulum Tamamlandı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-complete.png)
 
 İki seçenek sunulur:
 
@@ -130,11 +130,11 @@ Tüm özellikleri denemek için **30 günlük ücretsiz Pro deneme** başlatabil
 2. Sol menüden **"Settings"** seçeneğine gidin.
 3. **"Subscription"** bölümünde **"Try Pro Free"** butonuna tıklayın.
 
-![Ayarlar ve Abonelik](/images/academy/tr/gs-settings-subscription.webp)
+![Ayarlar ve Abonelik](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/gs-settings-subscription.webp)
 
 ### Pro Planın Farkları
 
-![Plan Karşılaştırma](/images/academy/tr/gs-subscription-plans.webp)
+![Plan Karşılaştırma](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/gs-subscription-plans.webp)
 
 | Özellik | Free | Pro |
 |---------|------|-----|
