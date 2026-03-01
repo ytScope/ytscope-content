@@ -48,7 +48,7 @@ Kayıt işleminden sonra giriş sayfasına yönlendirilirsiniz. E-posta adresini
 
 İlk girişinizde karşılama ekranı görünür. Bu ekran, platformun üç temel özelliğini tanıtır:
 
-![Onboarding Karşılama Ekranı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-welcome.png)
+![Onboarding Karşılama Ekranı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-welcome.webp)
 
 | Özellik | Açıklama |
 |---------|----------|
@@ -64,7 +64,7 @@ Kurulum 3 adımdan oluşur: Hoş Geldiniz → Kanal Ekleme → Tamamlandı. **"G
 
 Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube kanallarını buradan eklersiniz.
 
-![Kanal Ekleme Ekranı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-add-channels.png)
+![Kanal Ekleme Ekranı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-add-channels.webp)
 
 ### Bilmeniz Gerekenler
 
@@ -80,7 +80,7 @@ Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube k
 
 **Arama ile ekleme:** Kanal adını arama kutusuna yazın. Sonuçlarda kanalın adı, abone sayısı ve video sayısı görüntülenir. İstediğiniz kanalın yanındaki **"+ Add"** butonuna tıklayın.
 
-![Kanal Arama](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-search-channels.png)
+![Kanal Arama](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-search-channels.webp)
 
 > Sistemde zaten kayıtlı olan kanalların analitiği hemen kullanılabilir olur.
 
@@ -90,7 +90,7 @@ Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube k
 
 Kanallarınızı seçtikten sonra, ekleme öncesi son ayarları yapabilirsiniz.
 
-![Kanal Seçildi](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-channel-selected.png)
+![Kanal Seçildi](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-channel-selected.webp)
 
 ### "Bu Benim Kanalım" Seçeneği
 
@@ -111,7 +111,7 @@ Seçtiğiniz kanallar **"Channels to Add"** bölümünde listelenir. Listeyi gö
 
 Kanallarınız başarıyla eklendikten sonra onay ekranı görünür. Eklenen kanallar, avatar ve kanal adıyla birlikte listelenir. Kendi kanalınız olarak işaretlediğiniz kanal **"My Channel"** etiketi taşır.
 
-![Kurulum Tamamlandı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-complete.png)
+![Kurulum Tamamlandı](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-complete.webp)
 
 İki seçenek sunulur:
 

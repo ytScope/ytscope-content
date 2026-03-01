@@ -48,7 +48,7 @@ If you forgot your password, use the **"Forgot Password"** link to request a res
 
 On your first login, a welcome screen introduces the platform's three core capabilities:
 
-![Onboarding Welcome Screen](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-welcome.png)
+![Onboarding Welcome Screen](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-welcome.webp)
 
 | Feature | Description |
 |---------|-------------|
@@ -64,7 +64,7 @@ The setup consists of 3 steps: Welcome → Add Channels → Complete. Click **"G
 
 This is the most critical step. You add the YouTube channels you want to track here.
 
-![Add Channels Screen](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-add-channels.png)
+![Add Channels Screen](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-add-channels.webp)
 
 ### Key Points
 
@@ -80,7 +80,7 @@ This is the most critical step. You add the YouTube channels you want to track h
 
 **By search:** Type the channel name in the search box. Results display the channel name, subscriber count, and video count. Click **"+ Add"** next to the channel you want.
 
-![Channel Search](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-search-channels.png)
+![Channel Search](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-search-channels.webp)
 
 > Channels already in the system have analytics available instantly.
 
@@ -90,7 +90,7 @@ This is the most critical step. You add the YouTube channels you want to track h
 
 After selecting your channels, you can configure settings before finalizing.
 
-![Channel Selected](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-channel-selected.png)
+![Channel Selected](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-channel-selected.webp)
 
 ### "This Is My Own Channel" Option
 
@@ -111,7 +111,7 @@ Your selected channels appear in the **"Channels to Add"** section. Review the l
 
 After adding your channels, a confirmation screen displays your added channels with their avatars and names. Channels marked as your own carry the **"My Channel"** badge.
 
-![Setup Complete](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-complete.png)
+![Setup Complete](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/getting-started/onboarding-complete.webp)
 
 Two options are presented:
 
