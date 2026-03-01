@@ -13,7 +13,11 @@ YTScope, YouTube kanallarının performansını takip eden ve analiz eden bir pl
 
 ## Hesap Oluşturma
 
-[ytscope.com](https://ytscope.com) adresine gidin ve **"Start Free"** butonuna tıklayın. Kayıt formunda aşağıdaki bilgileri doldurun:
+[ytscope.com](https://ytscope.com) adresine gidin ve **"Start Free"** butonuna tıklayın.
+
+![YTScope Ana Sayfa](/images/academy/tr/gs-homepage.webp)
+
+Kayıt formunda aşağıdaki bilgileri doldurun:
 
 | Alan | Açıklama |
 |------|----------|
@@ -21,6 +25,8 @@ YTScope, YouTube kanallarının performansını takip eden ve analiz eden bir pl
 | **E-posta** | Geçerli bir e-posta adresi |
 | **Şifre** | En az 8 karakter |
 | **Şifre Tekrar** | Şifrenizi doğrulayın |
+
+![Kayıt Sayfası](/images/academy/tr/gs-register.webp)
 
 **"Register"** butonuna tıklayarak hesabınızı oluşturun.
 
@@ -32,6 +38,8 @@ YTScope, YouTube kanallarının performansını takip eden ve analiz eden bir pl
 
 Kayıt işleminden sonra giriş sayfasına yönlendirilirsiniz. E-posta adresinizi ve şifrenizi girerek **"Login"** butonuna tıklayın.
 
+![Giriş Sayfası](/images/academy/tr/gs-login.webp)
+
 Şifrenizi unuttuysanız, **"Forgot Password"** bağlantısından sıfırlama e-postası talep edebilirsiniz.
 
 ---
@@ -39,6 +47,8 @@ Kayıt işleminden sonra giriş sayfasına yönlendirilirsiniz. E-posta adresini
 ## Onboarding — Hoş Geldiniz
 
 İlk girişinizde karşılama ekranı görünür. Bu ekran, platformun üç temel özelliğini tanıtır:
+
+![Onboarding Karşılama Ekranı](/images/academy/getting-started/onboarding-welcome.png)
 
 | Özellik | Açıklama |
 |---------|----------|
@@ -54,6 +64,8 @@ Kurulum 3 adımdan oluşur: Hoş Geldiniz → Kanal Ekleme → Tamamlandı. **"G
 
 Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube kanallarını buradan eklersiniz.
 
+![Kanal Ekleme Ekranı](/images/academy/getting-started/onboarding-add-channels.png)
+
 ### Bilmeniz Gerekenler
 
 - Veri toplama, kanalı eklediğiniz andan itibaren başlar. Geçmişe dönük veri çekilemez.
@@ -68,6 +80,8 @@ Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube k
 
 **Arama ile ekleme:** Kanal adını arama kutusuna yazın. Sonuçlarda kanalın adı, abone sayısı ve video sayısı görüntülenir. İstediğiniz kanalın yanındaki **"+ Add"** butonuna tıklayın.
 
+![Kanal Arama](/images/academy/getting-started/onboarding-search-channels.png)
+
 > Sistemde zaten kayıtlı olan kanalların analitiği hemen kullanılabilir olur.
 
 ---
@@ -75,6 +89,8 @@ Bu adım, platformun en kritik aşamasıdır. Takip etmek istediğiniz YouTube k
 ## Kanal Seçimi ve Onay
 
 Kanallarınızı seçtikten sonra, ekleme öncesi son ayarları yapabilirsiniz.
+
+![Kanal Seçildi](/images/academy/getting-started/onboarding-channel-selected.png)
 
 ### "Bu Benim Kanalım" Seçeneği
 
@@ -95,6 +111,8 @@ Seçtiğiniz kanallar **"Channels to Add"** bölümünde listelenir. Listeyi gö
 
 Kanallarınız başarıyla eklendikten sonra onay ekranı görünür. Eklenen kanallar, avatar ve kanal adıyla birlikte listelenir. Kendi kanalınız olarak işaretlediğiniz kanal **"My Channel"** etiketi taşır.
 
+![Kurulum Tamamlandı](/images/academy/getting-started/onboarding-complete.png)
+
 İki seçenek sunulur:
 
 - **"Start Analyzing"** — Dashboard'a giderek analizlere başlayın.
@@ -112,7 +130,11 @@ Tüm özellikleri denemek için **30 günlük ücretsiz Pro deneme** başlatabil
 2. Sol menüden **"Settings"** seçeneğine gidin.
 3. **"Subscription"** bölümünde **"Try Pro Free"** butonuna tıklayın.
 
+![Ayarlar ve Abonelik](/images/academy/tr/gs-settings-subscription.webp)
+
 ### Pro Planın Farkları
+
+![Plan Karşılaştırma](/images/academy/tr/gs-subscription-plans.webp)
 
 | Özellik | Free | Pro |
 |---------|------|-----|

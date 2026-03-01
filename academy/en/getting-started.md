@@ -13,7 +13,11 @@ YTScope is a platform that tracks and analyzes YouTube channel performance. It p
 
 ## Creating Your Account
 
-Go to [ytscope.com](https://ytscope.com) and click the **"Start Free"** button. Fill in the registration form:
+Go to [ytscope.com](https://ytscope.com) and click the **"Start Free"** button.
+
+![YTScope Homepage](/images/academy/en/gs-homepage.webp)
+
+Fill in the registration form:
 
 | Field | Description |
 |-------|-------------|
@@ -21,6 +25,8 @@ Go to [ytscope.com](https://ytscope.com) and click the **"Start Free"** button. 
 | **Email** | A valid email address |
 | **Password** | Minimum 8 characters |
 | **Confirm Password** | Re-enter your password |
+
+![Registration Page](/images/academy/en/gs-register.webp)
 
 Click **"Register"** to create your account.
 
@@ -32,6 +38,8 @@ Click **"Register"** to create your account.
 
 After registration, you are redirected to the login page. Enter your email and password, then click **"Login"**.
 
+![Login Page](/images/academy/en/gs-login.webp)
+
 If you forgot your password, use the **"Forgot Password"** link to request a reset email.
 
 ---
@@ -39,6 +47,8 @@ If you forgot your password, use the **"Forgot Password"** link to request a res
 ## Onboarding — Welcome
 
 On your first login, a welcome screen introduces the platform's three core capabilities:
+
+![Onboarding Welcome Screen](/images/academy/getting-started/onboarding-welcome.png)
 
 | Feature | Description |
 |---------|-------------|
@@ -54,6 +64,8 @@ The setup consists of 3 steps: Welcome → Add Channels → Complete. Click **"G
 
 This is the most critical step. You add the YouTube channels you want to track here.
 
+![Add Channels Screen](/images/academy/getting-started/onboarding-add-channels.png)
+
 ### Key Points
 
 - Data collection starts from the moment you add a channel. Historical data cannot be retrieved retroactively.
@@ -68,6 +80,8 @@ This is the most critical step. You add the YouTube channels you want to track h
 
 **By search:** Type the channel name in the search box. Results display the channel name, subscriber count, and video count. Click **"+ Add"** next to the channel you want.
 
+![Channel Search](/images/academy/getting-started/onboarding-search-channels.png)
+
 > Channels already in the system have analytics available instantly.
 
 ---
@@ -75,6 +89,8 @@ This is the most critical step. You add the YouTube channels you want to track h
 ## Channel Selection and Confirmation
 
 After selecting your channels, you can configure settings before finalizing.
+
+![Channel Selected](/images/academy/getting-started/onboarding-channel-selected.png)
 
 ### "This Is My Own Channel" Option
 
@@ -95,6 +111,8 @@ Your selected channels appear in the **"Channels to Add"** section. Review the l
 
 After adding your channels, a confirmation screen displays your added channels with their avatars and names. Channels marked as your own carry the **"My Channel"** badge.
 
+![Setup Complete](/images/academy/getting-started/onboarding-complete.png)
+
 Two options are presented:
 
 - **"Start Analyzing"** — Go to your dashboard and begin exploring analytics.
@@ -112,7 +130,11 @@ To access all features, you can start a **30-day free Pro trial**. No credit car
 2. Navigate to **"Settings"** from the sidebar.
 3. In the **"Subscription"** section, click **"Try Pro Free"**.
 
+![Settings and Subscription](/images/academy/en/gs-settings-subscription.webp)
+
 ### Pro Plan Comparison
+
+![Plan Comparison](/images/academy/en/gs-subscription-plans.webp)
 
 | Feature | Free | Pro |
 |---------|------|-----|
