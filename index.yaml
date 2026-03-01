@@ -19,16 +19,10 @@ academy:
     - slug: dashboard-kullanimi
       published: true
       order: 2
-    - slug: video-analizi
-      published: true
-      order: 3
-    - slug: metrikler
-      published: true
-      order: 4
-    - slug: rakip-analizi
-      published: true
-      order: 5
   en:
     - slug: getting-started
       published: true
       order: 1
+    - slug: dashboard-guide
+      published: true
+      order: 2
