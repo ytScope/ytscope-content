@@ -16,7 +16,7 @@ blog:
 academy:
   tr:
     - slug: getting-started
-      published: false
+      published: true
       order: 1
       title: "Başlangıç Rehberi"
       description: "Kayıt, e-posta doğrulama, onboarding ve ilk kanal ekleme adımları."
@@ -83,7 +83,7 @@ academy:
 
   en:
     - slug: getting-started
-      published: false
+      published: true
       order: 1
       title: "Getting Started"
       description: "Registration, email verification, onboarding and adding your first channel."
