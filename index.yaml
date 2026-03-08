@@ -1,5 +1,6 @@
 # YTScope Content Index
 # Academy articles are organized by locale (tr/en)
+# Sidebar order = order field value
 
 blog:
   - slug: youtube-analytics-ai-algorithms
@@ -13,16 +14,93 @@ blog:
 
 academy:
   tr:
+    # 1 - Baslangic: Kayit, onboarding, ilk kanal ekleme
     - slug: getting-started
       published: true
       order: 1
+    # 2 - Dashboard: Genel bakis, health score, quick wins, narrative, alerts
     - slug: dashboard-kullanimi
       published: true
       order: 2
+    # 3 - Kanal yonetimi: Kanal listesi, ekleme/cikarma, kanal karsilastirma
+    - slug: kanal-yonetimi
+      published: false
+      order: 3
+    # 4 - Kanal analizi (Overview tab): Buyume, performans grafigi, gunluk metrikler
+    - slug: kanal-analizi
+      published: false
+      order: 4
+    # 5 - Gelismis analitik (Advanced tab): Heatmap, benchmark, seasonal, keywords, korelasyon
+    - slug: gelismis-analitik
+      published: false
+      order: 5
+    # 6 - Tahminler (Predictions tab): Momentum, churn, velocity decay, first 48h
+    - slug: tahminler
+      published: false
+      order: 6
+    # 7 - Video analizi: Video listesi, top videolar, video detay, performans notu
+    - slug: video-analizi
+      published: false
+      order: 7
+    # 8 - Video karsilastirma (Compare tab): A/B karsilastirma
+    - slug: video-karsilastirma
+      published: false
+      order: 8
+    # 9 - Siralamalar: Ranking tablosu, metrik bazli siralama, podyum, paylasim
+    - slug: siralamalar
+      published: false
+      order: 9
+    # 10 - AI asistan: Chat paneli, ornek sorular, context-aware oneriler
+    - slug: ai-asistan
+      published: false
+      order: 10
+    # 11 - Abonelik ve ayarlar: Plan farklari, upgrade, API key, dil, tema
+    - slug: abonelik-ve-ayarlar
+      published: false
+      order: 11
+
   en:
+    # 1 - Getting started: Registration, onboarding, first channel
     - slug: getting-started
       published: true
       order: 1
+    # 2 - Dashboard: Overview, health score, quick wins, narrative, alerts
     - slug: dashboard-guide
       published: true
       order: 2
+    # 3 - Channel management: Channel list, add/remove, channel comparison
+    - slug: channel-management
+      published: false
+      order: 3
+    # 4 - Channel analysis (Overview tab): Growth, performance chart, daily metrics
+    - slug: channel-analysis
+      published: false
+      order: 4
+    # 5 - Advanced analytics (Advanced tab): Heatmap, benchmark, seasonal, keywords, correlation
+    - slug: advanced-analytics
+      published: false
+      order: 5
+    # 6 - Predictions (Predictions tab): Momentum, churn, velocity decay, first 48h
+    - slug: predictions
+      published: false
+      order: 6
+    # 7 - Video analysis: Video list, top videos, video detail, performance grade
+    - slug: video-analysis
+      published: false
+      order: 7
+    # 8 - Video comparison (Compare tab): A/B comparison
+    - slug: video-comparison
+      published: false
+      order: 8
+    # 9 - Rankings: Ranking table, metric-based sorting, podium, share
+    - slug: rankings
+      published: false
+      order: 9
+    # 10 - AI assistant: Chat panel, example questions, context-aware suggestions
+    - slug: ai-assistant
+      published: false
+      order: 10
+    # 11 - Subscription and settings: Plan tiers, upgrade, API key, language, theme
+    - slug: subscription-and-settings
+      published: false
+      order: 11
