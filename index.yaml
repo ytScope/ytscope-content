@@ -52,7 +52,7 @@ academy:
       description: "Momentum skoru, abone kaybı analizi, ilk 48 saat performansı ve velocity decay."
 
     - slug: video-analizi
-      published: false
+      published: true
       order: 7
       title: "Video Analizi"
       description: "Video listesi, en iyi videolar, video detay sayfası ve performans notu (A+ → F)."
@@ -119,7 +119,7 @@ academy:
       description: "Momentum score, churn analysis, first 48-hour performance and velocity decay."
 
     - slug: video-analysis
-      published: false
+      published: true
       order: 7
       title: "Video Analysis"
       description: "Video list, top performers, video detail page and performance grade (A+ to F)."
