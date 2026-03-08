@@ -58,7 +58,7 @@ academy:
       description: "Video listesi, en iyi videolar, video detay sayfası ve performans notu (A+ → F)."
 
     - slug: video-karsilastirma
-      published: false
+      published: true
       order: 8
       title: "Video Karşılaştırma"
       description: "İki veya daha fazla videoyu yan yana karşılaştırın ve performans farklarını görün."
@@ -125,7 +125,7 @@ academy:
       description: "Video list, top performers, video detail page and performance grade (A+ to F)."
 
     - slug: video-comparison
-      published: false
+      published: true
       order: 8
       title: "Video Comparison"
       description: "Compare two or more videos side by side and see performance differences."
