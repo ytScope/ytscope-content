@@ -46,7 +46,7 @@ academy:
       description: "Yükleme heatmap'i, engagement benchmark, mevsimsel trendler, başlık analizi ve korelasyon."
 
     - slug: tahminler
-      published: false
+      published: true
       order: 6
       title: "Tahminler"
       description: "Momentum skoru, abone kaybı analizi, ilk 48 saat performansı ve velocity decay."
@@ -113,7 +113,7 @@ academy:
       description: "Upload heatmap, engagement benchmark, seasonal trends, title analysis and correlation."
 
     - slug: predictions
-      published: false
+      published: true
       order: 6
       title: "Predictions"
       description: "Momentum score, churn analysis, first 48-hour performance and velocity decay."

@@ -1,0 +1,129 @@
+---
+title: "Tahminler"
+description: "Momentum skoru, abone kaybı analizi, ilk 48 saat tahmini, izlenme hız azalması ve korelasyon matrisi."
+lastUpdated: "2026-03-08"
+order: 6
+---
+
+# Tahminler
+
+Tahminler sekmesi, kanalın geleceğe yönelik verilerini sunar. Momentum skoru ile büyüme yönünü, abone kaybı analizi ile risk seviyesini, ilk 48 saat tahmini ile yeni videoların erken performansını incelersiniz.
+
+<Screenshot
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channel-predictions-full.webp"
+  alt="Tahminler sekmesi genel görünüm"
+  caption="Tahminler sekmesi — Momentum Skoru ve tahmin modelleri."
+/>
+
+Kanal detay sayfasında **Tahminler** sekmesine tıklayarak bu bölüme ulaşın.
+
+---
+
+## Momentum skoru
+
+Momentum Skoru, kanalın büyüme ivmesini tek bir sayıyla özetler. Son 14 günlük verilere dayanarak kanalın yükseliş mi düşüş mü trendinde olduğunu gösterir.
+
+| Metrik | Açıklama |
+|--------|----------|
+| **Skor** | -100 ile +100 arası değer. Pozitif değerler büyüme ivmesi, negatif değerler yavaşlama gösterir. |
+| **Durum rozeti** | **Yükseliyor**, **Stabil** veya **Düşüyor** olarak kanalın genel yönü. |
+| **Abone Değişimi (7g)** | Son 7 günlük net abone değişimi ve bir önceki 7 güne kıyasla yüzde farkı. |
+| **İzlenme Değişimi (7g)** | Son 7 günlük toplam izlenme değişimi ve önceki dönemle karşılaştırma. |
+
+Skor altındaki **İçgörüler** bölümü, yapay zeka destekli kısa yorumlar sunar.
+
+<Callout type="tip">
+Momentum skoru haftalık takip edin. İki hafta üst üste düşüş trendi gösteren kanallar için içerik stratejisini gözden geçirin.
+</Callout>
+
+---
+
+## Abone kaybı analizi
+
+Abone kaybı (churn) analizi, kanalın abone tutma performansını ölçer.
+
+| Metrik | Açıklama |
+|--------|----------|
+| **Kayıp oranı** | Dönem içinde kaybedilen abonelerin yüzdesi. |
+| **Kayıp hızı** | Günlük ortalama abone kaybı sayısı. |
+| **Günlük değişim zaman çizelgesi** | Abone kazanım ve kayıplarını gün bazlı gösteren grafik. |
+| **Haftalık dağılım** | Haftalar arası karşılaştırma — kayıp hızı artıyor mu azalıyor mu. |
+
+<Callout type="note">
+Belirli bir düzeyde abone kaybı normaldir. Her kanalda izleyiciler zaman içinde ilgisini kaybeder. Önemli olan kayıp hızının kazanım hızını aşmaması.
+</Callout>
+
+---
+
+## İlk 48 saat tahmini
+
+Yeni yayınlanan videoların ilk 48 saatteki performansını analiz eder ve gelecek videolar için tahmin üretir.
+
+| Bilgi | Açıklama |
+|-------|----------|
+| **Erken performans özet kartları** | İlk 48 saatte ortalama izlenme, beğeni ve etkileşim tahmini. |
+| **Video bazlı tahmin tablosu** | Son videoların her biri için ilk 48 saat performans tahmini. |
+| **Etkileşim yörüngesi** | Yayından sonra etkileşim oranının nasıl değiştiği. |
+
+Bu bölüm, yeni bir video yayınlamadan önce beklentilerinizi kalibre etmenize yardımcı olur.
+
+<ProTip>
+İlk 48 saat tahminlerini gerçek verilerle karşılaştırın. Tahminin üstünde performans gösteren videolar, kanalın güçlü yönlerini temsil eder.
+</ProTip>
+
+---
+
+## İzlenme hız azalması
+
+Videoların yayından sonra izlenme hızının nasıl düştüğünü analiz eder. İki ana video kategorisi tanımlar:
+
+| Kategori | Açıklama |
+|----------|----------|
+| **Viral** | Yayının ilk günlerinde yüksek izlenme alıp hızla düşen videolar. |
+| **Evergreen** | Uzun süre boyunca istikrarlı izlenme almaya devam eden videolar. |
+
+| Bilgi | Açıklama |
+|-------|----------|
+| **Baskın kategori** | Kanalın videoları ağırlıklı olarak viral mi yoksa evergreen mi. |
+| **Kategori dağılım grafiği** | Videoların viral-evergreen dağılımı. |
+| **En iyi viral videolar** | Yayından hemen sonra en yüksek izlenme ivmesini yakalayan videolar. |
+| **En iyi evergreen videolar** | Yayından uzun süre sonra da izlenme almaya devam eden videolar. |
+
+<Callout type="tip">
+Evergreen oranı yüksek kanallar arama trafiğinden beslenir. Viral ağırlıklı kanallar ise önerilen videolar (suggested) akışına bağımlıdır.
+</Callout>
+
+---
+
+## Korelasyon analizi
+
+Kanal metriklerinin birbirleriyle ilişkisini istatistiksel olarak ölçer.
+
+| Bilgi | Açıklama |
+|-------|----------|
+| **Korelasyon matrisi** | Metrikler arası ilişki tablosu (ör. izlenme ile etkileşim arasındaki bağ). |
+| **Yöntem** | Pearson veya Spearman korelasyon katsayısı seçilebilir. |
+| **Örneklem büyüklüğü** | Analize dahil edilen veri noktası sayısı. |
+
+**Korelasyon değeri yorumlama:**
+
+| Değer | Anlam |
+|-------|-------|
+| **+0.7 ile +1.0** | Güçlü pozitif ilişki — bir metrik artınca diğeri de artar. |
+| **+0.3 ile +0.7** | Orta düzeyde pozitif ilişki. |
+| **-0.3 ile +0.3** | Zayıf veya anlamsız ilişki. |
+| **-0.7 ile -0.3** | Orta düzeyde negatif ilişki. |
+| **-1.0 ile -0.7** | Güçlü negatif ilişki — biri artarken diğeri azalır. |
+
+<Callout type="note">
+Korelasyon nedensellik göstermez. İki metrik arasında yüksek korelasyon varsa, birinin diğerine neden olduğu anlamına gelmez. Ancak strateji ipuçları verir.
+</Callout>
+
+---
+
+## Sırada ne var?
+
+| Rehber | Konu |
+|--------|------|
+| [Video Analizi](/academy/tr/video-analizi) | Video listesi, en iyi videolar ve video detay sayfası. |
+| [Gelişmiş Analitik](/academy/tr/gelismis-analitik) | Pazar payı, yükleme zamanı heatmap'i ve başlık analizi. |
