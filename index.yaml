@@ -16,13 +16,13 @@ blog:
 academy:
   tr:
     - slug: getting-started
-      published: true
+      published: false
       order: 1
       title: "Başlangıç Rehberi"
       description: "Kayıt, e-posta doğrulama, onboarding ve ilk kanal ekleme adımları."
 
     - slug: dashboard-kullanimi
-      published: true
+      published: false
       order: 2
       title: "Dashboard Kullanımı"
       description: "Genel bakış, Health Score, Quick Wins, AI günlük özet ve uyarılar."
@@ -83,13 +83,13 @@ academy:
 
   en:
     - slug: getting-started
-      published: true
+      published: false
       order: 1
       title: "Getting Started"
       description: "Registration, email verification, onboarding and adding your first channel."
 
     - slug: dashboard-guide
-      published: true
+      published: false
       order: 2
       title: "Dashboard Guide"
       description: "Overview, Health Score, Quick Wins, AI daily summary and alerts."
