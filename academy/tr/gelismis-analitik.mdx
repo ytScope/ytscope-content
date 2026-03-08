@@ -1,0 +1,176 @@
+---
+title: "Gelişmiş Analitik"
+description: "Yükleme zamanı heatmap'i, etkileşim benchmark'ı, pazar payı, başlık analizi ve gelir tahmini bölümlerini inceleyin."
+lastUpdated: "2026-03-08"
+order: 5
+---
+
+# Gelişmiş analitik
+
+İleri Analiz sekmesi, kanalın standart metriklerin ötesindeki derinlemesine verilerini sunar. Pazar payından yükleme zamanı optimizasyonuna, başlık anahtar kelimelerinden gelir tahminine kadar 10 farklı analiz bölümü içerir.
+
+<Screenshot
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channel-advanced-full.webp"
+  alt="İleri Analiz sekmesi genel görünüm"
+  caption="İleri Analiz sekmesi — Pazar Payı (SOV) ve dönem analizi bölümleri."
+/>
+
+Kanal detay sayfasında **İleri Analiz** sekmesine tıklayarak bu bölüme ulaşın. Tüm analizler seçilen dönem aralığına göre hesaplanır.
+
+---
+
+## Pazar payı (SOV)
+
+Pazar Payı (Share of Voice), kanalın takip ettiğiniz kanallar arasındaki konumunu gösterir. Üç ayrı SOV metriği sunar:
+
+| Metrik | Açıklama |
+|--------|----------|
+| **İzlenme SOV** | Kanalın toplam izlenmelerdeki payı. Ör. %20.9, takip ettiğiniz kanalların toplam izlenmesinin beşte birinin bu kanala ait olduğu anlamına gelir. |
+| **Abone SOV** | Kanalın toplam abonelerdeki payı. |
+| **Büyüme SOV** | Kanalın dönem içindeki büyümedeki payı. |
+
+Üst kısımdaki durum rozeti (Sağlıklı, Dikkat, Kritik) ve trend yönü (Yükseliyor, Düşüyor) hızlı bir özet sağlar. Sıralama değeri (ör. **2/12**) kanalın takip edilen kanallar arasındaki pozisyonunu gösterir.
+
+<Callout type="tip">
+İzlenme SOV'u düşük ama Büyüme SOV'u yüksek olan kanallar yükseliş trendinde. Bu durumda kanalın ne yaptığını incelemek faydalı olabilir.
+</Callout>
+
+---
+
+## İzlenme yoğunlaşması
+
+İzlenme Yoğunlaşması (View Concentration), videoların izlenme dağılımını Pareto analizi ile gösterir.
+
+| Metrik | Açıklama |
+|--------|----------|
+| **En iyi %10** | Videoların en çok izlenen %10'unun toplam izlenmedeki payı. |
+| **En iyi %20** | Videoların en çok izlenen %20'sinin toplam izlenmedeki payı. |
+| **En iyi %50** | Üst yarının toplam izlenmedeki payı. |
+
+Sonuç 80/20 kuralıyla karşılaştırılır. Yoğunlaşma yüksekse az sayıda video izlenmenin büyük kısmını taşır. Dengeli dağılım, kanalın birçok videosunun performans gösterdiğini gösterir.
+
+---
+
+## Yükleme zamanı analizi
+
+Heatmap formatında gün ve saat bazlı yükleme performansını gösterir. 7 gün × 24 saat matrisinde her hücre o zaman diliminde yüklenen videoların ortalama izlenmesini renkle ifade eder.
+
+| Bilgi | Açıklama |
+|-------|----------|
+| **Koyu hücre** | Yüksek izlenme ortalaması — o saat diliminde yüklenen videolar daha iyi performans göstermiş. |
+| **Açık hücre** | Düşük izlenme ortalaması. |
+| **En iyi slot** | Vurgulanan hücre, en yüksek ortalama izlenmeyi sağlayan gün-saat kombinasyonu. |
+
+<ProTip>
+En iyi yükleme saatinizi heatmap'ten belirleyin ve yeni içeriklerinizi bu zaman diliminde yayınlayın. Tutarlılık algoritma için de faydalıdır.
+</ProTip>
+
+---
+
+## Etkileşim benchmark'ı
+
+Kanalın etkileşim oranını (engagement rate) YouTube ortalaması ile karşılaştırır. YouTube'un genel ortalaması **%3.87** olarak referans alınır.
+
+| Metrik | Açıklama |
+|--------|----------|
+| **Ortalama etkileşim** | Kanalın ortalama etkileşim oranı. |
+| **YouTube ortalaması** | Sektör geneli referans değer (%3.87). |
+| **Medyan** | Videoların medyan etkileşim oranı — aşırı değerlerden etkilenmez. |
+| **Min / Max** | En düşük ve en yüksek etkileşim oranına sahip videolar. |
+| **Shorts vs Normal** | Kısa ve uzun videoların etkileşim oranı karşılaştırması. |
+
+---
+
+## Mevsimsel trendler
+
+Kanalın ay veya çeyrek bazlı performans döngülerini gösterir. Belirli dönemlerde izlenme veya etkileşimde tekrarlayan artış-azalış desenleri varsa bu bölümde görünür.
+
+<Callout type="note">
+Mevsimsel trendler en az 90 günlük veri ile anlamlı sonuç verir. Yeni eklenen kanallarda bu bölüm sınırlı veri gösterebilir.
+</Callout>
+
+---
+
+## Başlık anahtar kelimeleri
+
+Video başlıklarındaki kelimeleri analiz eder. Üç alt sekme içerir:
+
+| Sekme | İçerik |
+|-------|--------|
+| **Anahtar kelimeler** | En sık kullanılan kelimeler, kullanım sayısı ve her kelimenin ortalama izlenme performansı. |
+| **Başlık uzunluğu** | Başlık karakter sayısına göre performans dağılımı — kısa mı yoksa uzun başlıklar mı daha iyi performans gösteriyor. |
+| **İsimlendirme desenleri** | Başlıklardaki ortak yapılar (soru, liste, nasıl yapılır vb.) ve bu yapıların performansı. |
+
+<ProTip>
+En yüksek ortalama izlenmeye sahip anahtar kelimeleri gelecek videolarınızın başlıklarına dahil edin.
+</ProTip>
+
+---
+
+## Video süresi analizi
+
+Videoların süre kategorilerine göre performansını gösterir.
+
+| Kategori | Açıklama |
+|----------|----------|
+| **Shorts** | 60 saniyenin altındaki videolar. |
+| **Orta** | 1–15 dakika arası videolar. |
+| **Uzun** | 15–60 dakika arası videolar. |
+| **Çok uzun** | 60 dakikanın üzerindeki videolar. |
+
+Her kategori için video sayısı, ortalama izlenme ve etkileşim oranı listelenir. Hangi süre aralığının kanalda en iyi performansı gösterdiğini belirleyin.
+
+---
+
+## Video yaşı analizi
+
+Videoların yayınlandıktan sonra ne kadar süre izlenme almaya devam ettiğini gösterir.
+
+| Görünüm | Açıklama |
+|---------|----------|
+| **Etkileşim trendi** | Yayın tarihine göre etkileşim oranının zamanla nasıl değiştiği. |
+| **İçerik yaşı dağılımı** | Yeni videolar mı yoksa eski (evergreen) içerikler mi izlenmenin büyük kısmını taşıyor. |
+
+Evergreen (her dönem izlenen) içerik oranı yüksekse, kanal arama trafiğinden besleniyor demektir.
+
+---
+
+## Breakout ve anomali tespiti
+
+Normalin çok üstünde performans gösteren videoları (breakout) istatistiksel olarak tespit eder. Z-skor yöntemi ile kanalın ortalamasından sapan videolar işaretlenir.
+
+| Bilgi | Açıklama |
+|-------|----------|
+| **Breakout videolar** | Kanal ortalamasının belirgin üstünde izlenme alan videolar. |
+| **Anomaliler** | Beklenmedik pozitif veya negatif performans sapmaları. |
+| **Desenler** | Breakout videolarda ortak özellikler (başlık yapısı, süre, konu vb.). |
+
+<Callout type="tip">
+Breakout videolarınızın ortak özelliklerini inceleyin — konu, başlık yapısı ve küçük resim stili. Bu özellikleri gelecek içeriklerinize uygulayın.
+</Callout>
+
+---
+
+## Gelir tahmini
+
+Kanalın tahmini gelirini gösterir. Bu değer CPM (bin izlenme başına maliyet) ve bölge bazlı tahminlere dayanır.
+
+| Metrik | Açıklama |
+|--------|----------|
+| **Brüt gelir** | YouTube'a ödenen pay dahil toplam tahmini gelir. |
+| **Net gelir** | İçerik üreticisinin payına düşen tahmini tutar. |
+| **RPM** | Bin izlenme başına tahmini kazanç (Revenue Per Mille). |
+| **YouTube payı** | YouTube'un aldığı yüzde (genellikle %45). |
+
+<Callout type="warning">
+Gelir tahmini yaklaşık bir değerdir. Gerçek gelir, reklam türü, izleyici bölgesi, niş ve sponsorluk anlaşmalarına göre farklılık gösterir.
+</Callout>
+
+---
+
+## Sırada ne var?
+
+| Rehber | Konu |
+|--------|------|
+| [Tahminler](/academy/tr/tahminler) | Momentum skoru, abone kaybı analizi ve hız azalma tahminleri. |
+| [Kanal Analizi](/academy/tr/kanal-analizi) | Genel Bakış sekmesine dönün — büyüme, performans grafiği ve günlük metrikler. |

@@ -40,7 +40,7 @@ academy:
       description: "Abone büyümesi, performans grafikleri, günlük metrikler ve video özeti."
 
     - slug: gelismis-analitik
-      published: false
+      published: true
       order: 5
       title: "Gelişmiş Analitik"
       description: "Yükleme heatmap'i, engagement benchmark, mevsimsel trendler, başlık analizi ve korelasyon."
@@ -107,7 +107,7 @@ academy:
       description: "Subscriber growth, performance charts, daily metrics and video summary."
 
     - slug: advanced-analytics
-      published: false
+      published: true
       order: 5
       title: "Advanced Analytics"
       description: "Upload heatmap, engagement benchmark, seasonal trends, title analysis and correlation."
