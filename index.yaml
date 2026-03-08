@@ -34,7 +34,7 @@ academy:
       description: "Kanal ekleme/çıkarma, liste görünümü ve çoklu kanal karşılaştırma."
 
     - slug: kanal-analizi
-      published: false
+      published: true
       order: 4
       title: "Kanal Analizi"
       description: "Abone büyümesi, performans grafikleri, günlük metrikler ve video özeti."
@@ -101,7 +101,7 @@ academy:
       description: "Add/remove channels, list view and multi-channel comparison."
 
     - slug: channel-analysis
-      published: false
+      published: true
       order: 4
       title: "Channel Analysis"
       description: "Subscriber growth, performance charts, daily metrics and video summary."
