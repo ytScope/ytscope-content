@@ -22,7 +22,7 @@ academy:
       description: "Kayıt, e-posta doğrulama, onboarding ve ilk kanal ekleme adımları."
 
     - slug: dashboard-kullanimi
-      published: false
+      published: true
       order: 2
       title: "Dashboard Kullanımı"
       description: "Genel bakış, Health Score, Quick Wins, AI günlük özet ve uyarılar."
@@ -89,7 +89,7 @@ academy:
       description: "Registration, email verification, onboarding and adding your first channel."
 
     - slug: dashboard-guide
-      published: false
+      published: true
       order: 2
       title: "Dashboard Guide"
       description: "Overview, Health Score, Quick Wins, AI daily summary and alerts."
