@@ -28,7 +28,7 @@ academy:
       description: "Genel bakış, Health Score, Quick Wins, AI günlük özet ve uyarılar."
 
     - slug: kanal-yonetimi
-      published: false
+      published: true
       order: 3
       title: "Kanal Yönetimi"
       description: "Kanal ekleme/çıkarma, liste görünümü ve çoklu kanal karşılaştırma."
@@ -95,7 +95,7 @@ academy:
       description: "Overview, Health Score, Quick Wins, AI daily summary and alerts."
 
     - slug: channel-management
-      published: false
+      published: true
       order: 3
       title: "Channel Management"
       description: "Add/remove channels, list view and multi-channel comparison."
