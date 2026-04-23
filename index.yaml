@@ -78,11 +78,11 @@ academy:
     - slug: abonelik-ve-ayarlar
       published: false
       order: 11
-      title: "Abonelik ve Ayarlar"
+      title: "Abgonelik ve Ayarlar"
       description: "Plan karşılaştırma, yükseltme, API anahtarları, dil ve tema ayarları."
 
     - slug: studio-kullanimi
-      published: false
+      published: true
       order: 11
       title: "Studio Kullanımı"
       description: "Rakip sinyallerini, içerik fırsatlarını ve AI üretim araçlarını nasıl kullanacağınızı öğrenin."
