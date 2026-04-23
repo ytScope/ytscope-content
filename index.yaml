@@ -70,7 +70,7 @@ academy:
       description: "Rakip sinyallerini, içerik fırsatlarını ve AI üretim araçlarını nasıl kullanacağınızı öğrenin."
 
     - slug: siralamalar
-      published: false
+      published: true
       order: 10
       title: "Sıralamalar"
       description: "Kanalları metrik bazlı sıralayın, podyumu görün ve sonuçları paylaşın."
