@@ -76,10 +76,10 @@ academy:
       description: "Kanalları metrik bazlı sıralayın, podyumu görün ve sonuçları paylaşın."
 
     - slug: ai-asistan
-      published: false
+      published: true
       order: 11
       title: "AI Asistan"
-      description: "AI chat paneli, örnek sorular, bağlama duyarlı öneriler ve çoklu ajan yanıtları."
+      description: "AI chat panelini, sayfa bağlamını, örnek soru akışlarını ve çoklu ajan yanıtlarını nasıl kullanacağınızı öğrenin."
 
     - slug: abonelik-ve-ayarlar
       published: false

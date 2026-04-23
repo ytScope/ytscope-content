@@ -1,0 +1,268 @@
+---
+title: "AI Asistan"
+description: "AI chat panelini, sayfa bağlamını, örnek soru akışlarını ve Panel, Studio, Kanallar, Videolar, Sıralamalar kullanımını öğrenin."
+order: 11
+lastUpdated: "2026-04-23"
+---
+
+# AI Asistan
+
+AI Asistan, YTScope'un sağ altındaki **"AI'a Sor"** butonuyla açılan sohbet panelidir. Bu panel sıradan bir chatbot gibi çalışmaz; o anda hangi sayfada olduğunuzu, hangi kanalı veya videoyu görüntülediğinizi, hangi sekmenin açık olduğunu ve sayfada hangi analiz kartlarının görünür olduğunu bağlam olarak kullanır. Bu yüzden aynı soruyu Dashboard, Studio veya Sıralamalar sayfasında sorduğunuzda farklı ve daha ilgili cevaplar alırsınız.
+
+![AI Asistan Dashboard Görünümü](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/ai-asistan/dashboard-ai-panel.png)
+
+Bu özellik özellikle üç durumda güçlüdür:
+
+| Durum | AI Asistan Ne Sağlar? |
+|------|------------------------|
+| **Bir sayfayı hızlı yorumlamak istiyorsunuz** | O sayfadaki analizleri bir araya getirip özet çıkarır |
+| **Belirli bir kartı veya metriği anlamak istiyorsunuz** | Aynı bağlam üzerinden neden-sonuç ilişkisi kurar |
+| **Bir sonraki aksiyonu belirlemek istiyorsunuz** | Veriye dayalı içerik, optimizasyon veya rekabet önerileri sunar |
+
+---
+
+## Panelin Yapısı Nasıl Çalışır?
+
+AI Asistan açıldığında alt tarafta bir panel görünür. Bu panelde beş temel parça vardır:
+
+| Bölüm | Ne İşe Yarar? |
+|------|---------------|
+| **Sayfa sekmeleri** | Panel, Studio, Kanallar, Videolar ve Sıralamalar arasında doğrudan geçiş yapmanızı sağlar |
+| **Öneri soruları** | O an bulunduğunuz sayfaya göre üç hazır başlangıç sorusu sunar |
+| **Mesaj alanı** | Sorunuzu serbest metin olarak yazdığınız alandır |
+| **Kredi çubuğu** | Kalan AI kredinizi ve uyarı seviyesini gösterir |
+| **Geçmiş alanı** | Önceki sohbetleri tekrar açmanızı sağlar |
+
+Yazdığınız mesajlar akış halinde gelir. Arka planda veri toplanırken panel içinde kısa durum satırları görünür. Gerçek kullanımda Dashboard üzerinde **Kanal Sağlığı**, **Video Analizi** ve **Rekabet Analizi** uzmanlarının sırayla devreye girdiği görülebiliyor. Bu, yanıtın tek bir düz metin üretiminden değil, birden fazla uzman akışının birleşiminden geldiğini gösterir.
+
+### AI Asistan Hangi Bilgileri Biliyor?
+
+Kod tarafında sohbet isteğiyle birlikte şu bağlamlar gönderiliyor:
+
+- açık sayfa (`dashboard`, `studio`, `comparison`, `videos`, `rankings` gibi)
+- seçili kanal kimliği
+- gerekiyorsa seçili video veya seçili video listesi
+- aktif sekme
+- seçili dönem, metrik, kategori ve liste limiti
+- kullanıcıya ait kanal bilgisi
+- sayfada görünen analiz kartlarının listesi
+
+Bu tasarımın pratik sonucu şudur: **"Bu sayfayı incele"** gibi kısa bir komut bile, boş bir sohbete göre çok daha güçlü çalışır.
+
+---
+
+## Çoklu Uzman Mantığı
+
+AI Asistan'ın yanıtları tek katmanlı değildir. Backend tarafında dört uzman ajanın görev dağılımı bulunur:
+
+| Uzman | Ne Tür Sorulara Bakar? |
+|------|-------------------------|
+| **ChannelHealth** | Kanal sağlığı, büyüme, momentum, Creator DNA, gelir ve etkileşim |
+| **ContentStrategy** | Yükleme zamanı, konu seçimi, başlık, uzunluk, mevsimsel trendler |
+| **VideoAnalysis** | Video detayı, top video, breakout video, ilk 48 saat, hız düşüşü |
+| **Competitive** | Rakip özeti, kıyas, sıralama, pazar konumu ve rekabet resmi |
+
+Kullanıcı açısından bunun anlamı şudur: tek bir soruda hem kanalın durumu hem içerik stratejisi hem de rakip boyutu birlikte yorumlanabilir.
+
+---
+
+## Sayfa Bağlamı Neden Önemli?
+
+AI Asistan'ın en ayırt edici tarafı, yalnızca mesaj metnini değil **sayfada gördüğünüz analizleri** de bilmesidir. Eğer sayfada yeterli sayıda görünür analiz kartı varsa panelde otomatik olarak **"Bu sayfadaki tüm analizleri incele"** önerisi çıkar.
+
+Bu öneri tetiklendiğinde sistem, görünür analiz kartlarının araç eşleşmelerini kullanarak ilk 5-7 uygun analizi arka planda çalıştırır ve bunları tek yanıtta birleştirir. Dashboard üzerindeki gerçek kullanımda bu akış; sağlık, video ve rekabet sinyallerini tek cevapta toplayan bir özet üretti.
+
+Bu nedenle AI Asistan'ı en iyi kullandıran yaklaşım şudur:
+
+1. Önce ilgili sayfayı açın.
+2. İlgili filtreyi veya sekmeyi seçin.
+3. Soruyu o bağlam içindeyken sorun.
+
+---
+
+## Panel Sayfasında Neler Yapabilirsiniz?
+
+Dashboard bağlamında AI Asistan, seçili kanalınızı ve varsa rakiplerinizi bilir. Kod tarafında bu sayfa için görünen analizler; temel metrik özeti, Health Score, Creator DNA, büyüme içgörüleri, kanal trendleri, yeni videolar ve top performer kartları olarak tanımlanmış. Rakip varsa buna ek olarak rakip trendleri, rekabet skoru, rakip özeti ve fırsatlar bölümü de bağlama ekleniyor.
+
+![Dashboard Üzerinde AI Asistan](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/ai-asistan/dashboard-ai-panel.png)
+
+Bu sayfada özellikle şu sorular iyi çalışır:
+
+- **"Bu sayfadaki tüm analizleri incele"**
+- **"Health Score neden düştü?"**
+- **"Creator DNA bana ne anlatıyor?"**
+- **"Rakiplerime göre hangi alanda gerideyim?"**
+- **"Yeni çıkan videolardan nasıl bir içerik fırsatı görüyorsun?"**
+
+Gerçek kullanımda panel, Dashboard üzerinden şu tür bir sentez verebildi:
+
+- kanalın mevcut sağlık notunu
+- etkileşim oranının ortalamanın üstünde olup olmadığını
+- yükleme düzensizliği nedeniyle momentuma ne olduğunu
+- bir sonraki içerik ve yayın takvimi için somut önerileri
+
+Kısacası Dashboard üzerindeki AI sohbeti, sayfayı yalnızca açıklamaz; sayfadaki dağınık sinyalleri tek karar notuna dönüştürür.
+
+---
+
+## Studio Sayfasında Neler Yapabilirsiniz?
+
+Studio tarafında AI Asistan çok daha zengin bir bağlam alır. Burada yalnızca sayfa adı değil, doğrudan **Competitor Content Pulse**, **Fırsat Radarı**, **Performans Tahmini** ve kullanıcı tarafından oluşturulmuş içerik üretim çıktıları da sohbet bağlamına eklenir.
+
+Yani Studio'da şu veriler konuşmaya taşınabilir:
+
+- son 48 saat ve 7 günde öne çıkan rakip videolar
+- trend keyword'ler ve content gap başlıkları
+- en iyi gün, en iyi format ve tahmini performans aralığı
+- başlık üretici, SEO optimizer, topic ideas, script outline, thumbnail brief ve description çıktıları
+
+![Studio Üzerinde AI Asistan](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/ai-asistan/studio-ai-panel.png)
+
+Bu yüzden Studio'da panel, sadece soru-cevap aracı değil; doğrudan üretim asistanı gibi davranır. En uygun soru tipleri şunlardır:
+
+- **"Bu hafta ne çekmeliyim?"**
+- **"Rakiplerimde patlayan videolar ne?"**
+- **"Ele almadığım konuları analiz et"**
+- **"Ürettiğim başlıklar içinden hangisi daha güçlü?"**
+- **"Bu SEO çıktısını açıklama ve thumbnail yönüne nasıl bağlamalıyım?"**
+
+Burada önemli fark şudur: Dashboard daha çok yorumlama ve karar desteği verirken, Studio daha çok **konu seçimi, üretim ve optimizasyon** yönünde çalışır.
+
+---
+
+## Kanallar Sayfasında Neler Yapabilirsiniz?
+
+Kanallar sayfasında AI Asistan'ın önerileri daha çok **karşılaştırma odaklıdır**. Gerçek arayüzde panel açıldığında şu tür başlangıç soruları görünür:
+
+- **"Bu kanallar arasındaki farklar neler?"**
+- **"Hangi kanal daha hızlı büyüyor?"**
+- **"İçerik stratejileri açısından farklar neler?"**
+
+![Kanallar Üzerinde AI Asistan](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/ai-asistan/channels-ai-panel.png)
+
+Bunun nedeni codebase'de Kanallar sayfasının özellikle karşılaştırma kullanımına göre sohbet bağlamı göndermesidir. Bu yüzden AI Asistan:
+
+- izlediğiniz kanal havuzunu yüksek seviyede yorumlayabilir
+- ama asıl gücünü **Karşılaştır** sekmesinde, seçtiğiniz kanal listesi ve dönemle birlikte gösterir
+
+Bu sayfada en verimli kullanım şu sırayladır:
+
+1. Karşılaştırmak istediğiniz kanalları seçin.
+2. Dönemi belirleyin.
+3. Sonra AI'a performans farkını, büyüme farkını veya içerik yaklaşımı farkını sorun.
+
+Bu yaklaşım, genel sohbetten daha iyi sonuç verir çünkü panel karşılaştırma kimliklerini doğrudan isteğe dahil eder.
+
+---
+
+## Videolar Sayfasında Neler Yapabilirsiniz?
+
+Videolar sayfasında AI Asistan, aktif sekmeyi, seçili dönemi, kanal filtresini ve karşılaştırma sekmesindeyseniz seçtiğiniz video kimliklerini bilir. Kod tarafında bu ekran için üç ana bağlam vardır:
+
+| Bağlam | AI'ın Odaklandığı Alan |
+|-------|-------------------------|
+| **Liste** | Video arama, filtreleme ve genel video havuzu |
+| **En İyiler** | En güçlü performans gösteren videolar |
+| **Karşılaştır** | Seçili videoların yan yana analizi |
+
+![Videolar Üzerinde AI Asistan](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/ai-asistan/videos-ai-panel.png)
+
+Bu sayfada iyi çalışan soru örnekleri:
+
+- **"En iyi performans gösteren videolarım hangileri?"**
+- **"Shorts ve uzun videolarımın karşılaştırması nasıl?"**
+- **"Hangi video başlıkları daha çok izleniyor?"**
+- **"Seçtiğim videolardan hangisi daha iyi açılmış?"**
+- **"Bu karşılaştırmadan sonraki video için ne çıkarım yapmalıyım?"**
+
+Eğer compare sekmesinde belirli videoları seçtiyseniz AI yanıtı da bu seçime göre daralır. Bu sayede tek tek link kopyalamadan, seçim yaptığınız video seti üzerinden konuşabilirsiniz.
+
+---
+
+## Sıralamalar Sayfasında Neler Yapabilirsiniz?
+
+Sıralamalar sayfasında sohbet bağlamına doğrudan şu filtreler taşınır:
+
+- seçili metrik
+- seçili dönem
+- seçili kategori
+- listede gösterilen kanal limiti
+
+Bu sayede AI Asistan, ekranda gördüğünüz sıralamayı tam olarak hangi koşullarda okuduğunuzu bilir.
+
+![Sıralamalar Üzerinde AI Asistan](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/ai-asistan/rankings-ai-panel.png)
+
+Bu sayfa için uygun soru tipleri şunlardır:
+
+- **"Sıralamada kaçıncı sıradayım?"**
+- **"En hızlı büyüyen kanallar hangileri?"**
+- **"Bu filtrelerle ilk 10'u nasıl okumalıyım?"**
+- **"Bir üst rakiple aramdaki farkı nasıl kapatırım?"**
+- **"Abone artışı yerine etkileşim oranına bakarsam tablo nasıl değişir?"**
+
+Burada AI'ın en önemli katkısı, sıralamayı düz liste olmaktan çıkarıp yorumlanabilir hale getirmesidir. Özellikle metrik ve dönem değiştirdiğinizde aynı soruyu tekrar sormak, farklı rekabet resimlerini kıyaslamanıza yardımcı olur.
+
+---
+
+## Sohbet Geçmişi ve Oturum Yönetimi
+
+Panelin sağ üst kısmındaki geçmiş düğmesiyle daha önceki konuşmaları tekrar açabilirsiniz. Bu liste sunucu tarafında saklanan sohbet oturumlarını gösterir.
+
+![AI Asistan Geçmişi](https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/ai-asistan/ai-chat-history.png)
+
+Geçmiş tarafında dikkat çeken davranışlar şunlardır:
+
+- ilk kullanıcı mesajı, oturum başlığı için başlangıç metni olarak kullanılır
+- önceki oturumu açtığınızda mesajlar yeniden yüklenir
+- aktif oturum içindeyken yeni sohbet başlatabilirsiniz
+- oturum başlığını sonradan düzenleyebilir veya oturumu silebilirsiniz
+
+Bu yapı özellikle farklı sayfalar için ayrı ayrı çalışma alışkanlığı oluşturduğunuzda faydalıdır. Örneğin bir oturumu sadece Studio fikirleri için, başka bir oturumu sadece Dashboard analizi için tutabilirsiniz.
+
+---
+
+## Kartlardan AI'a Geçiş Nasıl Çalışır?
+
+YTScope'ta bazı analiz kartlarının üzerinde küçük bir sohbet tetikleyicisi bulunur. Bu düğmeye tıkladığınızda aynı panel açılır; ancak bu kez sohbet boş başlamaz. Kartın başlığı ve ilk bağlamı ilk mesaj olarak panele taşınır.
+
+Bu akış iki durumda faydalıdır:
+
+- belirli bir kartı devam sorularıyla açmak istediğinizde
+- sayfanın tamamı yerine sadece tek analizi derinleştirmek istediğinizde
+
+Örneğin bir AI Insight veya Stratejik Analiz kartından panele geçtiğinizde, ilk çıktının özeti soru başlangıcına eklenir. Bazı kartlarda ise doğrudan kart snapshot'ı da bağlama taşınır. Bu sayede AI aynı veriyi tekrar istemeden yorumunu derinleştirebilir.
+
+---
+
+## Sınırlar ve Dikkat Edilmesi Gerekenler
+
+AI Asistan güçlü bir özellik olsa da bazı sınırları bilmek faydalıdır:
+
+- **Plan bağımlılığı vardır.** `ai_chat` özelliği olmayan kullanıcıda panel kilitli durum gösterir ve yükseltme çağrısı açar.
+- **Kilitli analizleri bilir.** Sayfada sizin planınıza kapalı analizler varsa AI bunları da bağlamda görür ve gerektiğinde yükseltme gerektiğini söyler.
+- **Kredi kullanır.** Panel üstündeki kredi çubuğu kalan hakkı gösterir; oran yükseldikçe uyarı rengi değişir.
+- **Hata mesajları açıktır.** Kredi bitmesi, günlük limit, rate limit veya yanıt zaman aşımı gibi durumlarda panel doğrudan açıklayıcı mesaj gösterir.
+- **Bağlam sayfaya göre değişir.** Aynı soru farklı sayfalarda farklı sonuç üretir; bu yüzden doğru ekranı açmadan sohbet başlatmak verimi düşürür.
+- **Kanallar sayfasında en güçlü akış karşılaştırmadır.** Sadece liste görünümünde genel yorum alınabilir, ama gerçek fark seçili kanallarla karşılaştırma yaptığınızda ortaya çıkar.
+
+---
+
+## En Verimli Kullanım Akışı
+
+AI Asistan'ı günlük kullanımda şu sırayla değerlendirmek en pratiktir:
+
+1. Önce ilgili ekranı açın.
+2. Gerekliyse kanal, dönem, kategori veya sekme seçimini yapın.
+3. Hazır öneri sorularından biriyle başlayın.
+4. İlk yanıt geldikten sonra takip sorularıyla detaya inin.
+5. Gerekirse geçmişte o konu için ayrı bir oturum tutun.
+
+Bu düzen, AI'ı genel sohbetten çıkarıp gerçek bir çalışma yardımcıya dönüştürür.
+
+---
+
+## Sonuç
+
+YTScope'taki AI Asistan'ın değeri, yalnızca soru cevaplamasında değil; **sayfayı bilerek cevap vermesinde** yatıyor. Dashboard'da sağlık ve rekabeti özetlemesi, Studio'da içerik üretim akışına bağlanması, Kanallar'da kıyas odaklı çalışması, Videolar'da seçili içerik setini yorumlaması ve Sıralamalar'da filtre bağlamını koruması bu yüzden önemli.
+
+Sağ alttaki paneli en iyi kullanan kullanıcılar, AI'a boş bir alanda değil, doğru sayfada ve doğru seçimlerle soru soran kullanıcılar oluyor. YTScope AI Asistanı'nı verimli kullandığınızda, ekranlardaki metrikleri tek tek okumak yerine bunları hızla karar cümlesine dönüştürebilirsiniz.
