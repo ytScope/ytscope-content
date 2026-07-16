@@ -4,6 +4,8 @@
 # title + description: used for Academy list page cards (especially for unpublished/coming soon)
 
 blog:
+  - slug: youtube-egitim-markalari-rakip-analizi
+    published: true
   - slug: youtube-analytics-ai-algorithms
     published: true
   - slug: youtube-seo-2025
