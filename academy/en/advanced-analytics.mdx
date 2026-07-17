@@ -1,176 +1,168 @@
 ---
 title: "Advanced Analytics"
-description: "Explore upload time heatmap, engagement benchmark, market share, title analysis, and revenue estimates."
-lastUpdated: "2026-03-08"
+description: "Read market share, concentration, upload timing, benchmarks, outliers, content patterns, and estimated revenue with their limits."
+lastUpdated: "2026-07-17"
 order: 5
 ---
 
-# Advanced analytics
-
-The Advanced tab goes beyond standard metrics to offer deep insights into channel performance. It includes 10 analysis sections ranging from market share to upload time optimization, title keywords to revenue estimation.
+The **Advanced** tab evaluates a channel within your tracked set, video sample, and historical behavior. These cards support decisions; they are not private YouTube Studio data or proof of causation.
 
 <Screenshot
-  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/channel-advanced-full.webp"
-  alt="Advanced tab overview"
-  caption="Advanced tab — Share of Voice (SOV) and period analysis sections."
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channel-advanced-full.webp"
+  alt="Channel Advanced tab"
+  caption="Advanced — share of views and channel content-pattern analysis cards."
 />
 
-Click the **Advanced** tab on the channel detail page to access this section. All analyses are calculated based on the selected time period.
+## Outcome, prerequisites, and path
 
----
+- **Path:** **Channels → a channel → Advanced**.
+- The channel must be tracked and synced. Comparative cards need at least two tracked channels.
+- Every card has its own data requirement and period badge. The top period affects some cards; cards marked **All Data** ignore it.
+- An unavailable analysis appears locked. Its on-screen entitlement and limit message is the current source of truth.
 
-## Share of Voice (SOV)
+## Screen map
 
-Share of Voice shows the channel's position among all your tracked channels. It provides three SOV metrics:
+1. Share of views and relative market share.
+2. View concentration.
+3. Upload-time heatmap.
+4. Engagement benchmark.
+5. Seasonality, title, duration, and video-age analysis.
+6. Unusually strong and weak videos.
+7. Estimated revenue.
 
-| Metric | Description |
-|--------|-------------|
-| **Views SOV** | The channel's share of total views. For example, 20.9% means roughly one-fifth of all tracked views belong to this channel. |
-| **Subscribers SOV** | The channel's share of total subscribers. |
-| **Growth SOV** | The channel's share of growth during the period. |
+## Share of views (SOV)
 
-The status badge (Healthy, Attention, Critical) and trend direction (Rising, Declining) at the top provide a quick summary. The rank value (e.g., **2/12**) shows the channel's position among tracked channels.
+The market for **SOV (Share of Voice)** is not all of YouTube. It is the set of **channels you track that have latest stats**.
 
-<Callout type="tip">
-Channels with low Views SOV but high Growth SOV are on an upward trend. It's worth examining what they're doing differently.
-</Callout>
+| Metric | Denominator and period |
+|---|---|
+| **View Share** | Channel current cumulative views ÷ current views across the tracked set. |
+| **Subscriber Share** | Channel current subscribers ÷ current subscribers across the set. |
+| **Growth Share** | Channel period view gain ÷ the set's **positive** view gains. Negative gains are excluded from the pool. |
+| **Rank** | `rank / channels with data` by current views; lower rank is better. |
 
----
+The card supports its displayed short-period context; the product may clamp another selected period to a supported one. Status and trend are product classifications comparing current and growth share. Adding or removing a tracked channel changes the denominator and therefore the interpretation.
+
+### Relative market share
+
+This card compares your own channel with the largest competitor in your tracked set. Around `1` means similar scale, above `1` means ahead, and below `1` means behind in that context. Verify channel roles in [Channel Management](/academy/en/channel-management) first.
 
 ## View concentration
 
-View Concentration uses Pareto analysis to show how views are distributed across videos.
+**How Many Videos Carry Your Views?** sorts eligible videos with a latest synced view count from highest to lowest.
 
-| Metric | Description |
-|--------|-------------|
-| **Top 10%** | Share of total views held by the top 10% most-viewed videos. |
-| **Top 20%** | Share of total views held by the top 20%. |
-| **Top 50%** | Share of total views held by the top half. |
+| Metric | Meaning |
+|---|---|
+| **Top 10% / 20% / 50% Share** | Share of sample views carried by that top slice of videos. |
+| **Total Videos / Total Views** | The sample that actually entered the analysis and its total. |
+| **Distribution type** | The product's concentrated, balanced, or related classification. |
 
-Results are compared against the 80/20 rule. High concentration means a few videos carry most of the views. A balanced distribution indicates many videos are performing well.
-
----
+This is a Pareto description; “80/20” is not a target or guarantee. The card uses **All Data** context and may be limited to recent eligible videos for performance. High concentration suggests dependence on a few videos; it does not identify the traffic source.
 
 ## Upload time analysis
 
-A heatmap showing upload performance by day and hour. The 7-day × 24-hour grid uses color intensity to represent the average views of videos uploaded in each time slot.
+- **Purpose:** find a historical association between publish slots and average views.
+- **X-axis:** hours 0–23; **Y-axis:** Monday–Sunday.
+- **Cell color:** relative low-to-high performance; an empty cell has no data.
+- **Tooltip:** day, hour, video count, and average views in that cell.
+- **Highlight:** the sample slot with the highest average views.
 
-| Element | Description |
-|---------|-------------|
-| **Dark cell** | High average views — videos uploaded at this time performed better. |
-| **Light cell** | Lower average views. |
-| **Best slot** | The highlighted cell marks the day-hour combination with the highest average views. |
-
-<ProTip>
-Identify your best upload time from the heatmap and publish new content in that time slot. Consistency also benefits the algorithm.
-</ProTip>
-
----
+The heatmap groups outcomes of videos published in each slot. Do not treat a one-video dark cell as a reliable optimum; inspect sample count, topic, and format. Use the time context displayed by the product before converting time zones.
 
 ## Engagement benchmark
 
-Compares the channel's engagement rate against the YouTube average. The general YouTube average of **3.87%** is used as the reference.
+The card uses `(likes + comments) ÷ views × 100` on eligible videos and runs in **All Data** context.
 
-| Metric | Description |
-|--------|-------------|
-| **Average engagement** | The channel's average engagement rate. |
-| **YouTube average** | Industry-wide reference value (3.87%). |
-| **Median** | Median engagement rate across videos — unaffected by outliers. |
-| **Min / Max** | Videos with the lowest and highest engagement rates. |
-| **Shorts vs Regular** | Engagement rate comparison between short and long-form videos. |
+| Field | Reading |
+|---|---|
+| **Average Engagement** | Average video rate and current product rating. |
+| **YouTube Average** | Versioned reference displayed by the UI; its value and source year can change. |
+| **Videos Analyzed** | Sample size supporting the result. |
+| **Median / Min–Max** | Middle observation and range extremes. |
+| **Shorts vs Regular** | Group means and whether the gap looks reliable when both groups have enough samples. |
 
----
+Do not treat the benchmark as a universal target. Cohort, window, format, and source year must match. The mean is sensitive to extremes; read it with median and sample size.
 
 ## Seasonal trends
 
-Shows the channel's performance cycles on a monthly or quarterly basis. Recurring increases or decreases in views or engagement during certain periods appear in this section.
-
-<Callout type="note">
-Seasonal trends require at least 90 days of data for meaningful results. Newly added channels may show limited data in this section.
-</Callout>
-
----
+The x-axis is the month or week bucket; y-axes show average views (count) and average engagement (percent). Series group the periods; the tooltip gives period, video count, and averages. Best/worst cards compare only this sample. Without repeated annual cycles, do not claim seasonality as a cause.
 
 ## Title keywords
 
-Analyzes words used in video titles. Contains three sub-tabs:
+| Subtab | Unit and limit |
+|---|---|
+| **Keywords** | Word, usage count, average views, and engagement. Frequency is not causation. |
+| **Title Length** | Character buckets, video count, and average outcome. Do not generalize a small bucket. |
+| **Naming Patterns** | Detected question, list, or similar patterns and sample results. |
 
-| Tab | Content |
-|-----|---------|
-| **Keywords** | Most frequently used words, their usage count, and average view performance per keyword. |
-| **Title length** | Performance distribution by title character count — whether short or long titles perform better. |
-| **Naming patterns** | Common structures in titles (questions, lists, how-to, etc.) and their performance. |
-
-<ProTip>
-Include the keywords with the highest average views in your future video titles.
-</ProTip>
-
----
+Before reusing a “winning” word, inspect the number of videos and their topic. Adding a word does not reproduce the outcome.
 
 ## Video duration analysis
 
-Shows performance by video duration category.
-
-| Category | Description |
-|----------|-------------|
-| **Shorts** | Videos under 60 seconds. |
-| **Medium** | Videos between 1–15 minutes. |
-| **Long** | Videos between 15–60 minutes. |
-| **Extra long** | Videos over 60 minutes. |
-
-Each category lists video count, average views, and engagement rate. Identify which duration range performs best on the channel.
-
----
+The overview and, when available, Shorts comparison show video count, average views, and engagement in the duration groups currently labeled by the UI. Do not memorize duration cutoffs from this guide. “Best” means the highest average only among eligible videos in the current context.
 
 ## Video age analysis
 
-Shows how long videos continue to receive views after publication.
+In **Performance**, the x-axis is age bucket and y-axis is average views/engagement; **Distribution** changes the series to video count. The tooltip gives bucket, sample, and value. Older videos can have more views simply because they have existed longer, so this chart alone does not prove evergreen behavior.
 
-| View | Description |
-|------|-------------|
-| **Engagement trend** | How engagement rate changes over time since publication. |
-| **Content age distribution** | Whether new videos or older (evergreen) content carries most of the views. |
+## Unusually strong and weak videos
 
-A high evergreen content ratio indicates the channel draws significant traffic from search.
+The analysis needs at least three eligible videos in the selected period and compares their view performance with the channel baseline.
 
----
+- A **Z-score** says how many standard deviations a result lies from the sample mean.
+- On the horizontal chart, x is Z-score, y is video title, and zero is the reference line.
+- Green bars are strong positive deviations; red bars are weak negative deviations.
+- The tooltip shows Z-score and the views or views-per-day value used.
+- The product lists only videos crossing its current rule; do not freeze that threshold in the tutorial.
 
-## Breakout and anomaly detection
+A Z-score is not a “viral” label. Small samples, high variance, video age, and mixed formats change the result. An empty list can correctly mean no video crossed the rule.
 
-Statistically identifies videos that performed far above normal (breakouts). Uses z-score analysis to flag videos that deviate from the channel average.
+## Estimated revenue
 
-| Element | Description |
-|---------|-------------|
-| **Breakout videos** | Videos with significantly higher views than the channel average. |
-| **Anomalies** | Unexpected positive or negative performance deviations. |
-| **Patterns** | Common traits among breakout videos (title structure, duration, topic, etc.). |
+The **All Data** card uses current cumulative views plus the displayed **region**, **CPM**, creator/platform share assumptions, and USD currency.
 
-<Callout type="tip">
-Study what your breakout videos have in common — topic, title structure, and thumbnail style. Apply those traits to future content.
-</Callout>
-
----
-
-## Revenue estimate
-
-Displays the channel's estimated revenue. Values are based on CPM (cost per thousand views) and region-based estimates.
-
-| Metric | Description |
-|--------|-------------|
-| **Gross revenue** | Total estimated revenue including YouTube's share. |
-| **Net revenue** | Estimated amount the creator receives. |
-| **RPM** | Estimated earnings per thousand views (Revenue Per Mille). |
-| **YouTube share** | Percentage taken by YouTube (typically 45%). |
+| Field | Meaning |
+|---|---|
+| **Gross Revenue** | Estimate from cumulative views and assumed CPM. |
+| **Net Revenue** | Estimate after applying the displayed creator share. |
+| **Per 1K Views / CPM Used** | Model assumption, not verified RPM. |
+| **Region / Shares** | Context used to produce the estimate. |
 
 <Callout type="warning">
-Revenue estimates are approximate. Actual earnings vary based on ad type, viewer region, niche, and sponsorship deals.
+This is not YouTube Studio revenue, a payout, or an accounting record. It excludes non-monetized views, fill rate, country mix, Shorts/long-form differences, tax, memberships, sponsorships, and changing CPM. Your actual Studio revenue is authoritative.
 </Callout>
 
----
+## Shared states
+
+| State | Interpretation / action |
+|---|---|
+| **Loading** | Do not read results until the skeleton completes. |
+| **No / insufficient data** | Read the card requirement; widen the period, wait for sync, or add channels/videos. |
+| **Empty chart** | No eligible category, slot, or outlier may exist; zero is not evidence of performance. |
+| **Error** | Refresh; if it persists, retry later. |
+| **Locked** | Follow the plan message; do not infer price or limits from this guide. |
+
+## Practice — Coğrafyanın Kodları
+
+**Verified July 17, 2026.**
+
+1. Open **Coğrafyanın Kodları → Advanced** and record each card's period badge.
+2. For View Share, name your tracked list as the denominator and explain why changing it changes the result.
+3. Open a dark heatmap cell; record video count and average views before day/hour.
+4. Interpret benchmark mean, median, min–max, and videos analyzed in one sentence.
+5. Find a positive or negative Z-score deviation. Call it “unusual,” not “definitely viral/failed.”
+6. Record region, CPM, and shares from the revenue card; label the output an estimate.
+
+## Interpretation limits
+
+- Results change with cohort, sample, period, and data freshness.
+- Correlation, concentration, benchmarks, and timing do not prove causation.
+- Product labels and thresholds can be versioned; the current tooltip/badge and verification date are authoritative.
+- Validate AI advice against the raw sample and each card's prerequisite.
 
 ## What's next?
 
 | Guide | Topic |
-|-------|-------|
-| [Predictions](/academy/en/predictions) | Momentum score, churn analysis, and velocity decay forecasts. |
-| [Channel Analysis](/academy/en/channel-analysis) | Return to the Overview tab — growth, performance chart, and daily metrics. |
+|---|---|
+| [Predictions](/academy/en/predictions) | Momentum, volatility, subscriber-loss proxy, forecasts, and correlation. |
+| [Channel Analysis](/academy/en/channel-analysis) | Totals, period growth, and daily performance. |

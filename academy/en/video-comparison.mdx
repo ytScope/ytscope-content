@@ -1,107 +1,155 @@
 ---
 title: "Video Comparison"
-description: "Compare two or more videos side by side with radar charts, SEO analysis, and performance metrics."
-lastUpdated: "2026-03-08"
+description: "Compare selected videos fairly using benchmarks, raw charts, normalized radar, 24/48-hour velocity, SEO, and 30-day projections."
+lastUpdated: "2026-07-17"
 order: 8
 ---
 
-# Video comparison
-
-The Video Comparison tab lets you analyze selected videos side by side. Compare performance metrics, SEO scores, publish timing, and view projections across multiple dimensions.
+The **Compare** tab puts videos selected in List into one analysis set. Beyond finding the largest value, you will check how age, format, period, and normalization affect the result.
 
 <Screenshot
-  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/videos-compare.webp"
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/videos-compare.webp"
   alt="Video Compare tab"
-  caption="Compare tab — select videos from the List tab to add them to the comparison."
+  caption="Compare — a comparison built from selections in the List tab."
 />
 
-Click the **Compare** tab on the Videos page. Comparison sections appear once you select at least 2 videos.
+## Outcome, prerequisites, and path
 
----
+1. In **Videos → List**, select videos that can be compared fairly.
+2. Confirm at least two selections in the bottom bar.
+3. Open **Compare** through the action or tab.
 
-## Selecting videos
+The maximum is not fixed; it is the live comparison limit shown for your plan. Comparison is disabled beyond it. Only database videos from channels you track are eligible.
 
-Select the videos you want to compare from the **List** tab. Selected videos automatically appear in the Compare tab.
+## Fair-comparison checklist
 
-| Detail | Description |
-|--------|-------------|
-| **Minimum** | At least **2 videos** are required for comparison. |
-| **Maximum** | You can select up to **3 videos** (or more, depending on your plan). |
-| **Video counter** | The indicator at the top shows the number of selected videos (e.g., 0/25). |
+Match as much as possible:
 
----
+- similar publish age or lifecycle stage;
+- the same selected period and adequate snapshots;
+- Shorts with Shorts, regular videos with similar regular videos;
+- comparable topic and audience intent;
+- the same channel, or an explicit note about channel-size differences.
 
-## Comparison sections
+Older videos have an advantage in totals; new videos can lead on daily velocity. You may compare formats, but write the result as a format hypothesis rather than a conclusion from one video.
 
-Once videos are selected, the following analysis sections appear:
+## Selection and shared states
 
-### Benchmark metrics
+The selector shows thumbnail, title, channel, and views; remove a video with **X**. Manage additions from List.
 
-Displays key metrics for selected videos in a side-by-side table.
+| State | Action |
+|---|---|
+| **No / insufficient selection** | Return to List and select at least two. |
+| **Loading** | Do not record a winner until the skeleton completes. |
+| **No data** | Confirm videos belong to tracked, synced channels. |
+| **Error** | Refresh; retry later if it persists. |
+| **Missing metric / `—`** | Do not replace it with zero; age, publish date, or snapshots may be missing. |
+| **Limit** | Reduce selections to the on-screen plan limit; an old counter is not the limit. |
 
-| Metric | Description |
-|--------|-------------|
-| **Average views** | Average view count across the videos. |
-| **Median views** | Middle value unaffected by outliers. |
-| **Average likes** | Average likes per video. |
-| **Average engagement** | Average engagement rate (%). |
-| **Daily views** | Average daily views per video. |
+## Visual summary and benchmark cards
 
-### Radar chart
+Top cards highlight winners for basic metrics. Benchmark cards average **only the selected videos**.
 
-A 7-axis radar chart visually compares each video's strengths and weaknesses:
+| Field | Definition |
+|---|---|
+| **Avg. Views / Likes / Engagement** | Arithmetic mean across selected videos; engagement is percent, others are counts. |
+| **Median Views** | Middle selected view count; more resistant to one extreme than the mean. |
+| **Views/Day** | Cumulative views ÷ video age, views/day. |
 
-| Axis | Description |
-|------|-------------|
-| **Views** | Total view count. |
-| **Likes** | Total like count. |
-| **Comments** | Total comment count. |
-| **Engagement** | Engagement rate (%). |
-| **Daily views** | Average daily views. |
-| **SEO score** | Search optimization score. |
-| **Velocity** | View momentum (velocity). |
+A two-video mean or median is not a population conclusion. “Best” means highest for that metric only within the selection.
 
-The dashed line represents the channel average. Areas extending beyond this line indicate above-average performance.
+## Performance comparison chart
 
-### Performance chart
+### Bar view
 
-View the videos' view trends as a bar or line chart. Use the period selector to change the time range.
+- **X-axis:** Views, Likes, and Comments metrics.
+- **Y-axis:** raw count.
+- **Series/legend:** one color per selected video; highlight marks the views winner.
+- **Tooltip:** raw value and video title.
 
-### View velocity
+Metric scales differ, so a large view bar can visually dominate like/comment differences.
 
-Shows each video's view velocity over the last 24 and 48 hours, daily rate, and trend direction.
+### Line view
 
-### SEO comparison
+- **X-axis:** date in the selected period.
+- **Y-axis:** cumulative views.
+- **Series/legend:** one line per video.
+- **Tooltip:** views on that date and video title.
 
-| Metric | Description |
-|--------|-------------|
-| **SEO score** | Each video's search optimization score (shown with a progress bar). |
-| **Tag count** | Number of tags used by each video. |
-| **Common tags** | Tags found across all selected videos. |
-| **Unique tags** | Tags specific to each video. |
-| **Description length** | Description text length comparison. |
+Lines do not connect a missing date. An older publication can have a longer track; read video age separately.
 
-### Publish timing
+## Normalized radar chart
 
-Shows the day and hour each video was published side by side. Evaluate which timing delivered better performance.
+The seven axes are **Views, Likes, Comments, Engagement, Daily Avg., SEO, and Velocity**. On each axis, the highest value in the selected set is normalized to `100`; other videos are scaled against it.
 
-### View projection
+- 100 is not absolute quality or a YouTube benchmark.
+- A 50 on different axes comes from different raw units.
+- The dashed **Channel Average** label is technically the normalized average of selected videos on that axis, not the full channel archive.
+- The legend maps videos; the tooltip shows normalized 0–100 values.
 
-Displays estimated 30-day view counts with a confidence level for each video.
+A small raw difference can look prominent after normalization. Validate the shape with the benchmark card or raw table.
 
-<Callout type="tip">
-Look for dimensions below the channel average on the radar chart. These areas highlight where improvement is needed.
-</Callout>
+## View velocity
 
-<ProTip>
-Compare content published on the same topic in different formats (Shorts vs. long-form). Measure how format affects performance.
-</ProTip>
+Each video can show **Last 24h**, **Last 48h**, **Daily Rate**, and trend. Units are view counts and views/day. The windows need eligible snapshots; a young video has an incomplete window and an older one can lack detailed history. “Best velocity” is best only among available daily rates.
 
----
+## 30-day view projection
+
+| Field | Reading |
+|---|---|
+| **Current / Estimated Views** | Current cumulative count and modeled possible 30-day total. |
+| **Projected Growth** | Relative change from current to estimated total, percent. |
+| **Based on Days** | Observed video age used by the model. |
+| **Confidence** | Low / Medium / High data-age class, not a probability. |
+
+When enough decline signal exists, the model can use a decaying velocity curve; otherwise it can extend current velocity with a simpler approach. A young video and short observation can produce a large projection. **High confidence** is not a guarantee or error interval.
+
+## Publish timing
+
+The card compares publish date, hour, and weekday and marks newest/oldest. It is not a controlled performance experiment. Before calling the highest-viewed video's time “best,” check topic, format, age, and channel size.
+
+## SEO comparison
+
+The panel shows each 0–100 product SEO score, tag/hashtag/link counts, description length, and common/unique tags. Highest means best only within the selection. The score does not guarantee YouTube search rank, and a common tag is not a cause of success.
+
+## Detail table and mobile cards
+
+Desktop table and mobile cards cover the same comparison:
+
+- views, likes, comments, and engagement;
+- views/day;
+- like ratio;
+- **likes/comments per 1K views**;
+- video age, duration, format, velocity, SEO, and ranks.
+
+Per-1K metrics normalize different view scales but are volatile at low views. Do not confuse engagement percent with percentage-point change or raw counts with per-1K rates.
+
+## Insights and AI analysis
+
+**Key Insights** and strategic AI derive from selected videos. A “winner” applies only to its named metric. Before acting, validate period, fair-comparison checklist, raw value, and missing-data state.
+
+## Practice — Coğrafyanın Kodları
+
+**Verified July 17, 2026.**
+
+1. Select two similarly aged, same-format Coğrafyanın Kodları videos and record the live plan limit.
+2. Compare benchmark mean and median; if they differ, identify a possible extreme.
+3. Read raw counts in Bar and the historical track in Line; do not assume they answer the same question.
+4. Choose one radar axis, validate its normalized value against the raw table, and name the selected maximum as denominator.
+5. Check whether each 24/48-hour window is complete or missing.
+6. Add Based on Days and Confidence beside every projection you record.
+7. Turn the publish-time or SEO winner into a hypothesis for the next video, not a causal claim.
+
+## Interpretation limits
+
+- Changing the selected set changes averages, radar, winners, and projection comparison.
+- Different age, format, and channel size make a comparison less fair.
+- Normalized radar does not show raw magnitude; confidence does not show an uncertainty interval.
+- Projection, SEO, and AI advice are not outcome guarantees.
 
 ## What's next?
 
 | Guide | Topic |
-|-------|-------|
-| [Rankings](/academy/en/rankings) | Rank channels by metrics and view the podium. |
-| [Video Analysis](/academy/en/video-analysis) | Return to the video list and video detail page. |
+|---|---|
+| [Channel Analysis](/academy/en/channel-analysis) | Return to channel-level growth, performance, and daily metrics. |
+| [Video Analysis](/academy/en/video-analysis) | Revisit List selection and one-video detail. |

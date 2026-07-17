@@ -1,224 +1,176 @@
 ---
-title: "Dashboard Kullanımı"
-description: "YTScope dashboard'undaki Health Score, Creator DNA, KPI kartları, AI özet ve rakip analizlerini öğrenin."
-lastUpdated: "2026-03-08"
+title: "Panel Kullanımı"
+description: "Panelde kanal seçin; Kanal Sağlığı, Creator DNA, haftalık kartlar, AI analizleri ve rakip sinyallerini doğru yorumlayın."
+lastUpdated: "2026-07-17"
 order: 2
 ---
 
-# Dashboard Kullanımı
-
-Dashboard, takip ettiğiniz tüm kanalların performansını tek ekranda özetler. Kanal sağlığı, rakip durumu, yeni videolar ve AI destekli analizler bu sayfada yer alır.
+Bu rehberin sonunda Panelde doğru kanalı seçebilir, haftalık performans özetini okuyabilir ve bir sonraki inceleme ekranına güvenle geçebilirsiniz.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/dashboard-panel.webp"
-  alt="Dashboard genel görünümü"
-  caption="Dashboard ana ekranı — kanal sağlığı, Creator DNA, KPI kartları ve AI özet."
+  alt="Coğrafyanın Kodları seçiliyken YTScope Paneli"
+  caption="Panel — seçili kanal, Kanal Sağlığı, Creator DNA ve haftalık metrik kartları aynı başlangıç görünümünde."
 />
 
 ---
+
+## Başlamadan önce
+
+- En az bir kanal takip edilmiş olmalıdır. Kanal eklemek için [Kanal Yönetimi](/academy/tr/kanal-yonetimi) rehberini kullanın.
+- Rakip karşılaştırmalarını görmek için kanal rollerinin **Kanalım** ve **Rakip** olarak doğru ayarlandığını kontrol edin.
+- Yeni eklenen kanalın ilk verileri hazırlanırken bazı kartlar boş veya bekleme durumunda olabilir.
+- AI kartları ve bazı analizler hesabınızdaki güncel özellik haklarına bağlı olabilir.
+
+## Bu ekrana nasıl ulaşırsınız?
+
+Giriş yaptıktan sonra sol menüden **Panel** öğesini seçin. Sayfanın üst kısmındaki kanal seçiciden incelemek istediğiniz kanalı belirleyin. Seçimi değiştirdiğinizde kanal başlığı, analiz kartları ve kanala bağlı öneriler de değişir.
+
+<Callout type="warning">
+Bir sonucu yorumlamadan önce üstte doğru kanalın seçili olduğunu kontrol edin. Panelde bir rakip kanal seçilebilir; bu seçim o kanalı sizin kanalınız yapmaz.
+</Callout>
+
+## Ekran haritası
+
+Panel aşağıdaki karar sırasını izler:
+
+| Bölüm | Yanıtladığı soru |
+|---|---|
+| **Kanal Sağlığı** ve **Creator DNA** | Seçili kanalın genel durumu ve içerik profili nasıl? |
+| Haftalık kartlar | Abone, izlenme ve etkileşim son haftada nasıl değişti? |
+| **AI Destekli Analizler** | Veriler hangi kısa özet ve aksiyonları destekliyor? |
+| **Bu Hafta Nasıl Geçti?** | Kendi kanalım ve rakiplerim haftayı nasıl kapattı? |
+| **Kanalım Nasıl?** ve **Rakip Skoru** | Referans kanalım rakip grubuna göre nerede? |
+| **Yeni Yayınlanan Videolar** | İlk 48 saatinde izlenen yeni içerikler hangileri? |
+| **En İyi Performans**, **Dikkat Gerektiren**, **Fırsatlar** | Nerede derinleşmeli veya aksiyon almalıyım? |
 
 ## Kanal Sağlığı ve Creator DNA
 
-Dashboard'un üst bölümünde iki ana kart yer alır: sol tarafta **Kanal Sağlığı** puanı, sağ tarafta **Creator DNA** profili.
+### Kanal Sağlığı
 
-### Kanal Sağlığı (Health Score)
+**Kanal Sağlığı**, seçili kanal için 0–100 arası bir özet puan ve harf seviyesi gösterir. Altındaki **Büyüme**, **Etkileşim** ve **Tutarlılık** çubukları toplam puanı oluşturan görünen boyutları ayrı ayrı okumanızı sağlar.
 
-Kanal Sağlığı puanı, kanalınızın son 7 günlük performansını beş faktörün ağırlıklı ortalamasıyla tek bir sayıya indirger. Puan 0-100 arasında değişir ve harf notu (A+ ile F arası) alır.
+- Puanı tek başına karar olarak kullanmayın; en düşük boyutun etiketini ve açıklama simgesini de okuyun.
+- Yüzde veya sıra karşılaştırması görünüyorsa bunun rakip grubuna mı, önceki döneme mi ait olduğunu kart metninden kontrol edin.
+- Renk, durumu hızlı taramak içindir. Asıl anlamı sayı, harf seviyesi ve metin etiketi birlikte verir.
 
-| Faktör | Ne ölçer? |
-|--------|-----------|
-| **Büyüme (Growth)** | Abone artış hızı ve yönü. |
-| **Etkileşim (Engagement)** | Beğeni, yorum ve paylaşım oranı. |
-| **Tutarlılık (Consistency)** | Düzenli içerik yayınlama sıklığı. |
-| **Momentum** | Büyüme ivmesinin yönü — hızlanıyor mu, yavaşlıyor mu? |
-| **Rekabet (Competitive)** | Rakiplere kıyasla genel konum. |
-
-Her faktör 0-100 arası puan alır ve durum çubuğuyla gösterilir. Altındaki metin, rakip ortalamasına göre önde mi geride mi olduğunuzu belirtir.
-
-| Puan Aralığı | Not | Anlamı |
-|-------------|-----|--------|
-| **80-100** | A+ / A | Kanalınız güçlü performans gösteriyor. |
-| **60-79** | B | Ortalama üstü — iyileştirme alanları var. |
-| **40-59** | C | Ortalama — belirli faktörlere odaklanın. |
-| **0-39** | D / F | Kritik — acil aksiyon gerekiyor. |
-
-<Callout type="tip">
-Sağlık puanını haftalık takip edin. Tek bir viral video puanı geçici olarak yükseltebilir; tutarlı düşüş trendi ise strateji değişikliği gerektirir.
-</Callout>
+Bu rehber puanın ağırlıklarını varsaymaz. Hesaplama ayrıntısı değişirse karttaki bilgi simgesi güncel kaynaktır.
 
 ### Creator DNA
 
-Creator DNA, kanalınızın içerik üretim kimliğini beş boyutta analiz eder ve bir "yaratıcı tipi" atar.
-
-| Boyut | Ne ölçer? |
-|-------|-----------|
-| **İçerik Tipi** | Yayınladığınız içerik çeşitliliği ve format tercihi. |
-| **Tutarlılık** | Yükleme sıklığı ve düzeni. |
-| **Etkileşim** | İzleyici etkileşim oranı. |
-| **Büyüme** | Abone kazanım hızı. |
-| **Sadakat (Loyalty)** | İzleyicilerin geri dönme oranı. |
-
-Toplam puan 100 üzerinden hesaplanır. Sağ üstte yaratıcı tipiniz rozet olarak gösterilir (örneğin: "Viral Avcısı", "Topluluk Kurucusu", "Yükselen Yıldız").
+**Creator DNA**, kanalın içerik profilini **İçerik Tipi**, **Tutarlılık**, **Etkileşim**, **Büyüme** ve **Sadakat** boyutlarında gösterir. Rozet, güçlü yön ve zayıf yön metni bir teşhistir; yayın başarısı garantisi değildir.
 
 <ProTip>
-Creator DNA kartının sağ üst köşesindeki paylaşım butonuyla sonuçlarınızı sosyal medyada paylaşabilirsiniz.
+Kanal Sağlığı haftalık değişime, Creator DNA ise kanal profilinin boyutlarına farklı açılardan bakar. İki puanı doğrudan birbirinden büyük veya küçük diye karşılaştırmayın.
 </ProTip>
 
----
-
-## KPI kartları
-
-Kanal Sağlığı bölümünün altında dört temel metrik kartı yer alır. Her kart son 7 günlük değişimi ve bir önceki haftaya kıyasla trendi gösterir.
+## Haftalık metrik kartları
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/dashboard-ai-analysis.webp"
-  alt="KPI kartları ve AI özet"
-  caption="Dört KPI kartı: Abone, İzlenme, Etkileşim ve Kazanım."
+  alt="Panelde haftalık Abone, İzlenme, Etkileşim ve Kazanım kartları"
+  caption="Haftalık kartlar — büyük değer mevcut dönemi, altındaki metin önceki haftaya göre değişimi açıklar."
 />
 
-| Kart | Gösterdiği Değer | Trend |
-|------|------------------|-------|
-| **Abone** | Son 7 günde kazanılan/kaybedilen net abone sayısı. | Yeşil ok artışı, kırmızı ok kaybı gösterir. |
-| **İzlenme** | Son 7 günlük toplam izlenme değişimi. | Önceki haftaya göre yüzdesel fark. |
-| **Etkileşim** | Etkileşim oranı (engagement rate) — her 100 izleme başına beğeni, yorum ve paylaşım oranı. | Önceki haftaya kıyasla değişim. |
-| **Kazanım** | Rakip karşılaştırmasında kazanılan metrik sayısı (örn. 2/4). | Abone, izlenme, etkileşim ve video sayısı karşılaştırılır. |
+| Kart | Büyük değer | Alt satır ve küçük grafik |
+|---|---|---|
+| **Abone** | Seçili haftadaki net abone değişimi | Önceki haftaya göre yön ve fark; sparkline dönem içindeki hareketi gösterir. |
+| **İzlenme** | Seçili haftadaki izlenme değişimi | Önceki haftayla karşılaştırma ve dönem içi yön. |
+| **Etkileşim** | Ekranda tanımlanan etkileşim oranı | Önceki haftaya göre fark. Oran farkını yüzde puan mı, oransal yüzde mi gösterdiğini tooltip metninden kontrol edin. |
+| **Kazanım** | Rakip karşılaştırmasında önde olunan görünen metriklerin sayısı | Noktalar veya durum göstergesi karşılaştırmanın dağılımını özetler. |
 
-<Callout type="note">
-Kazanım kartı yalnızca rakip kanalları eklediğinizde görünür. Rakip yoksa bu kart gizlenir.
-</Callout>
+Sparkline eksensiz bir yön göstergesidir; kesin değeri karttaki sayıdan okuyun. Haftalık kartları kanalın ömür boyu toplam abone veya izlenme sayısıyla karıştırmayın.
 
----
-
-## AI destekli analizler
-
-KPI kartlarının altında AI destekli iki bölüm yer alır: **AI Özeti** ve **Hızlı Kazanımlar (Quick Wins)**.
+## AI Destekli Analizler
 
 ### AI Özeti
 
-Yapay zeka, kanalınızın son 7 günlük verilerini analiz eder ve doğal dilde bir özet sunar. Bu özet kanalınızın güçlü yönlerini, zayıf alanlarını ve önerilen aksiyonları içerir.
+**AI Özeti**, Paneldeki verileri okunabilir bir değerlendirmeye dönüştürür. Rozet veya kısa özet; güçlü yön, dikkat noktası ve olası aksiyon içerebilir. Yeni analiz oluşturma düğmesi görünüyorsa işlem AI kredisi kullanabilir.
 
-Özet varsayılan olarak 3 satıra kısaltılır. **"Devamını oku"** bağlantısına tıklayarak tam metni görün. **"AI Analizi Oluştur"** butonuyla yeni bir analiz talep edebilirsiniz.
+### Hızlı Kazanımlar
 
-### Hızlı Kazanımlar (Quick Wins)
+**Hızlı Kazanımlar**, kısa vadede incelenebilecek önerileri etki etiketiyle listeler. Öneriyi uygulamadan önce ilgili kartı veya detay sayfasını açıp dayandığı veriyi doğrulayın.
 
-Hızlı kazanımlar, hemen uygulanabilecek aksiyonları önem sırasına göre listeler.
+<Callout type="note">
+AI metni karar desteğidir; ölçülen değerin yerine geçmez. Bir iddiayı kart, grafik veya detay tablosunda doğrulayamadığınızda kesin sonuç olarak kullanmayın.
+</Callout>
 
-| Tür | Örnek Mesaj |
-|-----|-------------|
-| **Yükleme gerekli** | "X gündür video yüklemediniz." |
-| **Etkileşim düşük** | "Etkileşim oranınız ortalamanın %X altında." |
-| **Rakip zayıflığı** | "Rakip [isim] abone kaybediyor." |
-
-Her önerinin yanındaki etki seviyesi (Yüksek/Orta/Düşük) renkli noktayla belirtilir.
-
----
-
-## Kanalım ve rakipler
-
-Dashboard'un orta bölümünde kanalınızın haftalık özeti ve rakip bilgileri yer alır.
+## Haftalık özet ve rakip karşılaştırması
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/dashboard-channel-health.webp"
-  alt="Kanalım ve rakip kartları"
-  caption="Kanalım kartı, Rakiplerin Bu Haftası ve rekabet karşılaştırma bölümü."
+  alt="Panelde Kanalım ve rakip karşılaştırma bölümleri"
+  caption="Haftalık özet — kendi kanalınız, rakip hareketleri ve karşılaştırma kartları farklı soruları yanıtlar."
 />
 
-### Kanalım
+### Bu Hafta Nasıl Geçti?
 
-Sol taraftaki **Kanalım** kartı, kendi kanalınızın haftalık performansını özetler:
+Bu bölüm, haftalık değişimleri özetler. Değerlerin dönem içi değişim olduğunu, ömür boyu toplam olmadığını bölüm etiketlerinden kontrol edin.
 
-| Metrik | Açıklama |
-|--------|----------|
-| **Abone değişimi** | Son 7 günde kazanılan/kaybedilen abone sayısı. |
-| **İzlenme değişimi** | Son 7 günlük toplam izlenme artışı/azalışı. |
-| **Video sayısı** | Bu hafta yüklenen video adedi. |
+### Kanalım Nasıl?
 
-**"Kanal Detayları"** butonuna tıklayarak kanal analiz sayfasına gidin.
+**Kanalım Nasıl?**, **Kanalım** rolündeki referans kanalın haftalık durumunu gösterir. **Kanal Detayları** benzeri aksiyon, kanalın Genel Bakış ekranına götürür.
 
-### Rakiplerin Bu Haftası
+### Rakiplerin Bu Haftası ve Rakip Skoru
 
-Sağ taraftaki kart, takip ettiğiniz rakip kanalların haftalık abone değişimlerini listeler. Her satırda kanal adı, mevcut abone sayısı ve bu haftaki değişim gösterilir. **"Tüm Rakipler"** bağlantısıyla tam listeye ulaşın.
+**Rakiplerin Bu Haftası**, rakip rolündeki kanalların son hareketlerini listeler. **Rakip Skoru**, referans kanalınızı ekrandaki rakip ortalamasıyla görünen metriklerde karşılaştırır. “Önde” sayısını yorumlarken hangi metriklerin dahil edildiğini kart satırlarından kontrol edin.
 
-### Rakip Skoru
+**Detaylı Karşılaştırma** eylemi, kanalları aynı dönem ve metrikte yan yana incelemek için **Kanallarım > Karşılaştır** akışına götürür.
 
-**Rakip Skoru** kartı, kanalınızı rakip ortalamasıyla dört metrikte karşılaştırır:
-
-| Metrik | Sizin Değeriniz | Rakip Ortalaması | Durum |
-|--------|----------------|-----------------|-------|
-| **Abone** | Mevcut abone sayınız. | Rakiplerin ortalaması. | Yeşil = öndesiniz, kırmızı = gerideysiniz. |
-| **İzlenme** | Toplam izlenmeniz. | Rakiplerin ortalaması. | Fark ve kapanma/açılma durumu gösterilir. |
-| **Etkileşim** | Etkileşim oranınız. | Rakiplerin ortalaması. | Yüzdesel fark belirtilir. |
-| **Video** | Toplam video sayınız. | Rakiplerin ortalaması. | Fark adet olarak gösterilir. |
-
-Kartın üstündeki rozet (örn. **"2/4 önde"**) toplam kazanım durumunu özetler. **"Detaylı Karşılaştırma"** butonuyla kanal karşılaştırma sayfasına gidin.
-
-### Rakipler listesi
-
-Rakip Skoru'nun yanındaki liste, tüm rakip kanalları abone sayısına göre sıralar. Her satırda sıra numarası, kanal adı, abone sayısı ve haftalık değişim trendi gösterilir.
-
----
-
-## Son gelişmeler
-
-Dashboard'un alt bölümünde üç kart yer alır: yeni videolar, en iyi performans gösterenler ve dikkat gerektiren uyarılar.
+## Yeni videolar, en iyi performans ve uyarılar
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/dashboard-my-channel.webp"
-  alt="Yeni videolar, en iyi performans ve uyarılar"
-  caption="Son 48 saatte yayınlanan videolar, en iyi performans gösteren kanallar ve fırsatlar."
+  alt="Yeni Yayınlanan Videolar, En İyi Performans ve uyarı kartları"
+  caption="Panelin alt bölümü — yeni içeriklerin ilk 48 saat sinyalleri, öne çıkanlar ve inceleme gerektiren durumlar."
 />
 
-### Yeni yayınlanan videolar
+### Yeni Yayınlanan Videolar
 
-Son 48 saatte yayınlanan videoları listeler. Her satırda:
+Bu kart yeni içeriklerin **İlk 48 saat performansı** bağlamındaki sinyallerini gösterir. Video henüz 48 saati doldurmadıysa değerler tamamlanmamış olabilir. Başlık veya karta tıklayarak Video Detay sayfasında günlük performansı inceleyin.
 
-| Alan | Açıklama |
-|------|----------|
-| **Küçük resim ve başlık** | Video önizlemesi ve tam başlığı. |
-| **Kanal adı ve zaman** | Hangi kanal yükledi ve ne kadar önce. |
-| **Görüntülenme** | Mevcut izlenme sayısı ve saatlik artış hızı. |
-| **Etkileşim** | Beğeni/izlenme oranı (%). |
-| **Performans rozeti** | "Normal", "Değişkenli" veya kanal ortalamasına göre durum. |
+### En İyi Performans
 
-<Callout type="tip">
-Kendi videonuz listede varsa ve kanal ortalamasının %50'sinden düşük performans gösteriyorsa, sistem otomatik olarak bir öneri sunar.
-</Callout>
+**En İyi Performans**, ekranda tanımlanan kategorilerde öne çıkan kanalları gösterir. Kategori başlığını okumadan yalnızca kanal sırasına bakmayın; “en aktif” ile “en yüksek etkileşim” farklı ölçümlerdir.
 
-### En iyi performans
+### Dikkat Gerektiren ve Fırsatlar
 
-Üç kategoride öne çıkan kanalları gösterir:
+Bu kartlar incelenmesi gereken sinyalleri özetler. Uyarı, tek başına neden açıklamaz. İlgili kanal veya videoyu açıp dönem, veri kapsamı ve karşılaştırma grubunu doğrulayın.
 
-| Kategori | Ne ölçer? |
-|----------|-----------|
-| **En Hızlı Büyüyen** | Son dönemde en çok abone kazanan kanal. |
-| **En Aktif** | Son 30 günde en çok video yükleyen kanal. |
-| **En Yüksek Etkileşim** | En yüksek etkileşim oranına sahip kanal. |
+## Coğrafyanın Kodları ile uygulama
 
-### Dikkat gerektiren ve fırsatlar
+**Doğrulama tarihi: 17 Temmuz 2026.** Aşağıdaki görev ekrandaki değerler değişse de aynı okuma sırasını kullanır.
 
-**Dikkat Gerektiren** bölümü, kanalınız için acil aksiyon gerektiren uyarıları listeler:
+1. Üstteki kanal seçiciden **Coğrafyanın Kodları** kanalını seçin.
+2. **Kanal Sağlığı** puanını okuyun; ardından en yüksek ve en düşük görünen boyutları not edin.
+3. **Creator DNA** rozetini, güçlü ve zayıf yön metinleriyle birlikte okuyun.
+4. Haftalık **Abone**, **İzlenme** ve **Etkileşim** kartlarında büyük değer ile önceki haftaya göre farkı ayırın.
+5. **AI Özeti** içindeki bir iddiayı yukarıdaki kartlardan biriyle doğrulayın.
+6. **Yeni Yayınlanan Videolar** bölümünden bir içerik seçip Video Detay sayfasına geçin.
+7. Paneldeki kanalın size ait olmadığını unutmayın; **Kanalım Nasıl?** ve **Rakip Skoru** bölümlerini kendi referans kanalınızın bağlamıyla okuyun.
 
-| Uyarı Tipi | Örnek |
-|------------|-------|
-| **Abone kaybı** | Abone sayısı düşüyor. |
-| **İzlenme düşüşü** | İzlenmeler haftalık bazda %X azaldı. |
-| **Rakip geçti** | X rakip kanal abone sayısında sizi geçti. |
+## Yükleniyor, boş, hata ve kilitli durumlar
 
-**Fırsatlar** bölümü ise rakiplerdeki zayıflıkları gösterir:
+| Durum | Ne anlama gelir? | Ne yapmalısınız? |
+|---|---|---|
+| Kanal seçici boş | Takip edilen kanal yoktur | **Kanallarım** sayfasından ilk kanalı ekleyin. |
+| Veri toplanıyor | Kanal veya ilgili dönem için yeterli veri henüz hazırlanmamıştır | Kanalı ve dönemi değiştirmeden daha sonra yeniden kontrol edin. |
+| Rakip bölümü boş | Rakip rolünde kanal yoktur veya karşılaştırma verisi hazır değildir | Kanal rollerini kontrol edin; gerekiyorsa rakip ekleyin. |
+| Yeni video yok | İlk 48 saat penceresine giren yeni içerik bulunmamıştır | Daha uzun dönem için Videolar sayfasını kullanın. |
+| AI kartı kilitli | Hesabınızda gerekli özellik erişimi veya kredi bulunmuyor olabilir | Kilitli kart açıklamasını ve **Abonelik** sayfasını kontrol edin. |
+| Kart yüklenemedi | Ağ veya veri isteği tamamlanmamıştır | Sayfayı yenileyin; sorun sürerse görünür hata mesajıyla destek isteyin. |
 
-| Fırsat Tipi | Örnek |
-|-------------|-------|
-| **Rakip abone kaybediyor** | "[Kanal adı] X abone kaybetti." |
-| **Rakip inaktif** | "[Kanal adı] X gündür video yüklemedi." |
-| **Rakip düşük etkileşim** | "[Kanal adı] etkileşim oranı sadece %X." |
+## Sorun giderme ve sınırlar
 
----
+- Kartlar beklediğiniz kanalı göstermiyorsa kanal seçiciyi yeniden kontrol edin.
+- Haftalık değişim ile toplam kanal değerini karşılaştırmayın; dönem etiketini okuyun.
+- Çok küçük tabanlarda yüzdesel değişim büyük görünebilir; mutlak değeri de inceleyin.
+- Kamuya açık YouTube verileri periyodik hazırlanır; Paneli gerçek zamanlı YouTube Studio verisi olarak değerlendirmeyin.
+- AI önerisini uygulamadan önce ilgili detay ekranındaki ölçülen kanıtı kontrol edin.
 
-## Sırada ne var?
+## İlgili rehberler
 
-Dashboard'u tanıdınız. Şimdi kanal yönetimini öğrenin:
-
-| Rehber | Konu |
-|--------|------|
-| [Kanal Yönetimi](/academy/tr/kanal-yonetimi) | Kanal ekleme/çıkarma, liste görünümü ve çoklu kanal karşılaştırma. |
-| [Kanal Analizi](/academy/tr/kanal-analizi) | Abone büyümesi, performans grafikleri ve günlük metrikler. |
+| Rehber | Sonraki görev |
+|---|---|
+| [Kanal Yönetimi](/academy/tr/kanal-yonetimi) | Kanal rolü, filtre ve iki kanallı karşılaştırmayı yönetin. |
+| [Kanal Analizi](/academy/tr/kanal-analizi) | Seçili kanalın dönem grafikleri ve günlük tablosuna geçin. |

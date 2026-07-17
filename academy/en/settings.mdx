@@ -1,0 +1,102 @@
+---
+title: "Settings"
+description: "Manage your profile, preferences, password, usage, and API keys safely."
+order: 14
+lastUpdated: "2026-07-17"
+---
+
+## What this guide helps you do
+
+**Settings** manages your account profile, interface preferences, plan usage, and developer access. The page is organized into **Profile & Preferences**, **Plan & Usage**, and **Developer**.
+
+Make changes one section at a time and verify each saved result. In particular, avoid password and API key actions on shared screens or during screen sharing.
+
+## Edit your profile
+
+In **Profile & Preferences**, you can see the account's joined date and status along with **Full Name** and **Email**.
+
+1. Select **Edit Profile**.
+2. Update **Full Name**.
+3. Choose **Save** to apply the change or **Cancel** to discard it.
+
+**Email cannot be changed** on this screen. If it is incorrect, use the support process instead of opening a second account or entering an email in another field. After saving, confirm that the new name appears on the page.
+
+## Change your password
+
+Under **Change Password**, complete **Current Password**, **New Password**, and **Confirm New Password**. The new password and confirmation must match and meet the security requirements displayed by the interface.
+
+After the action:
+
+- Confirm that the success message appears.
+- Review sessions on other devices according to your account security policy.
+- Never paste the password into Academy content, AI Copilot, a report, or a support message.
+
+If the action fails, check the current password and confirm that both new-password fields match. Read the error instead of rapidly repeating the same attempt.
+
+## Language and theme preferences
+
+Under **Preferences**:
+
+- **Language** switches the interface between the available Turkish and English options.
+- **Theme** selects **Light**, **Dark**, or **System**. **System** follows your device appearance preference.
+
+After changing Language, verify that page headings and navigation use the selected language. After changing Theme, check that text, chart explanations, and status colors remain readable. Language does not automatically change channel data or report language; choose report language separately in [Reports](/academy/en/reports).
+
+## Read Plan & Usage
+
+Depending on your account, **Plan & Usage** can display current values for:
+
+- **Current Plan** and plan status,
+- Tracked channels,
+- Monthly channel removals,
+- Data retention,
+- Plan limits, features, and periods.
+
+Each counter measures a different entitlement. For example, the number of tracked channels is not the same as the monthly channel-removal counter. Interpret values using the plan details currently shown, not a fixed package assumption. Use [Subscription](/academy/en/subscription) for purchasing, upgrading, downgrading, or cancellation.
+
+## AI Credits
+
+The **AI Credits** card can show **Monthly Quota**, **Plan Credits**, **Add-on Credits**, and **Total Remaining**. If available to your account, **Buy More Credits** opens the current options.
+
+When reviewing remaining credits, allow for the counter to take time to update immediately after an action. Do not treat examples in this guide as a promise of price, credit amount, or renewal; the current screen values are authoritative.
+
+## Create and protect API Keys
+
+**API Keys** under **Developer** allow authorized external connections to access your account. Create one only when it has a specific purpose:
+
+1. Enter a clear purpose in **Key name**.
+2. Select **Create**.
+3. When the new key is shown once, copy it directly to a secure password vault.
+4. Store it in the secret-variable facility of the application that needs it; never put it in source code or a public file.
+
+Never paste an API key into Academy, AI Copilot, chat, a report, a screenshot, an issue, or a support message. Nobody, including the YTScope team, needs its complete value to investigate a problem.
+
+An empty list shows **No API keys created yet.** For existing entries, review the name, creation details, and **Last used** time when available. Select **Revoke** for a key that is unused, lost, or suspected of exposure. Revocation stops every connection using that key, so identify its consumers first and update them securely with a replacement when necessary.
+
+Developer guidance such as **Connect Your AI Assistant** may require using a key in an external tool. Follow that product's current secret-management documentation and never enter the key as a normal chat message.
+
+## Guided task: Coğrafyanın Kodları
+
+On **July 17, 2026**, complete this check without creating or sharing a secret:
+
+1. Confirm that **Language** is set to English and that the navigation headings match.
+2. Switch among the **Theme** options and check that charts and text for **Coğrafyanın Kodları** remain readable, then return to your preferred theme.
+3. Compare the tracked-channel count in **Plan & Usage** with [Channel Management](/academy/en/channel-management).
+4. Review **API Keys** only at the name and last-used level. Do not reveal, copy, or record a complete key for this task.
+5. If a key has an unknown purpose, identify its connected system before taking an arbitrary action; revoke it if exposure is suspected.
+
+This is a dated example. When you perform it, rely on the current account values and security state.
+
+## Loading, empty, error, and locked states
+
+- **Loading**: Do not change profile, plan, or key data before the sections finish loading.
+- **Empty API Keys**: This is a normal initial state; do not create a key unless you need one.
+- **Save error**: Check field validation and your connection, then refresh to verify whether the change was applied.
+- **Password error**: Read the message and never disclose your password to support.
+- **Locked plan or credit action**: Follow the on-screen guidance and use Subscription for the current terms.
+
+## Related guides
+
+- [Subscription](/academy/en/subscription)
+- [AI Copilot](/academy/en/ai-assistant)
+- [Getting Started](/academy/en/getting-started)

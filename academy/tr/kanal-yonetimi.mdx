@@ -1,163 +1,168 @@
 ---
 title: "Kanal Yönetimi"
-description: "YTScope'ta kanal ekleme, çıkarma, filtreleme ve çoklu kanal karşılaştırma işlemlerini öğrenin."
-lastUpdated: "2026-03-08"
+description: "Kanalları doğru rolle ekleyin, filtreleyin veya kaldırın; hazırlık ve limit durumlarını anlayıp iki kanalı karşılaştırın."
+lastUpdated: "2026-07-17"
 order: 3
 ---
 
-# Kanal yönetimi
-
-Kanallarım sayfası, takip ettiğiniz tüm YouTube kanallarını tek ekranda yönetmenizi sağlar. Kanal ekleyin, rol atayın, filtrelerin ve rakiplerinizi yan yana karşılaştırın.
+Bu rehberin sonunda **Kanallarım** sayfasında takip listenizi yönetebilir ve iki kanalla ilk karşılaştırmanızı başlatabilirsiniz.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channels-list.webp"
-  alt="Kanallarım sayfası genel görünümü"
-  caption="Kanallarım sayfası — takip edilen tüm kanallar grid düzeninde."
+  alt="Kanallarım sayfasındaki Kanallar ve Karşılaştır sekmeleri"
+  caption="Kanallarım — roller, filtreler, kullanım göstergesi ve Kanal Ekle eylemi takip listenizi yönetir."
 />
-
-Sayfa iki sekmeden oluşur:
-
-| Sekme | İşlev |
-|-------|-------|
-| **Kanallar** | Takip ettiğiniz kanalları listeler, filtreler ve yönetirsiniz. |
-| **Karşılaştır** | Seçtiğiniz kanalları metrik bazlı yan yana karşılaştırırsınız. |
 
 ---
 
-## Kanallar sekmesi
+## Başlamadan önce
 
-Bu sekmede takip ettiğiniz tüm kanalları görürsünüz. Üst kısımdaki araç çubuğu filtreleme ve kanal ekleme kontrolleri içerir.
+- Eklemek istediğiniz kanalın adını, `@handle` bilgisini veya YouTube kanal URL'sini hazırlayın.
+- Kanalın size ait olup olmadığını belirleyin; **Kanalım**, **Rakip** ve **İzleme Listesi** farklı karşılaştırma bağlamları oluşturur.
+- Sayfadaki **Kanal Limiti** göstergesi hesabınızın güncel kullanımını gösterir. Bu rehber sabit bir kanal veya kaldırma hakkı varsaymaz.
+- Yeni kanalın analizleri, kanal kaydı görünür olduktan sonra da bir süre veri hazırlanıyor durumunda kalabilir.
 
-### Filtreler
+## Bu ekrana nasıl ulaşırsınız?
 
-Kanal listesini rol bazlı daraltmak için üst kısımdaki filtre butonlarını kullanın.
+Sol menüden **Kanallar** öğesini seçin. Sayfa başlığı **Kanallarım** olarak görünür ve iki ana sekme içerir:
 
-| Filtre | Gösterdiği kanallar |
-|--------|---------------------|
-| **Tümü** | Tüm takip edilen kanallar. |
-| **Kanallarım** | Yalnızca **"Kanalım"** rolündeki kanal. |
-| **Rakipler** | Yalnızca **"Rakip"** olarak işaretlenen kanallar. |
+| Sekme | Amaç |
+|---|---|
+| **Kanallar** | Takip edilen kanalları arayın, filtreleyin, sıralayın ve yönetin. |
+| **Karşılaştır** | En az iki takip edilen kanalı aynı bağlamda yan yana inceleyin. |
 
-Filtre butonlarının yanında **kanal limiti göstergesi** yer alır. Örneğin **12/50**, 50 kanal hakkınızdan 12'sini kullandığınız anlamına gelir.
+## Kanallar sekmesindeki kontroller
+
+### Filtreler ve sıralama
+
+| Kontrol | Ne yapar? |
+|---|---|
+| **Tümü** | Tüm takip edilen rolleri gösterir. |
+| **Kanallarım** | **Kanalım** rolündeki referans kanalınızı gösterir. |
+| **Rakipler** | **Rakip** rolündeki kanalları gösterir. |
+| **İzleme Listesi** | Rakip karşılaştırmasına dahil etmeden izlediğiniz kanalları gösterir. |
+| Sıralama | Ada, abone sayısına veya eklenme tarihine göre listeyi yeniden düzenler. |
+| **Kanal Limiti** | Kullanılan ve hesabınızda kullanılabilir görünen kanal hakkını açıklar. |
+
+Bir filtre boş sonuç verirse kanalın silindiğini varsaymayın; önce **Tümü** filtresine dönün.
 
 ### Kanal kartları
 
-Her kanal bir kart olarak görünür. Kart üzerinde şu bilgiler yer alır:
+| Alan | Nasıl okunur? |
+|---|---|
+| Avatar, kanal adı ve `@handle` | Doğru kanalı ayırt etmek için birlikte kontrol edin. |
+| Rol rozeti | Kanalın **Kanalım**, **Rakip** veya **İzleme Listesi** bağlamını gösterir. |
+| Abone ve izlenme | Karttaki ana değerleri gösterir; altındaki küçük değer dönem değişimidir. |
+| Sparkline | Eksen vermeyen kısa yön özetidir; kesin değeri ana sayıdan okuyun. |
+| Üç nokta menüsü | **Türü Değiştir** ve **Kanalı Kaldır** gibi yönetim eylemlerini açar. |
 
-| Alan | Açıklama |
-|------|----------|
-| **Avatar ve isim** | Kanal profil görseli ve adı. Tıkladığınızda kanal detay sayfasına gidersiniz. |
-| **Handle** | Kanalın YouTube kullanıcı adı (ör. @dopinghafiza). |
-| **Rol rozeti** | Kanalın ilişki türünü gösterir: **Kanalım**, **Rakip** veya **İzleme Listesi**. |
-| **Abone sayısı** | Güncel abone sayısı ve son 7 günlük değişim yüzdesi. |
-| **Toplam izlenme** | Kanalın toplam izlenme sayısı ve trend yüzdesi. |
-| **Sparkline** | Küçük trend grafiği — abone ve izlenme değişimini görsel olarak özetler. |
-
-Kartın sol kenarındaki renk çizgisi trendi gösterir: yeşil artış, kırmızı düşüş, gri değişim yok.
-
-<Callout type="tip">
-Bir kanalın üç nokta menüsüne (⋯) tıklayarak ilişki türünü değiştirebilir veya kanalı takipten çıkarabilirsiniz.
+<Callout type="note">
+Karttaki toplam değer ile altındaki dönem değişimi aynı ölçüm değildir. Yüzdeyi yorumlarken pozitif/negatif işaretini ve dönem bağlamını birlikte okuyun.
 </Callout>
 
----
+## Kanal ekleyin
 
-## Kanal ekleme
-
-Sağ üst köşedeki **"+ Kanal Ekle"** butonuna tıklayarak yeni kanal ekleyin.
+**Kanal Ekle** düğmesi arama ve rol seçimi penceresini açar.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channels-add-modal.webp"
-  alt="Kanal Ekle modalı"
-  caption="Kanal Ekle modalı — arama yapın, rol seçin ve ekleyin."
+  alt="Kanal adı, handle veya URL kabul eden Kanal Ekle penceresi"
+  caption="Kanal Ekle — önce doğru kanalı bulun, ardından Olarak ekle alanından rolünü seçin."
 />
 
-<Step number={1} title="Arama yapın">
-Kanal adını, @handle'ını veya YouTube URL'sini arama kutusuna yazın. En az 3 karakter girdikten sonra sonuçlar otomatik listelenir.
+<Step number={1} title="Kanalı arayın">
+Arama alanına kanal adını, `@handle` bilgisini veya tam YouTube kanal URL'sini girin. Kısa sorgu uyarısı görünürse daha fazla karakter yazın.
 </Step>
 
-<Step number={2} title="Rol seçin">
-Kanalı hangi rolle ekleyeceğinizi belirleyin:
-
-| Rol | Açıklama |
-|-----|----------|
-| **Kanalım** | Kendi YouTube kanalınız. Yalnızca 1 kanal bu role atanabilir. |
-| **Rakip** | Takip etmek istediğiniz rakip kanallar. |
-| **İzleme Listesi** | İlham aldığınız veya izlemek istediğiniz kanallar. |
+<Step number={2} title="Sonucu doğrulayın">
+Avatar, kanal adı ve handle bilgilerini kontrol edin. Veritabanındaki sonuçlarda kanal yoksa ekrandaki YouTube'dan ekleme seçeneğini kullanabilirsiniz.
 </Step>
 
-<Step number={3} title="Ekleyin">
-Arama sonuçlarından ilgili kanalı seçin. Kanal listeye eklenir ve verileri birkaç dakika içinde yüklenir.
+<Step number={3} title="Rolü seçin">
+**Olarak ekle** alanından kullanım amacınıza uygun rolü belirleyin.
 </Step>
 
-<Callout type="note">
-Arama sonuçlarında kanalınız çıkmazsa **"URL veya ID ile ekle"** seçeneğini kullanın. Doğrudan YouTube kanal URL'si yapıştırabilirsiniz.
+| Rol | Etkisi |
+|---|---|
+| **Kanalım** | Panelde ve karşılaştırmalarda sizin referans kanalınız olarak kullanılır. Başka bir kanalı bu role geçirirken ekrandaki sonuç ve onay metnini okuyun. |
+| **Rakip** | Rakip haftası, rakip skoru ve karşılaştırma bağlamına dahil edilir. |
+| **İzleme Listesi** | Kanal takip edilir ancak rakip odaklı özetlere dahil edilmeyebilir. |
+
+<Step number={4} title="Eklemeyi tamamlayın">
+Sonuç kartındaki ekleme eylemini seçin. **Ekleniyor...** durumu tamamlanana kadar pencereyi kapatmayın. Kanal kartı göründüğünde kayıt tamamlanmıştır; analiz verileri ayrıca hazırlanabilir.
+</Step>
+
+## Rolü değiştirin veya kanalı kaldırın
+
+Kanal kartındaki üç nokta menüsünü açın.
+
+- **Türü Değiştir**, kanalın uygulamadaki bağlamını değiştirir. Değişiklikten sonra Panel ve karşılaştırma bölümlerini yeniden kontrol edin.
+- **Kanalı Kaldır**, kanalı takip listesinden çıkarır. Onay penceresi güncel kaldırma kullanımını ve varsa sonraki değişiklik tarihini gösterir.
+
+<Callout type="warning">
+Kaldırma işleminden önce onay penceresindeki kullanım ve sonuç metnini okuyun. Rehberdeki eski bir sayı yerine hesabınızda gösterilen güncel bilgiye güvenin.
 </Callout>
 
-<ProTip>
-Kendi kanalınızı **"Kanalım"** olarak ekleyin. Bu sayede karşılaştırma sekmesinde rakiplerinize kıyasla performansınızı görürsünüz.
-</ProTip>
-
----
-
-## Karşılaştır sekmesi
-
-Karşılaştır sekmesi, takip ettiğiniz kanalları metrik bazlı yan yana analiz etmenizi sağlar. En az 2 kanal seçtiğinizde karşılaştırma bölümleri görünür.
+## İki kanalı karşılaştırın
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/comparison-selector.webp"
-  alt="Karşılaştır sekmesi — kanal seçici"
-  caption="Karşılaştır sekmesi — kanalları seçin, dönem ve metrik belirleyin."
+  alt="Karşılaştır sekmesindeki kanal seçim alanı"
+  caption="Karşılaştır — sonuçların açılması için takip listenizden iki kanal seçin."
 />
 
-### Kanal seçimi ve kontroller
+1. **Kanallarım** sayfasında **Karşılaştır** sekmesini açın.
+2. Kanal seçim alanından ilk kanalı seçin.
+3. Aynı alandan ikinci kanalı seçin. Seçili kart veya işaretleri kontrol edin.
+4. Ekranda dönem veya metrik kontrolü görünüyorsa ikisini de aynı karşılaştırma sorusuna göre belirleyin.
+5. Sonuçlar açıldığında önce kanal özetlerini, ardından büyüme grafiği ve diğer analiz bölümlerini okuyun.
 
-Sayfanın üst kısmında üç kontrol alanı bulunur:
+Karşılaştırma seçimi hesabın güncel hakkıyla sınırlı olabilir. Seçim sayacını ve kilitli durum metnini esas alın; bu rehber sabit maksimum sayı vermez.
 
-| Kontrol | İşlev |
-|---------|-------|
-| **Kanal kartları** | Karşılaştırmak istediğiniz kanalları seçin. En fazla **5 kanal** seçilebilir. |
-| **Dönem seçici** | Karşılaştırma dönemi: **7 gün**, **30 gün**, **90 gün** veya **365 gün**. |
-| **Metrik seçici** | Grafik metriği: **Abone Sayısı**, **İzlenme** veya **Etkileşim**. |
+### Büyüme grafiğini okuyun
 
-Hızlı seçim butonları işlemi kolaylaştırır:
+- Yatay eksen zamanı, dikey eksen seçili metriği gösterir.
+- Her renk/seri bir kanala karşılık gelir; legend etiketini kontrol edin.
+- Tooltip, aynı tarihteki kesin kanal değerlerini gösterir.
+- Toplam değer ile dönem içi büyüme aynı değildir; aktif metrik etiketini kontrol edin.
+- Eksik gün veya hazırlanan veri gördüğünüzde çizgiler arasındaki farkı kesin sonuç olarak yorumlamayın.
 
-| Buton | İşlev |
-|-------|-------|
-| **Tüm Rakipler** | Tüm rakip kanallarını tek tıkla seçer. |
-| **En İyi 3** | Abone sayısına göre en yüksek 3 kanalı seçer. |
+## Coğrafyanın Kodları ile uygulama
 
-Kendi kanalınız **"Sen"** rozeti ile öne çıkar. Karşılaştırma sonuçlarında her zaman referans noktası olarak görünür.
+**Doğrulama tarihi: 17 Temmuz 2026.** Bu görev değişken kanal değerlerine bağlı değildir.
 
-### Karşılaştırma bölümleri
+1. **Tümü** filtresinde **Coğrafyanın Kodları** kartını bulun; adını, handle bilgisini ve rol rozetini kontrol edin.
+2. Kart görünmüyorsa **Kanal Ekle** içinde adı arayın. Zaten takip ediliyor uyarısı alırsanız yeni kayıt oluşturmayın.
+3. **Karşılaştır** sekmesine geçin.
+4. İlk kanal olarak **Coğrafyanın Kodları**, ikinci kanal olarak aynı konu veya kitlede takip ettiğiniz başka bir kanal seçin.
+5. İki kanalın seçili olduğunu doğrulayın; ardından aynı dönem ve metrikte grafiği okuyun.
+6. Bir çizginin neden önde olduğunu yalnız grafikten varsaymayın; Kanal Analizi ekranında dönem videolarını ve günlük değişimleri kontrol edin.
 
-En az 2 kanal seçtiğinizde aşağıdaki analiz bölümleri görünür:
+## Yükleniyor, boş, hata ve kilitli durumlar
 
-| Bölüm | Ne gösterir |
-|-------|-------------|
-| **Karşılaştırma kartları** | Her kanalın abone, izlenme ve video sayısını özetler. En iyi performans gösteren kanal taç simgesiyle işaretlenir. |
-| **Büyüme grafiği** | Seçilen metriğin zaman serisi grafiği — kanalların büyüme eğrilerini yan yana görürsünüz. |
-| **Büyüme momentumu** | Her kanalın büyüme ivmesi ve trend yönü. |
-| **İçerik stratejisi** | Video yükleme sıklığı, ortalama izlenme ve içerik türü dağılımı (Shorts / normal video). |
-| **Etkileşim** | Etkileşim oranı (engagement rate), beğeni ve yorum ortalaması. |
-| **Breakout analizi** | Normalin çok üstünde performans gösteren videoların tespiti. |
-| **Yükleme zamanı** | Heatmap formatında en verimli yükleme gün ve saati. |
-| **Video süresi** | Süre kategorilerine göre ortalama izlenme performansı. |
-| **Başlık anahtar kelimeleri** | En çok kullanılan başlık kelimelerinin frekans ve performans analizi. |
-| **En iyi videolar** | Her kanalın en çok izlenen videolarının karşılaştırması. |
+| Durum | Ne yapmalısınız? |
+|---|---|
+| **Henüz kanal eklenmemiş** | **Kanal Ekle** ile ilk kanalı ekleyin. |
+| **Aranıyor...** | Sonuç tamamlanana kadar sorguyu değiştirmeden bekleyin. |
+| Veritabanında eşleşme yok | Handle veya URL'yi kontrol edip YouTube'dan ekleme seçeneğini deneyin. |
+| Kanal bulunamadı | URL veya handle yazımını doğrulayın. |
+| Zaten takip ediliyor | Mevcut kartı **Tümü** filtresinde bulun. |
+| Kanal limitine ulaşıldı | **Kanal Limiti** ve **Abonelik** sayfasındaki güncel kullanımı kontrol edin. |
+| Veri hazırlanıyor | Kanal eklenmiştir ancak analizler hazır değildir; daha sonra yeniden kontrol edin. |
+| Karşılaştırma boş | En az iki kanal seçildiğini ve verilerinin hazır olduğunu kontrol edin. |
+| Genel hata | Yeniden deneyin; sürerse görünür hata metni ve kanal bilgisiyle destek isteyin. |
 
-<Callout type="tip">
-Dönem seçicisini değiştirdiğinizde tüm bölümler otomatik güncellenir. 30 günlük ve 90 günlük sonuçları karşılaştırarak kısa ve orta vadeli trendleri ayırt edin.
-</Callout>
+## Sorun giderme ve sınırlar
 
-<ProTip>
-Karşılaştırma sonuçlarında kendi kanalınız **"Sen"** rozetiyle ayrılır. Rakiplerinizden geride kaldığınız metrikleri hızlıca tespit edin ve içerik stratejinizi buna göre ayarlayın.
-</ProTip>
+- Benzer adlı kanallarda yalnız ada güvenmeyin; avatar ve handle bilgisini de doğrulayın.
+- Bir kanal rolü değiştikten sonra Paneldeki rakip özetlerinin de değişmesi beklenir.
+- Sparkline kesin ölçek sunmaz; ayrıntı için kanal kartını açın.
+- Kamuya açık kanal verileri periyodik hazırlanır ve YouTube Studio ile aynı anda güncellenmeyebilir.
+- Karşılaştırmada aynı dönem ve metriği kullanmadan kanallar arasında sonuç çıkarmayın.
 
----
+## İlgili rehberler
 
-## Sırada ne var?
-
-| Rehber | Konu |
-|--------|------|
-| [Kanal Analizi](/academy/tr/kanal-analizi) | Tek bir kanalın abone büyümesi, performans grafikleri ve günlük metriklerini inceleyin. |
-| [Dashboard Kullanımı](/academy/tr/dashboard-kullanimi) | Genel bakış, Health Score ve AI günlük özet. |
+| Rehber | Sonraki görev |
+|---|---|
+| [Kanal Analizi](/academy/tr/kanal-analizi) | Tek kanalın grafik, video ve günlük verilerine geçin. |
+| [Panel Kullanımı](/academy/tr/dashboard-kullanimi) | Rol değişikliklerinin haftalık özetlere etkisini kontrol edin. |

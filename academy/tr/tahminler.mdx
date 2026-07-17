@@ -1,129 +1,147 @@
 ---
 title: "Tahminler"
-description: "Momentum skoru, abone kaybı analizi, ilk 48 saat tahmini, izlenme hız azalması ve korelasyon matrisi."
-lastUpdated: "2026-03-08"
+description: "Momentum, volatilite, abone kaybı vekili, ilk 48 saat, izlenme hız azalması ve korelasyonu belirsizlikleriyle okuyun."
+lastUpdated: "2026-07-17"
 order: 6
 ---
 
-# Tahminler
-
-Tahminler sekmesi, kanalın geleceğe yönelik verilerini sunar. Momentum skoru ile büyüme yönünü, abone kaybı analizi ile risk seviyesini, ilk 48 saat tahmini ile yeni videoların erken performansını incelersiniz.
+**Tahminler** sekmesi geçmiş açık veriden yön, risk ve olası sonuç üretir. Tahmin, ölçüm değildir: her sonucu veri penceresi, örneklem ve güven işaretiyle birlikte okuyun.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channel-predictions-full.webp"
-  alt="Tahminler sekmesi genel görünüm"
-  caption="Tahminler sekmesi — Momentum Skoru ve tahmin modelleri."
+  alt="Kanal Tahminler sekmesi"
+  caption="Tahminler — momentum, abone kaybı vekili, ilk 48 saat ve içerik ömrü analizleri."
 />
 
-Kanal detay sayfasında **Tahminler** sekmesine tıklayarak bu bölüme ulaşın.
+## Sonuç, ön koşullar ve yol
 
----
+- **Yol:** **Kanallar → bir kanal → Tahminler**.
+- Kanal takipte ve tarihsel istatistikleri senkronlanmış olmalıdır.
+- Kartların pencereleri sabittir veya **Tüm Veriler** olabilir; üst dönem seçicisinin her kartı değiştirdiğini varsaymayın.
+- Temel/detay görünümü planınıza göre kilitlenebilir. Ekrandaki plan mesajı günceldir.
+
+## Ekran haritası
+
+1. Momentum skoru, son dönem karşılaştırması ve detay çizgisi.
+2. Abone kaybı analizi.
+3. İlk 48 saat tahmini.
+4. İzlenme hız azalması ve içerik ömrü sınıfları.
+5. Pearson/Spearman korelasyon matrisi.
 
 ## Momentum skoru
 
-Momentum Skoru, kanalın büyüme ivmesini tek bir sayıyla özetler. Son 14 günlük verilere dayanarak kanalın yükseliş mi düşüş mü trendinde olduğunu gösterir.
+Momentum, son 7 gündeki abone ve pozitif görüntülenme değişimini önceki 7 günle karşılaştıran birleşik bir ürün skorudur. Kart **14 günlük** sabit bağlam taşır ve ekranda güncel ölçeği gösterir; 17 Temmuz 2026'da bu ölçek **-100 ile 200** idi.
 
-| Metrik | Açıklama |
-|--------|----------|
-| **Skor** | -100 ile +100 arası değer. Pozitif değerler büyüme ivmesi, negatif değerler yavaşlama gösterir. |
-| **Durum rozeti** | **Yükseliyor**, **Stabil** veya **Düşüyor** olarak kanalın genel yönü. |
-| **Abone Değişimi (7g)** | Son 7 günlük net abone değişimi ve bir önceki 7 güne kıyasla yüzde farkı. |
-| **İzlenme Değişimi (7g)** | Son 7 günlük toplam izlenme değişimi ve önceki dönemle karşılaştırma. |
+| Alan | Birim / yorum |
+|---|---|
+| **Momentum Skoru** | Birleşik boyutsuz skor. Sıfır, “büyüme yok” değil, modelin karşılaştırma merkezidir. |
+| **Sağlık / Trend** | Mükemmel–kritik ve hızlanıyor–yavaşlıyor gibi güncel ürün sınıfları. |
+| **Abone Değişimi / İzlenme Değişimi** | Son 7 gündeki ham adet; alt yüzde önceki 7 güne göre göreli farktır. |
+| **Yön** | Abone ve görüntülenmenin birlikte yukarı, birlikte aşağı veya karışık hareketi. |
 
-Skor altındaki **İçgörüler** bölümü, yapay zeka destekli kısa yorumlar sunar.
+Önceki dönem değişimi sıfıra yakınsa yüzde fark büyüyebilir; model bunu kanal ölçeğine göre sınırlar fakat sonuç yine hassastır. Skoru farklı büyüklükte kanallar arasında mutlak performans sırası gibi kullanmayın.
 
-<Callout type="tip">
-Momentum skoru haftalık takip edin. İki hafta üst üste düşüş trendi gösteren kanallar için içerik stratejisini gözden geçirin.
-</Callout>
+### Detaylı momentum, volatilite ve tutarlılık
 
----
+- **X ekseni:** tarih.
+- **Y ekseni:** günlük ham abone ve görüntülenme değişimlerinden üretilen 3 günlük hareketli ortalama.
+- **Seriler/legend:** Abone ve Görüntülenme; tooltip tarih ve iki serinin değerini verir.
+- **Volatilite:** günlük değişimlerin standart sapmasıdır; yüksek değer daha dalgalı seri demektir. UI bir yüzde işareti gösterse bile bunu doğrudan “abonelerin yüzde kaçı” diye okumayın.
+- **Tutarlılık:** volatiliteyi ortalama abone değişimine göre özetleyen 0–100 ürün skorudur. Ortalama sıfıra yakınsa küçük hareketler skoru güçlü etkileyebilir.
+
+Hareketli ortalama ani dönüşü gecikmeli gösterir ve eksik günleri tamamlamaz.
 
 ## Abone kaybı analizi
 
-Abone kaybı (churn) analizi, kanalın abone tutma performansını ölçer.
+Bu kart gerçek YouTube abonelikten çıkış olaylarını görmez. **30 günlük açık abone toplamı değişimlerinden üretilen bir kayıp vekilidir.**
 
-| Metrik | Açıklama |
-|--------|----------|
-| **Kayıp oranı** | Dönem içinde kaybedilen abonelerin yüzdesi. |
-| **Kayıp hızı** | Günlük ortalama abone kaybı sayısı. |
-| **Günlük değişim zaman çizelgesi** | Abone kazanım ve kayıplarını gün bazlı gösteren grafik. |
-| **Haftalık dağılım** | Haftalar arası karşılaştırma — kayıp hızı artıyor mu azalıyor mu. |
+| Metrik | Tanım |
+|---|---|
+| **Kayıp Oranı** | Negatif günlük abone değişimlerinin mutlak toplamı ÷ dönem başı abone sayısı, yüzde. |
+| **Negatif Gün** | Abone toplamının önceki kayda göre düştüğü gün sayısı. |
+| **Toplam Kazanç / Kayıp / Net Değişim** | Pozitif ve negatif günlük değişimlerin ham adet toplamları. |
+| **Günlük grafik** | X ekseni tarih, y ekseni günlük abone değişimi; sıfır çizgisi kazanım/kayıp sınırıdır. |
+| **Haftalık özet** | Aynı açık değişim vekilinin haftalara gruplanmış görünümü. |
 
-<Callout type="note">
-Belirli bir düzeyde abone kaybı normaldir. Her kanalda izleyiciler zaman içinde ilgisini kaybeder. Önemli olan kayıp hızının kazanım hızını aşmaması.
-</Callout>
-
----
+YouTube'un yuvarlama, temizleme ve veri düzeltmeleri negatif gün üretebilir. Karttan “şu kişiler abonelikten çıktı” veya bir içeriğin kayba neden olduğu sonucu çıkarılamaz.
 
 ## İlk 48 saat tahmini
 
-Yeni yayınlanan videoların ilk 48 saatteki performansını analiz eder ve gelecek videolar için tahmin üretir.
+Kart yakın tarihli videolarda erken görüntülenmeyi aynı kanalın mevcut 48 saat örneklemiyle birlikte gösterir.
 
-| Bilgi | Açıklama |
-|-------|----------|
-| **Erken performans özet kartları** | İlk 48 saatte ortalama izlenme, beğeni ve etkileşim tahmini. |
-| **Video bazlı tahmin tablosu** | Son videoların her biri için ilk 48 saat performans tahmini. |
-| **Etkileşim yörüngesi** | Yayından sonra etkileşim oranının nasıl değiştiği. |
+| Alan | Okuma |
+|---|---|
+| **Ortalama 48 Saat İzlenmesi** | Gerçek 48 saat snapshot'ı bulunan uygun videoların ortalaması. |
+| **Analiz Edilen Video** | Tabloya giren yakın tarihli video sayısı. |
+| **Yaş** | Yayından beri saat. 48 saatin altındaki video canlı projeksiyondur. |
+| **Mevcut İzlenme** | Şu anki kümülatif adet. |
+| **Tahmini 48 Saat** | 48 saatten genç videoda mevcut hızın basit uzatması; eski videoda varsa 48 saat snapshot'ı. |
 
-Bu bölüm, yeni bir video yayınlamadan önce beklentilerinizi kalibre etmenize yardımcı olur.
-
-<ProTip>
-İlk 48 saat tahminlerini gerçek verilerle karşılaştırın. Tahminin üstünde performans gösteren videolar, kanalın güçlü yönlerini temsil eder.
-</ProTip>
-
----
+Tahmin için yayın tarihi ve izlenme snapshot'ı gerekir. `—`, sıfır tahmin değil, yeterli 48 saat verisi olmadığını gösterir. Çok genç videoda birkaç saatlik hız büyük tahmin üretebilir; güven bandı gibi yorumlamayın ve 48 saat dolunca gerçek değerle karşılaştırın.
 
 ## İzlenme hız azalması
 
-Videoların yayından sonra izlenme hızının nasıl düştüğünü analiz eder. İki ana video kategorisi tanımlar:
+Bu **Tüm Veriler** kartı her videonun kümülatif günlük görüntülenmesinden günlük kazanımı türetir; aynı takvim günündeki birden fazla snapshot'ın sonuncusunu kullanır.
 
-| Kategori | Açıklama |
-|----------|----------|
-| **Viral** | Yayının ilk günlerinde yüksek izlenme alıp hızla düşen videolar. |
-| **Evergreen** | Uzun süre boyunca istikrarlı izlenme almaya devam eden videolar. |
+| Sınıf | Okuma |
+|---|---|
+| **Evergreen** | Günlük görüntülenme hızı geç veya hiç yarıya inmeyen uzun ömürlü desen. |
+| **Long Tail** | İlk düşüşten sonra daha uzun süre anlamlı hız taşıyan desen. |
+| **Normal** | Ürünün orta ömür sınıfı. |
+| **Viral Burst** | İlk yüksek hızın kısa sürede yarıya indiği desen. “Viral başarı” garantisi değildir. |
 
-| Bilgi | Açıklama |
-|-------|----------|
-| **Baskın kategori** | Kanalın videoları ağırlıklı olarak viral mi yoksa evergreen mi. |
-| **Kategori dağılım grafiği** | Videoların viral-evergreen dağılımı. |
-| **En iyi viral videolar** | Yayından hemen sonra en yüksek izlenme ivmesini yakalayan videolar. |
-| **En iyi evergreen videolar** | Yayından uzun süre sonra da izlenme almaya devam eden videolar. |
+**İlginin yarıya inme süresi**, günlük görüntülenme hızının ilk gün hızının yarısına ilk kez düştüğü gözlenen gündür. Pasta grafiğin dilimleri sınıf, değerleri video sayısıdır; tooltip sınıf ve sayıyı, legend renk eşlemesini verir. En az iki günlük snapshot yoksa video **yetersiz veri** olarak ayrılır ve baskın sınıf hesabına katılmaz.
 
-<Callout type="tip">
-Evergreen oranı yüksek kanallar arama trafiğinden beslenir. Viral ağırlıklı kanallar ise önerilen videolar (suggested) akışına bağımlıdır.
-</Callout>
-
----
+Yarı ömür içerik yaşı, senkron boşlukları ve ilk günün kısmi olup olmamasına duyarlıdır. Evergreen sınıfından otomatik olarak SEO trafiği sonucu çıkarmayın.
 
 ## Korelasyon analizi
 
-Kanal metriklerinin birbirleriyle ilişkisini istatistiksel olarak ölçer.
+Korelasyon kartı **Tüm Veriler** bağlamında uygun videolarda süre, görüntülenme, beğeni, yorum ve etkileşim oranı çiftlerini karşılaştırır.
 
-| Bilgi | Açıklama |
-|-------|----------|
-| **Korelasyon matrisi** | Metrikler arası ilişki tablosu (ör. izlenme ile etkileşim arasındaki bağ). |
-| **Yöntem** | Pearson veya Spearman korelasyon katsayısı seçilebilir. |
-| **Örneklem büyüklüğü** | Analize dahil edilen veri noktası sayısı. |
+| Kontrol / alan | Anlam |
+|---|---|
+| **Doğrusal eğilim (Pearson)** | İki sayısal değişkenin doğrusal birlikte hareketini ölçer; aykırı değerlere duyarlıdır. |
+| **Sıralamaya göre eğilim (Spearman)** | Değerlerin sıralarındaki monoton ilişkiyi ölçer; birkaç uç değere daha dayanıklıdır. |
+| **Örneklem** | Analize giren video sayısı. Ürün güvenilir yorum için ekranda minimum gereksinimi gösterir. |
+| **Matris hücresi** | `-1…+1` katsayısı; işaret yönü, mutlak büyüklük ilişkinin gücünü gösterir. |
+| **`—` hücresi** | Bu örneklemde yeterli kanıt yok; sıfır ilişki demek değildir. |
 
-**Korelasyon değeri yorumlama:**
+Matrisin satır ve sütunları metriklerdir; köşegen aynı metriği gösterir. Renkler güçlü pozitif, güçlü negatif, zayıf ve kanıt yetersiz durumları ayırır. Tooltip/başlık, kanıt yetersiz hücreyi açıklar.
 
-| Değer | Anlam |
-|-------|-------|
-| **+0.7 ile +1.0** | Güçlü pozitif ilişki — bir metrik artınca diğeri de artar. |
-| **+0.3 ile +0.7** | Orta düzeyde pozitif ilişki. |
-| **-0.3 ile +0.3** | Zayıf veya anlamsız ilişki. |
-| **-0.7 ile -0.3** | Orta düzeyde negatif ilişki. |
-| **-1.0 ile -0.7** | Güçlü negatif ilişki — biri artarken diğeri azalır. |
+Korelasyon nedensellik değildir. Ortak konu, video yaşı, format ve kanal büyüklüğü üçüncü değişken olabilir. Çok sayıda çift denenmesi tesadüfi ilişki riskini artırır; sonucu hipotez olarak kullanın.
 
-<Callout type="note">
-Korelasyon nedensellik göstermez. İki metrik arasında yüksek korelasyon varsa, birinin diğerine neden olduğu anlamına gelmez. Ancak strateji ipuçları verir.
-</Callout>
+## Ortak durumlar
 
----
+| Durum | Eylem |
+|---|---|
+| **Yükleniyor** | İskelet bitmeden skor veya tahmin kaydetmeyin. |
+| **Yetersiz tarihsel veri** | Kartın sabit penceresi kadar senkron bekleyin; uygun yerde dönemi genişletin. |
+| **`—` / yetersiz kanıt** | Sıfır diye doldurmayın; örneklem veya snapshot eksiktir. |
+| **Hata** | Yenileyin ve daha sonra tekrar deneyin. |
+| **Kilitli detay** | Temel kartı okuyun; plan mesajı dışındaki limitleri varsaymayın. |
+
+## Uygulama — Coğrafyanın Kodları
+
+**Doğrulama tarihi: 17 Temmuz 2026.**
+
+1. **Coğrafyanın Kodları → Tahminler** yolunu açın ve her kartın dönem rozetini yazın.
+2. Momentum'da ham son 7 gün değişimini önceki 7 güne göre yüzde farktan ayırın; skoru kesin gelecek tahmini diye adlandırmayın.
+3. Volatilite ve tutarlılığı birlikte okuyun; ortalama sıfıra yakınsa uyarı ekleyin.
+4. Kayıp kartını “açık abone sayısı düşüşü vekili” diye açıklayın.
+5. İlk 48 saat tablosunda canlı bir tahmin ile `—` veya gerçekleşmiş değeri ayırın.
+6. Hız azalmasında baskın sınıfı ve analiz edilen video sayısını birlikte kaydedin.
+7. Aynı metrik çifti için Pearson ve Spearman'ı değiştirin; katsayı veya kanıt durumu değişirse olası neden yazın.
+
+## Yorum sınırları
+
+- Tahminler yeni veri geldikçe değişir; snapshot zamanı ve video yaşı sonucu etkiler.
+- Momentum ve tutarlılık ürün skorlarıdır, finansal veya istatistiksel garanti değildir.
+- Abone kaybı kartı bireysel churn veya nedeni ölçmez.
+- Korelasyon ve sınıflandırma bir deneyin yerini tutmaz.
 
 ## Sırada ne var?
 
 | Rehber | Konu |
-|--------|------|
-| [Video Analizi](/academy/tr/video-analizi) | Video listesi, en iyi videolar ve video detay sayfası. |
-| [Gelişmiş Analitik](/academy/tr/gelismis-analitik) | Pazar payı, yükleme zamanı heatmap'i ve başlık analizi. |
+|---|---|
+| [Video Analizi](/academy/tr/video-analizi) | Tek video skoru, 24/48 saat hızı, sıra ve SEO. |
+| [Gelişmiş Analitik](/academy/tr/gelismis-analitik) | Benchmark, aykırı video, zamanlama ve gelir tahmini. |

@@ -1,129 +1,147 @@
 ---
 title: "Predictions"
-description: "Momentum score, churn analysis, first 48-hour forecast, view velocity decay, and correlation matrix."
-lastUpdated: "2026-03-08"
+description: "Read momentum, volatility, subscriber-loss proxy, first-48-hour forecasts, view decay, and correlation with their uncertainty."
+lastUpdated: "2026-07-17"
 order: 6
 ---
 
-# Predictions
-
-The Predictions tab provides forward-looking data for the channel. Use the momentum score to gauge growth direction, churn analysis for risk assessment, and the first 48-hour forecast to evaluate early video performance.
+The **Predictions** tab derives direction, risk, and possible outcomes from historical public data. A forecast is not a measurement: read every result with its window, sample, and confidence signal.
 
 <Screenshot
-  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/channel-predictions-full.webp"
-  alt="Predictions tab overview"
-  caption="Predictions tab — Momentum Score and prediction models."
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channel-predictions-full.webp"
+  alt="Channel Predictions tab"
+  caption="Predictions — momentum, subscriber-loss proxy, first 48 hours, and content-lifetime analyses."
 />
 
-Click the **Predictions** tab on the channel detail page to access this section.
+## Outcome, prerequisites, and path
 
----
+- **Path:** **Channels → a channel → Predictions**.
+- The channel must be tracked with synced historical stats.
+- Cards can have fixed windows or **All Data** context; do not assume the top period changes every card.
+- Basic or detailed views may be locked by plan. The on-screen plan message is current.
+
+## Screen map
+
+1. Momentum score, recent-period comparison, and detailed line chart.
+2. Subscriber-loss analysis.
+3. First-48-hour forecast.
+4. View-velocity decay and shelf-life classes.
+5. Pearson/Spearman correlation matrix.
 
 ## Momentum score
 
-The Momentum Score summarizes the channel's growth acceleration in a single number. Based on the last 14 days of data, it shows whether the channel is trending up or slowing down.
+Momentum is a composite product score comparing subscriber and positive view change in the last 7 days with the previous 7. The card has a fixed **14-day** context and displays its current scale; on July 17, 2026, it was **-100 to 200**.
 
-| Metric | Description |
-|--------|-------------|
-| **Score** | Value between -100 and +100. Positive values indicate growth momentum, negative values signal deceleration. |
-| **Status badge** | **Rising**, **Stable**, or **Declining** — the channel's overall direction. |
-| **Subscriber Change (7d)** | Net subscriber change over the last 7 days and percentage difference vs. the previous 7 days. |
-| **View Change (7d)** | Total view change over the last 7 days and comparison with the prior period. |
+| Field | Unit / interpretation |
+|---|---|
+| **Momentum Score** | Unitless composite score. Zero is the model center, not “no growth.” |
+| **Health / Trend** | Current excellent-to-critical and accelerating-to-decelerating product classes. |
+| **Subscriber / View Change** | Raw count in the last 7 days; the percentage below compares it with the previous 7. |
+| **Direction** | Whether subscriber and view movement are both up, both down, or mixed. |
 
-The **Insights** section below the score provides AI-powered short commentary.
+When previous-period change is near zero, relative change can be large. The model applies a channel-scale floor, but the result remains sensitive. Do not use the score as an absolute ranking across differently sized channels.
 
-<Callout type="tip">
-Track the momentum score weekly. If a channel shows a declining trend for two consecutive weeks, review its content strategy.
-</Callout>
+### Detailed momentum, volatility, and consistency
 
----
+- **X-axis:** date.
+- **Y-axis:** 3-day moving averages derived from raw daily subscriber and view changes.
+- **Series/legend:** Subscribers and Views; the tooltip shows date and both values.
+- **Volatility:** standard deviation of daily changes. A higher value means a more variable series. Even if the UI adds a percent sign, do not read it as “percent of subscribers.”
+- **Consistency:** a 0–100 product score relating volatility to average subscriber change. When the mean is near zero, small movements can strongly affect it.
 
-## Subscriber churn analysis
+The moving average reacts later than a daily reversal and does not fill missing days.
 
-Churn analysis measures how well the channel retains its subscribers.
+## Subscriber-loss analysis
 
-| Metric | Description |
-|--------|-------------|
-| **Churn rate** | Percentage of subscribers lost during the period. |
-| **Churn velocity** | Average daily subscriber loss count. |
-| **Daily change timeline** | Chart showing subscriber gains and losses by day. |
-| **Weekly breakdown** | Week-over-week comparison — is churn accelerating or decelerating. |
+This card cannot see actual YouTube unsubscribe events. It is a **30-day proxy derived from changes in the public subscriber total**.
 
-<Callout type="note">
-Some level of subscriber churn is normal. Viewers naturally lose interest over time. What matters is that the churn rate doesn't exceed the acquisition rate.
-</Callout>
+| Metric | Definition |
+|---|---|
+| **Churn Rate** | Absolute sum of negative daily subscriber changes ÷ subscriber count at period start, percent. |
+| **Negative Days** | Days when the subscriber total fell from the prior record. |
+| **Total Gain / Loss / Net Change** | Raw sums of positive and negative daily changes. |
+| **Daily chart** | X is date, y is daily subscriber change; zero separates gains and losses. |
+| **Weekly summary** | The same public-change proxy grouped into weeks. |
 
----
+YouTube rounding, cleanup, and data corrections can create negative days. The card cannot identify who unsubscribed or prove that a piece of content caused loss.
 
-## First 48-hour forecast
+## First-48-hour forecast
 
-Analyzes the early performance of newly published videos and generates forecasts for future uploads.
+The card shows early views for recent videos alongside the channel's available 48-hour sample.
 
-| Element | Description |
-|---------|-------------|
-| **Early performance summary cards** | Predicted average views, likes, and engagement within the first 48 hours. |
-| **Per-video forecast table** | First 48-hour performance prediction for each recent video. |
-| **Engagement trajectory** | How engagement rate changes after publication. |
+| Field | Reading |
+|---|---|
+| **Average 48h Views** | Mean of eligible videos with an actual 48-hour snapshot. |
+| **Videos Analyzed** | Recent videos included in the table. |
+| **Age** | Hours since publication. A video younger than 48 hours has a live projection. |
+| **Current Views** | Current cumulative count. |
+| **Predicted 48h** | Simple extension of current pace for a young video; actual 48-hour snapshot for an older video when available. |
 
-This section helps calibrate your expectations before publishing a new video.
-
-<ProTip>
-Compare first 48-hour forecasts with actual results. Videos that outperform the forecast represent the channel's strengths.
-</ProTip>
-
----
+Publish time and view snapshots are required. `—` means insufficient 48-hour data, not zero. A few early hours can produce an extreme projection; do not treat it as a confidence band, and compare it with the actual value after 48 hours.
 
 ## View velocity decay
 
-Analyzes how quickly view velocity drops after a video is published. Defines two main video categories:
+This **All Data** card derives daily gains from cumulative daily views and keeps the final snapshot when several exist on the same calendar day.
 
-| Category | Description |
-|----------|-------------|
-| **Viral** | Videos that get high initial views but drop off quickly. |
-| **Evergreen** | Videos that continue to receive steady views over a long period. |
+| Class | Reading |
+|---|---|
+| **Evergreen** | Daily view velocity halves late or not within the observed window. |
+| **Long Tail** | Meaningful velocity continues after the initial decline. |
+| **Normal** | The product's middle shelf-life class. |
+| **Viral Burst** | High initial velocity halves quickly; it is not a guarantee of viral success. |
 
-| Element | Description |
-|---------|-------------|
-| **Dominant category** | Whether the channel's videos lean viral or evergreen. |
-| **Category distribution chart** | Visual split of videos between viral and evergreen. |
-| **Top viral videos** | Videos that captured the highest view momentum right after publishing. |
-| **Top evergreen videos** | Videos that continue attracting views long after publication. |
+**View half-life** is the first observed day when daily velocity falls to half of day-one velocity. Pie slices are classes and values are video counts; the tooltip shows class/count and the legend maps colors. Videos with fewer than two daily snapshots are **insufficient data** and excluded from the dominant class.
 
-<Callout type="tip">
-Channels with a high evergreen ratio draw traffic from search. Viral-heavy channels depend on the suggested videos feed.
-</Callout>
-
----
+Half-life is sensitive to video age, sync gaps, and whether day one was partial. Do not infer SEO traffic automatically from an Evergreen class.
 
 ## Correlation analysis
 
-Statistically measures the relationships between channel metrics.
+The **All Data** card compares pairs among duration, views, likes, comments, and engagement rate for eligible videos.
 
-| Element | Description |
-|---------|-------------|
-| **Correlation matrix** | Table showing relationships between metrics (e.g., the link between views and engagement). |
-| **Method** | Choose between Pearson or Spearman correlation coefficients. |
-| **Sample size** | Number of data points included in the analysis. |
+| Control / field | Meaning |
+|---|---|
+| **Straight-line trend (Pearson)** | Linear co-movement of two numeric variables; sensitive to outliers. |
+| **Ranked trend (Spearman)** | Monotonic relationship between ranks; more resistant to a few extremes. |
+| **Sample** | Videos included. The UI states the minimum recommended for reliable interpretation. |
+| **Matrix cell** | Coefficient from `-1…+1`; sign is direction and absolute size is strength. |
+| **`—` cell** | Not enough evidence in this sample; it does not mean a zero relationship. |
 
-**Interpreting correlation values:**
+Rows and columns are metrics; the diagonal compares a metric with itself. Colors distinguish strong positive, strong negative, weak, and insufficient-evidence cells. The title/tooltip explains insufficient evidence.
 
-| Value | Meaning |
-|-------|---------|
-| **+0.7 to +1.0** | Strong positive relationship — when one metric rises, so does the other. |
-| **+0.3 to +0.7** | Moderate positive relationship. |
-| **-0.3 to +0.3** | Weak or insignificant relationship. |
-| **-0.7 to -0.3** | Moderate negative relationship. |
-| **-1.0 to -0.7** | Strong negative relationship — one rises while the other falls. |
+Correlation is not causation. Topic, video age, format, and channel size can be confounders. Testing many pairs also raises the chance of a coincidental relationship; use the result as a hypothesis.
 
-<Callout type="note">
-Correlation doesn't imply causation. A high correlation between two metrics doesn't mean one causes the other. However, it does provide useful strategy clues.
-</Callout>
+## Shared states
 
----
+| State | Action |
+|---|---|
+| **Loading** | Do not record a score or forecast until the skeleton completes. |
+| **Insufficient history** | Wait for the card's fixed sync window; widen the period where applicable. |
+| **`—` / insufficient evidence** | Do not replace it with zero; the sample or snapshot is missing. |
+| **Error** | Refresh and retry later. |
+| **Locked detail** | Read the basic card and follow the current plan message. |
+
+## Practice — Coğrafyanın Kodları
+
+**Verified July 17, 2026.**
+
+1. Open **Coğrafyanın Kodları → Predictions** and record each card's period badge.
+2. Separate the raw last-7-day changes from percentage differences versus the prior 7; do not call momentum a certain future result.
+3. Read volatility with consistency and add a caution if the mean is near zero.
+4. Describe the loss card as a “public subscriber-count decline proxy.”
+5. Distinguish a live first-48-hour projection from `—` or an observed value.
+6. Record the dominant decay class together with videos analyzed.
+7. Switch Pearson and Spearman for one metric pair; if coefficient or evidence changes, note a possible reason.
+
+## Interpretation limits
+
+- Forecasts change as new data arrives; snapshot timing and video age matter.
+- Momentum and consistency are product scores, not financial or statistical guarantees.
+- The loss card does not measure individual churn or its cause.
+- Correlation and classification do not replace an experiment.
 
 ## What's next?
 
 | Guide | Topic |
-|-------|-------|
-| [Video Analysis](/academy/en/video-analysis) | Video list, top performers, and video detail page. |
-| [Advanced Analytics](/academy/en/advanced-analytics) | Market share, upload time heatmap, and title analysis. |
+|---|---|
+| [Video Analysis](/academy/en/video-analysis) | One-video score, 24/48-hour velocity, rank, and SEO. |
+| [Advanced Analytics](/academy/en/advanced-analytics) | Benchmarks, outliers, timing, and revenue estimates. |

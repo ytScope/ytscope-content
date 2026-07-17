@@ -1,163 +1,168 @@
 ---
 title: "Channel Management"
-description: "Learn how to add, remove, filter channels and compare multiple channels side by side in YTScope."
-lastUpdated: "2026-03-08"
+description: "Add channels with the right role, filter or remove them, understand preparation and limit states, and compare two channels."
+lastUpdated: "2026-07-17"
 order: 3
 ---
 
-# Channel management
-
-The My Channels page lets you manage all your tracked YouTube channels in one place. Add channels, assign roles, apply filters, and compare competitors side by side.
+By the end of this guide, you can manage your tracked list on **My Channels** and start your first two-channel comparison.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/channels-list.webp"
-  alt="My Channels page overview"
-  caption="My Channels page — all tracked channels displayed in a grid layout."
+  alt="Channels and Compare tabs on My Channels"
+  caption="My Channels — roles, filters, usage, and Add Channel controls manage the tracked list."
 />
-
-The page has two tabs:
-
-| Tab | Purpose |
-|-----|---------|
-| **Channels** | List, filter, and manage your tracked channels. |
-| **Compare** | Compare selected channels by metrics side by side. |
 
 ---
 
-## Channels tab
+## Before you begin
 
-This tab displays all channels you're tracking. The toolbar at the top provides filtering and channel management controls.
+- Have the channel name, `@handle`, or YouTube channel URL ready.
+- Decide whether the channel belongs to you. **My Channel**, **Competitor**, and **Watchlist** create different comparison contexts.
+- The **Channel Limit** indicator shows current account usage. This guide does not assume a fixed channel or removal allowance.
+- A new channel's analysis can remain in a data-preparation state after its card becomes visible.
 
-### Filters
+## How to reach this screen
 
-Use the filter buttons at the top to narrow the channel list by role.
+Select **Channels** from the left navigation. The page heading is **My Channels**, and it contains two main tabs:
 
-| Filter | Channels shown |
-|--------|----------------|
-| **All** | Every tracked channel. |
-| **Own** | Only your channel marked as **"Own"**. |
-| **Competitor** | Only channels marked as **"Competitor"**. |
+| Tab | Purpose |
+|---|---|
+| **Channels** | Search, filter, sort, and manage tracked channels. |
+| **Compare** | Inspect at least two tracked channels in the same context. |
 
-Next to the filter buttons, the **channel limit indicator** shows your usage. For example, **12/50** means you've used 12 of your 50 channel slots.
+## Controls on the Channels tab
+
+### Filters and sorting
+
+| Control | What it does |
+|---|---|
+| **All** | Shows every tracked role. |
+| **My Channels** | Shows the channel assigned the **My Channel** role. |
+| **Competitors** | Shows channels assigned the **Competitor** role. |
+| **Watchlist** | Shows channels monitored without treating them as competitors. |
+| Sorting | Reorders the list by name, subscribers, or date added. |
+| **Channel Limit** | Explains used and currently available channel access. |
+
+If a filter is empty, do not assume the channel was removed; return to **All** first.
 
 ### Channel cards
 
-Each channel appears as a card. The card displays the following information:
+| Field | How to read it |
+|---|---|
+| Avatar, channel name, and `@handle` | Check them together to identify the correct channel. |
+| Role badge | Shows whether the channel is **My Channel**, **Competitor**, or **Watchlist**. |
+| Subscribers and views | The main values on the card; the smaller values below describe period movement. |
+| Sparkline | An axis-free direction summary; use the main number for the exact value. |
+| Three-dot menu | Opens management actions such as **Change Type** and **Remove Channel**. |
 
-| Field | Description |
-|-------|-------------|
-| **Avatar and name** | Channel profile image and name. Click to open the channel detail page. |
-| **Handle** | The channel's YouTube username (e.g., @dopinghafiza). |
-| **Role badge** | Shows the channel's relation type: **Own**, **Competitor**, or **Watchlist**. |
-| **Subscribers** | Current subscriber count and 7-day change percentage. |
-| **Total views** | The channel's total view count and trend percentage. |
-| **Sparkline** | A small trend chart that visually summarizes subscriber and view changes. |
-
-The colored line on the left edge of the card indicates the trend: green for growth, red for decline, gray for no change.
-
-<Callout type="tip">
-Click the three-dot menu (⋯) on any card to change the channel's relation type or remove it from tracking.
+<Callout type="note">
+The main total and the smaller period change are not the same measurement. Read the sign and period context before interpreting a percentage.
 </Callout>
 
----
+## Add a channel
 
-## Adding a channel
-
-Click the **"+ Add Channel"** button in the top-right corner to add a new channel.
+**Add Channel** opens the search and role-selection dialog.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/channels-add-modal.webp"
-  alt="Add Channel modal"
-  caption="Add Channel modal — search, select a role, and add."
+  alt="Add Channel dialog accepting a channel name, handle, or URL"
+  caption="Add Channel — first find the correct channel, then choose its role with Add as."
 />
 
-<Step number={1} title="Search for a channel">
-Type a channel name, @handle, or YouTube URL into the search box. Results appear automatically after you enter at least 3 characters.
+<Step number={1} title="Search for the channel">
+Enter a channel name, `@handle`, or full YouTube channel URL. If a minimum-length message appears, enter more characters.
 </Step>
 
-<Step number={2} title="Select a role">
-Choose the role for the channel:
-
-| Role | Description |
-|------|-------------|
-| **Own** | Your YouTube channel. Only 1 channel can have this role. |
-| **Competitor** | Competitor channels you want to monitor. |
-| **Watchlist** | Channels you follow for inspiration or reference. |
+<Step number={2} title="Verify the result">
+Check the avatar, channel name, and handle. If no database result matches, use the on-screen option to add it from YouTube.
 </Step>
 
-<Step number={3} title="Add the channel">
-Select the channel from the search results. It's added to your list and data loads within a few minutes.
+<Step number={3} title="Choose the role">
+Use **Add as** to select the role that matches your purpose.
 </Step>
 
-<Callout type="note">
-If the channel doesn't appear in search results, use the **"Add by URL or ID"** option. You can paste a YouTube channel URL directly.
+| Role | Effect |
+|---|---|
+| **My Channel** | Used as your reference on the Dashboard and in comparisons. When assigning a different channel, read the consequence and confirmation shown on screen. |
+| **Competitor** | Included in competitor-week, score, and comparison contexts. |
+| **Watchlist** | Tracked without necessarily appearing in competitor-focused summaries. |
+
+<Step number={4} title="Complete the addition">
+Select the add action on the result. Keep the dialog open until **Adding...** completes. The visible channel card confirms the record; analysis data may still be preparing.
+</Step>
+
+## Change a role or remove a channel
+
+Open the three-dot menu on a channel card.
+
+- **Change Type** changes the channel's context in the app. Recheck the Dashboard and Compare sections afterward.
+- **Remove Channel** stops tracking the channel. The confirmation dialog shows current removal usage and any next-change date.
+
+<Callout type="warning">
+Read the usage and consequence text in the confirmation dialog before removing a channel. Trust the current account message rather than an old number in a guide.
 </Callout>
 
-<ProTip>
-Add your own channel with the **"Own"** role. This way, the comparison tab highlights your performance relative to competitors.
-</ProTip>
-
----
-
-## Compare tab
-
-The Compare tab lets you analyze your tracked channels side by side using key metrics. Comparison sections appear once you select at least 2 channels.
+## Compare two channels
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/comparison-selector.webp"
-  alt="Compare tab — channel selector"
-  caption="Compare tab — select channels, set the period and metric."
+  alt="Channel selection area on the Compare tab"
+  caption="Compare — choose two channels from your tracked list to reveal results."
 />
 
-### Channel selection and controls
+1. Open **Compare** on **My Channels**.
+2. Choose the first channel in the selection area.
+3. Choose a second channel and confirm both selected cards or indicators.
+4. If period and metric controls are visible, set both for the same comparison question.
+5. When results appear, read the channel summaries first, then the growth chart and other analysis sections.
 
-Three control areas sit at the top of the page:
+The current account may limit comparison selection. Follow the selection counter and locked-state text; this guide does not hard-code a maximum.
 
-| Control | Purpose |
-|---------|---------|
-| **Channel cards** | Select channels to compare. You can choose up to **5 channels**. |
-| **Period selector** | Comparison period: **7 days**, **30 days**, **90 days**, or **365 days**. |
-| **Metric selector** | Chart metric: **Subscribers**, **Views**, or **Engagement**. |
+### Read the growth chart
 
-Quick selection buttons speed up the process:
+- The horizontal axis is time; the vertical axis is the selected metric.
+- Each color or series belongs to one channel; confirm the legend label.
+- A tooltip shows exact channel values at the same date.
+- A total and growth during a period are different; check the active metric label.
+- If days are missing or data is preparing, do not treat the distance between lines as conclusive.
 
-| Button | Action |
-|--------|--------|
-| **All Competitors** | Selects all competitor channels in one click. |
-| **Top 3** | Selects the top 3 channels by subscriber count. |
+## Practice with Coğrafyanın Kodları
 
-Your own channel stands out with a **"You"** badge. It always appears as the reference point in comparison results.
+**Verified July 17, 2026.** This exercise does not depend on changing channel values.
 
-### Comparison sections
+1. Find the **Coğrafyanın Kodları** card under **All**; check its name, handle, and role badge.
+2. If it is absent, search for it in **Add Channel**. If the app says it is already tracked, do not create another record.
+3. Open **Compare**.
+4. Select **Coğrafyanın Kodları** first and another tracked channel serving a similar topic or audience second.
+5. Confirm both selections, then read the chart with the same period and metric.
+6. Do not infer why one line leads from the chart alone; open Channel Analysis and inspect period videos and daily movement.
 
-Once you select 2 or more channels, the following analysis sections appear:
+## Loading, empty, error, and locked states
 
-| Section | What it shows |
-|---------|---------------|
-| **Comparison cards** | Summarizes each channel's subscribers, views, and video count. The top performer is marked with a crown icon. |
-| **Growth chart** | Time-series chart for the selected metric — view growth curves for all channels at once. |
-| **Growth momentum** | Each channel's growth acceleration and trend direction. |
-| **Content strategy** | Upload frequency, average views per video, and content type distribution (Shorts vs. regular). |
-| **Engagement** | Engagement rate, average likes, and comments per video. |
-| **Breakout analysis** | Detects videos that performed far above the channel's average. |
-| **Upload time** | Heatmap showing the most effective upload day and hour. |
-| **Video duration** | Average view performance by duration category. |
-| **Title keywords** | Frequency and performance analysis of the most-used title keywords. |
-| **Best videos** | Compares the most-viewed videos from each channel. |
+| State | What to do |
+|---|---|
+| **No channels added yet** | Use **Add Channel** to add the first channel. |
+| **Searching...** | Keep the query unchanged until results complete. |
+| No database match | Verify the handle or URL and try the add-from-YouTube option. |
+| Channel not found | Check the URL or handle spelling. |
+| Already tracking | Find the existing card under **All**. |
+| Channel limit reached | Review **Channel Limit** and current usage on **Subscription**. |
+| Data is being prepared | The channel was added, but analysis is not ready; check again later. |
+| Comparison is empty | Confirm that at least two channels are selected and their data is ready. |
+| General error | Retry; if it continues, contact support with the visible message and channel identity. |
 
-<Callout type="tip">
-When you change the period selector, all sections update automatically. Compare 30-day and 90-day results to distinguish short-term spikes from sustained trends.
-</Callout>
+## Troubleshooting and limits
 
-<ProTip>
-Your channel is highlighted with a **"You"** badge in comparison results. Quickly spot the metrics where you lag behind competitors and adjust your content strategy accordingly.
-</ProTip>
+- For similar channel names, verify the avatar and handle instead of relying on the name alone.
+- Competitor summaries should change after a role change; recheck the Dashboard.
+- A sparkline has no exact scale; open the channel card for detail.
+- Public channel data is prepared periodically and may not update at the same time as YouTube Studio.
+- Do not compare channels without using the same period and metric.
 
----
+## Related guides
 
-## What's next?
-
-| Guide | Topic |
-|-------|-------|
-| [Channel Analysis](/academy/en/channel-analysis) | Examine a single channel's subscriber growth, performance charts, and daily metrics. |
-| [Dashboard Guide](/academy/en/dashboard-guide) | Overview, Health Score, and AI daily summary. |
+| Guide | Next task |
+|---|---|
+| [Channel Analysis](/academy/en/channel-analysis) | Open one channel's charts, period videos, and daily data. |
+| [Dashboard Guide](/academy/en/dashboard-guide) | Check how role changes affect weekly summaries. |

@@ -1,136 +1,175 @@
 ---
 title: "Video Analizi"
-description: "Video listesi, en iyi videolar, video detay sayfası, performans notu ve SEO analizini inceleyin."
-lastUpdated: "2026-03-08"
+description: "Video listesini, filtreleri, lider tablolarını ve video detayındaki skor, grafik, 48 saat, sıra, yüzdelik ve SEO alanlarını okuyun."
+lastUpdated: "2026-07-17"
 order: 7
 ---
 
-# Video analizi
-
-Videolar sayfası, takip ettiğiniz tüm kanalların videolarını tek ekranda listeler. Filtreleme, sıralama, en iyi performans gösteren videoları görme ve tek bir videonun detaylı analizine ulaşma imkanı sunar.
+**Videolar** sayfası takip ettiğiniz kanalların içeriklerini bulmanızı, sıralamanızı, karşılaştırma için seçmenizi ve tek video bağlamında değerlendirmenizi sağlar.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/videos-list.webp"
-  alt="Videolar sayfası liste görünümü"
-  caption="Videolar sayfası — tüm kanalların videoları filtrelenebilir grid düzeninde."
+  alt="Videolar Liste sekmesi"
+  caption="Liste — dönem, arama, kanal, format, sıralama ve video seçimi."
 />
 
-Sayfa üç sekmeden oluşur:
+## Sonuç, ön koşullar ve yol
 
-| Sekme | İçerik |
-|-------|--------|
-| **Liste** | Tüm videoları filtreleyin, arayın ve sıralayın. |
-| **En İyiler** | Dönemin en çok izlenen, beğenilen ve yorum alan videoları. |
-| **Karşılaştır** | Seçtiğiniz videoları yan yana karşılaştırın. |
+- **Yol:** ana menüden **Videolar**; detay için bir video kartına tıklayın.
+- En az bir takip edilen ve senkronlanmış kanala ihtiyacınız vardır.
+- Üst dönem ve kanal seçimi **Liste** ile **En İyiler** sonuç kümesini belirler. Video detayında ayrı bir dönem seçicisi bulunur.
+- Planınız hangi dönemlerin ve kaç karşılaştırma seçiminin açık olduğunu belirler; ekrandaki limit yetkilidir.
 
----
+## Ekran haritası
+
+1. **Liste:** filtre, sıralama, sayfalama ve seçim.
+2. **En İyiler:** görüntülenme, beğeni, yorum ve etkileşim liderleri.
+3. **Karşılaştır:** Liste'den seçilen videoların analizi.
+4. Video detay başlığı ve özet metrikler.
+5. Performans notu, günlük grafik, hız ve etkileşim.
+6. Kanal sırası/yüzdeliği ve SEO skoru.
 
 ## Liste sekmesi
 
-Liste sekmesinde takip ettiğiniz tüm kanalların videoları görünür. Üst kısımdaki araç çubuğu filtreleme kontrolleri içerir.
+| Kontrol | Etki |
+|---|---|
+| **Dönem** | Yayın tarihi seçili aralıkta olan videoları getirir. |
+| **Arama** | Video başlığında metin arar; sonuç yoksa filtreyi temizleyin. |
+| **Kanal** | Tüm takip edilen kanallar veya tek kanal. Tek kanal varsa kontrol görünmeyebilir. |
+| **Tümü / Normal / Shorts** | Format filtresi. |
+| **Tarih / İzlenme / Beğeni / Etkileşim** | Sıralama metriği. |
+| **Azalan / Artan** | Sıralama yönü. |
+| **Önceki / Sonraki** | Sonuç sayfaları; filtre değişince ilk sayfaya dönülür. |
 
-| Kontrol | İşlev |
-|---------|-------|
-| **Arama** | Video başlığında anahtar kelime arayın. |
-| **Kanal filtresi** | Tek bir kanalın videolarını görüntüleyin veya tümünü listeleyin. |
-| **İçerik türü** | **Tümü**, **Normal** veya **Shorts** videolar arasında filtreleyin. |
-| **Sıralama** | Tarih, izlenme, beğeni veya etkileşime göre sıralayın. |
-| **Dönem** | Zaman aralığını seçin (7 gün, 30 gün, 90 gün, 365 gün). |
+Kartta küçük resim, süre/Shorts rozeti, başlık, kanal, görüntülenme, beğeni, yorum ve yayın yaşı bulunur. Sayılar güncel kümülatif değerlerdir; dönem yalnız hangi videoların listeye gireceğini belirleyebilir.
 
-Her video kartı küçük resim, başlık, kanal adı, izlenme sayısı, beğeni ve yorum sayısını gösterir. Karta tıkladığınızda video detay sayfasına gidersiniz.
+### Karşılaştırma seçimi
 
----
+Kartın seçim kutusu videoyu alt seçim çubuğuna ekler. Çubuk seçili sayıyı, **Temizle** ve **Karşılaştır** eylemlerini gösterir. En az iki video gerekir; üst sınır planınızın canlı karşılaştırma limitidir. Limiti başka bir sayfadaki genel sayaçtan çıkarmayın. Filtre veya sayfa değişse de seçiminizi çubukta doğrulayın.
 
 ## En İyiler sekmesi
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/videos-top.webp"
-  alt="En İyiler sekmesi"
-  caption="En İyiler — dönemin en yüksek performanslı videoları, podyum düzeninde."
+  alt="Videolar En İyiler sekmesi"
+  caption="En İyiler — seçili dönem ve kanal kümesindeki liderler."
 />
 
-Bu sekme, seçilen dönemdeki en iyi videoları sıralar. Dört metriğe göre sıralama yapın:
+| Kontrol | Değer ve birim |
+|---|---|
+| **İzlenme** | Kümülatif görüntülenme adedi. |
+| **Beğeni** | Kümülatif beğeni adedi. |
+| **Yorum** | Kümülatif yorum adedi. |
+| **Etkileşim** | `(beğeni + yorum) ÷ görüntülenme × 100`, yüzde. |
 
-| Sıralama | Gösterdiği |
-|----------|------------|
-| **İzlenme** | En çok izlenen videolar. |
-| **Beğeni** | En çok beğenilen videolar. |
-| **Yorum** | En çok yorum alan videolar. |
-| **Etkileşim** | En yüksek etkileşim oranına sahip videolar. |
-
-İlk 3 video podyum düzeninde öne çıkar. Altında ise sıralamanın devamı listelenir.
-
-<Callout type="tip">
-Farklı metriklere göre sıralamayı değiştirin. İzlenmede düşük ama etkileşimde yüksek videolar, niş ama sadık bir kitleye ulaşmış olabilir.
-</Callout>
-
----
+İlk üç video podyumda, kalanlar sıralı listede görünür. Başlıktaki dönem ve kanal filtresi evreni belirler. Bir videonun etkileşim lideri olması görüntülenme lideri olduğu anlamına gelmez; adet ile oranı ayırın.
 
 ## Video detay sayfası
-
-Video listesinden herhangi bir videoya tıkladığınızda detay sayfası açılır.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/video-detail-header.webp"
   alt="Video detay sayfası"
-  caption="Video detay sayfası — performans skoru, metrikler ve kanal sıralaması."
+  caption="Video detayı — başlık, performans skoru, dönem metrikleri ve kanal bağlamı."
 />
 
-### Video başlığı
+Başlıkta küçük resim, süre, Shorts rozeti, yayın yaşı, kanal/handle ve **YouTube'da İzle** bulunur. Dönem seçicisi video yaşından uzun, anlamsız pencereleri gizleyebilir; ipucu görünüyorsa ürünün geçerli dönem kümesini kullanın.
 
-Sayfanın üst kısmında videonun temel bilgileri yer alır:
+### Özet metrikler ve yüzde dili
 
-| Alan | Açıklama |
-|------|----------|
-| **Küçük resim** | Video önizleme görseli ve süre. |
-| **Başlık** | Video başlığı. |
-| **Yayın tarihi** | Videonun yayınlandığı tarih. |
-| **Kanal** | Videonun ait olduğu kanal adı ve handle'ı. |
-| **YouTube'da İzle** | Videoyu YouTube'da yeni sekmede açar. |
+| Kart | Kapsam |
+|---|---|
+| **İzlenme / Beğeni / Yorum** | Güncel kümülatif adet; değişim etiketi seçili detay döneminin ilk ve son snapshot'ına göre yüzdedir. |
+| **Etkileşim** | Güncel oran, yüzde. |
+| **Görüntülenme/Gün** | Yayından bugüne kümülatif görüntülenmenin video yaşına bölümü; son 24 saat hızı değildir. |
 
-### Performans skoru
+`%20 artış`, ilk değere göre göreli büyümedir. Etkileşim `4.0%`dan `5.0%`a çıktıysa fark **1 yüzde puan**, göreli artış ise **%25**tir. UI “kanal ortalamasına göre” farkı yüzde puan olarak verdiğinde bunu yüzde büyüme diye yazmayın.
 
-Sağ üst köşedeki dairesel gösterge, videonun genel performans notunu gösterir. Puan 0-100 arası olup harf notu (A+ ile F arası) ile ifade edilir.
+### Performans notu ve alt skorlar
 
-| Alt skor | Açıklama |
-|----------|----------|
-| **İzlenme Performansı** | Videonun izlenme sayısının kanal ortalamasına kıyası. |
-| **Etkileşim** | Beğeni, yorum ve paylaşım oranı. |
-| **Hız** | Videonun ilk günlerdeki izlenme ivmesi. |
-| **SEO Skoru** | Başlık, açıklama ve etiketlerin arama optimizasyonu. |
+Genel skor 0–100 ve **A+–F** harf notudur. Dört alt skoru birleştiren ürün sezgisidir:
 
-Her alt skor renkli çubukla gösterilir: yeşil iyi, sarı orta, kırmızı zayıf.
+| Alt skor | Girdi |
+|---|---|
+| **İzlenme Performansı** | Güncel görüntülenmenin kanal ortalamasına göre konumu. |
+| **Etkileşim** | Video etkileşim oranının kanal ortalamasına göre konumu. |
+| **Hız** | Mevcut 24/48 saat görünümü ve hız trendi bulunabilirliği. |
+| **SEO** | Başlık, açıklama, etiket ve küçük resim alt skorları. |
 
-### Genel bakış metrikleri
+Not, YouTube algoritmasının verdiği bir kalite puanı değildir. Formül/eşikler ürünle değişebilir; alt skoru ve ham metriği birlikte okuyun. Yeni veya seyrek snapshot'lı videoda hız alt skoru sınırlı kanıta dayanabilir.
 
-Performans skorunun altında 4 özet kart yer alır:
+### Günlük performans grafiği
 
-| Kart | Açıklama |
-|------|----------|
-| **İzlenme** | Videonun toplam izlenme sayısı. |
-| **Beğeni** | Toplam beğeni sayısı. |
-| **Yorum** | Toplam yorum sayısı. |
-| **Etkileşim** | Etkileşim oranı — her 100 izleme başına etkileşim yüzdesi. |
+- **X ekseni:** tarih.
+- **Sol Y ekseni / alan:** görüntülenme adedi.
+- **Sağ Y ekseni / çubuklar:** beğeni ve yorum adetleri.
+- **Kesikli referans:** yeterli gün olduğunda ortalama görüntülenme.
+- **Tooltip:** tarih, görüntülenme, beğeni ve yorum.
 
-Sarı vurgu banner'ı varsa, video belirli bir metrikte kanalın en iyileri arasındadır (ör. "Bu video etkileşimde kanalın en iyilerinden").
+En az iki günlük kayıt yoksa grafik yerine kanal ortalaması karşılaştırması görünür. Eksik günler çizgide bağlanmaz. Farklı eksenlerdeki alan ve çubuk yüksekliklerini doğrudan oranlamayın.
 
 ### Video vs kanal ortalaması
 
-Her metrik, kanalın genel ortalaması ile karşılaştırılır. Videonun izlenme, beğeni ve yorum sayısı kanalın ortalamasının yüzde kaçına denk geldiğini görürsünüz.
+Her satır video değeri ile kanal ortalamasını gösterir. Çubuğun orta işareti kanal ortalamasıdır; alt metindeki yüzde, `video değeri ÷ kanal ortalaması × 100` oranıdır. `150%`, kanal ortalamasının 1,5 katı demektir; “%150 daha fazla” demek değildir. Kanal ortalaması farklı yaş ve formatlardaki videoları içerebilir.
 
-### Kanal sıralaması
+### İzlenme hızı ve 48 saat kullanılabilirliği
 
-Videonun kanaldaki tüm videolar arasındaki sırası gösterilir. **"Top 10%"** gibi rozetler videonun kanaldaki konumunu özetler. İzlenme, beğeni ve yorum bazlı ayrı sıralamalar listelenir.
+| Alan | Birim / ön koşul |
+|---|---|
+| **Son 24 Saat / Son 48 Saat** | Uygun snapshot'lardan türetilen görüntülenme kazanımı, adet. |
+| **Günlük Hız** | Gözlenen saat aralığına normalize edilmiş görüntülenme/gün. |
+| **Trend** | Karşılaştırılabilir iki pencere varsa hızlanıyor/yavaşlıyor/stabil. |
 
-<ProTip>
-Performans skoru düşük ama etkileşim alt skoru yüksek olan videolar, küçük ama ilgili bir kitleye ulaşmış demektir. Bu videoların konusunu gelecek içeriklere taşıyın.
-</ProTip>
+Kart tüm değerler sıfır veya kullanılamazsa gizlenir. `0`, veri yok ile gerçek sıfırı ayırmak için tooltip ve video yaşını kontrol edin. 48 saat dolmamış videoda 48 saat toplamı gerçekleşmiş değer değildir.
 
----
+### Kanal sırası ve yüzdelik
+
+`#sıra / toplam video` içinde **#1 en iyi** sonuçtur. İzlenme, beğeni, yorum ve etkileşim için ayrı sıralar vardır. Ekrandaki yüzde `sıra ÷ toplam video × 100` yönündedir; **daha düşük yüzde daha iyi sıraya** karşılık gelir. Bu yüzden `0%` veya çok küçük değer “kötü puan” değildir. Yüzdeyi her zaman sıra ve toplam videoyla birlikte yazın.
+
+### SEO skoru
+
+SEO skoru 0–100 bir ürün sezgisidir. Görünür alt ölçütler:
+
+- başlık uzunluğu;
+- açıklama varlığı/uzunluğu;
+- etiket sayısı;
+- özel küçük resim kullanımı.
+
+Kart kategori, uygun etiketlerin bir bölümünü ve her alt skorun güncel ideal metnini gösterir. Skor arama sırası veya görüntülenme garantisi değildir; konu talebi, izleyici niyeti, başlık kalitesi ve izlenme davranışı gibi faktörleri ölçmez.
+
+## Durumlar ve sorun giderme
+
+| Durum | Eylem |
+|---|---|
+| **Liste yükleniyor** | İskelet bitene kadar seçim yapmayın. |
+| **Sonuç yok** | Arama, kanal, format ve dönemi temizleyin/genişletin. |
+| **Hata** | Sayfayı yenileyin; devam ederse daha sonra deneyin. |
+| **Detay bulunamadı/erişilemez** | Videonun takip ettiğiniz aktif bir kanala ait olduğunu doğrulayın. |
+| **Grafik yok** | En az iki snapshot bekleyin; kanal karşılaştırma kartını kullanın. |
+| **Hız yok** | Video yaşı ve 24/48 saat snapshot'ını kontrol edin. |
+| **Karşılaştır devre dışı** | En az iki, en fazla ekrandaki plan limiti kadar video seçin. |
+
+## Uygulama — Coğrafyanın Kodları
+
+**Doğrulama tarihi: 17 Temmuz 2026.**
+
+1. **Videolar → Liste** içinde Coğrafyanın Kodları'nı seçin; dönem, Normal/Shorts ve sıralama yönünü not edin.
+2. Aynı sonuç kümesini İzlenme ve Etkileşim ile sıralayın; liderlerin neden farklı olabileceğini yazın.
+3. İki video seçin, seçim çubuğundaki plan limitini kaydedin ve sonra seçimi temizlemeyin.
+4. Bir video detayında kümülatif görüntülenme, dönem değişimi ve görüntülenme/gün değerini üç ayrı birimle açıklayın.
+5. Performans notunun en güçlü ve en zayıf alt skorunu ham metriğiyle doğrulayın.
+6. Kanal sırası, toplam video ve yüzdeliği birlikte okuyun; küçük yüzdenin yönünü açıklayın.
+7. SEO alt skorlarından birini geliştirme hipotezi olarak yazın, sonuç garantisi vermeyin.
+
+## Yorum sınırları
+
+- Dönem filtresi, kümülatif kartların değerini değil sonuç kümesini seçebilir.
+- Yaşı ve formatı çok farklı videoları ham toplamla karşılaştırmak adil değildir.
+- Not, SEO ve yüzdelik ürün tanımlarıdır; YouTube'un resmi kalite sinyalleri değildir.
+- Özel YouTube Studio trafik kaynakları ve izleyici tutma verileri bu ekranda yoktur.
 
 ## Sırada ne var?
 
 | Rehber | Konu |
-|--------|------|
-| [Video Karşılaştırma](/academy/tr/video-karsilastirma) | İki veya daha fazla videoyu yan yana karşılaştırın. |
-| [Sıralamalar](/academy/tr/siralamalar) | Kanalları metrik bazlı sıralayın ve podyumu görün. |
+|---|---|
+| [Video Karşılaştırma](/academy/tr/video-karsilastirma) | Seçtiğiniz videoları adil bağlam ve normalize grafiklerle karşılaştırın. |
+| [Gelişmiş Analitik](/academy/tr/gelismis-analitik) | Kanal düzeyinde benchmark, desen ve aykırı videoları okuyun. |

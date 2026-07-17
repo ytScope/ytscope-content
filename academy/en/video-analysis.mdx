@@ -1,136 +1,175 @@
 ---
 title: "Video Analysis"
-description: "Explore the video list, top performers, video detail page, performance grade, and SEO analysis."
-lastUpdated: "2026-03-08"
+description: "Use the video list, filters, leaderboards, and detail score, chart, 48-hour velocity, rank, percentile, and SEO fields correctly."
+lastUpdated: "2026-07-17"
 order: 7
 ---
 
-# Video analysis
-
-The Videos page lists all videos from your tracked channels in one place. Filter, sort, find top performers, and access detailed analytics for any individual video.
+The **Videos** page lets you find and sort content from tracked channels, select videos for comparison, and evaluate one video in its channel context.
 
 <Screenshot
-  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/videos-list.webp"
-  alt="Videos page list view"
-  caption="Videos page — all tracked channel videos in a filterable grid layout."
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/videos-list.webp"
+  alt="Videos List tab"
+  caption="List — period, search, channel, format, sorting, and video selection."
 />
 
-The page has three tabs:
+## Outcome, prerequisites, and path
 
-| Tab | Content |
-|-----|---------|
-| **List** | Filter, search, and sort all videos. |
-| **Top** | Highest-performing videos of the selected period. |
-| **Compare** | Compare selected videos side by side. |
+- **Path:** choose **Videos** in the main navigation; select a card for detail.
+- You need at least one tracked, synced channel.
+- The top period and channel selection define the **List** and **Top** result set. Video detail has a separate period selector.
+- Your plan determines available periods and comparison selections; the on-screen limit is authoritative.
 
----
+## Screen map
+
+1. **List:** filters, sorting, pagination, and selection.
+2. **Top:** leaders by views, likes, comments, and engagement.
+3. **Compare:** analysis of videos selected from List.
+4. Video detail header and summary metrics.
+5. Performance grade, daily chart, velocity, and engagement.
+6. Channel rank/percentile and SEO score.
 
 ## List tab
 
-The List tab shows all videos from your tracked channels. The toolbar at the top provides filtering controls.
+| Control | Effect |
+|---|---|
+| **Period** | Includes videos published in the selected window. |
+| **Search** | Searches video titles; clear it when no result matches. |
+| **Channel** | All tracked channels or one channel. It may be hidden when only one exists. |
+| **All / Regular / Shorts** | Format filter. |
+| **Date / Views / Likes / Engagement** | Sort metric. |
+| **Descending / Ascending** | Sort direction. |
+| **Previous / Next** | Result pages; changing a filter returns to page one. |
 
-| Control | Purpose |
-|---------|---------|
-| **Search** | Search for keywords in video titles. |
-| **Channel filter** | View videos from a single channel or list all. |
-| **Content type** | Filter between **All**, **Regular**, or **Shorts** videos. |
-| **Sort** | Sort by date, views, likes, or engagement. |
-| **Period** | Select the time range (7 days, 30 days, 90 days, 365 days). |
+A card shows thumbnail, duration/Shorts badge, title, channel, views, likes, comments, and publish age. Counts are current cumulative values; the period can control which videos qualify rather than truncating each total.
 
-Each video card shows the thumbnail, title, channel name, view count, likes, and comments. Click a card to open the video detail page.
+### Comparison selection
 
----
+The card checkbox adds a video to the bottom selection bar. The bar shows selected count, **Clear**, and **Compare**. At least two videos are required; the upper bound is your live plan's comparison limit. Do not infer it from a general counter on another page. Verify retained selections in the bar after filtering or paging.
 
 ## Top tab
 
 <Screenshot
-  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/videos-top.webp"
-  alt="Top performers tab"
-  caption="Top — highest-performing videos displayed in a podium layout."
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/videos-top.webp"
+  alt="Videos Top tab"
+  caption="Top — leaders within the selected period and channel set."
 />
 
-This tab ranks the best videos in the selected period. Sort by four metrics:
+| Control | Value and unit |
+|---|---|
+| **Views** | Cumulative view count. |
+| **Likes** | Cumulative like count. |
+| **Comments** | Cumulative comment count. |
+| **Engagement** | `(likes + comments) ÷ views × 100`, percent. |
 
-| Sort by | Shows |
-|---------|-------|
-| **Views** | Most-viewed videos. |
-| **Likes** | Most-liked videos. |
-| **Comments** | Videos with the most comments. |
-| **Engagement** | Videos with the highest engagement rate. |
-
-The top 3 videos appear in a podium layout. The full ranking continues below.
-
-<Callout type="tip">
-Switch between different metrics. Videos with low views but high engagement may have reached a small but dedicated audience.
-</Callout>
-
----
+The first three appear on the podium and the rest in a ranked list. Period and channel filter define the cohort. An engagement leader need not be the views leader; distinguish counts from rates.
 
 ## Video detail page
 
-Click any video in the list to open its detail page.
-
 <Screenshot
-  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/video-detail-header.webp"
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/video-detail-header.webp"
   alt="Video detail page"
-  caption="Video detail page — performance score, metrics, and channel ranking."
+  caption="Video detail — header, performance score, period metrics, and channel context."
 />
 
-### Video header
+The header shows thumbnail, duration, Shorts badge, publish age, channel/handle, and **Watch on YouTube**. The selector can hide windows longer than the video's age; when a hint appears, use the product's valid period set.
 
-The top section displays the video's basic information:
+### Summary metrics and percentage language
 
-| Field | Description |
-|-------|-------------|
-| **Thumbnail** | Video preview image and duration. |
-| **Title** | Video title. |
-| **Publish date** | The date the video was published. |
-| **Channel** | Channel name and handle that owns the video. |
-| **Watch on YouTube** | Opens the video on YouTube in a new tab. |
+| Card | Scope |
+|---|---|
+| **Views / Likes / Comments** | Current cumulative count; change compares first and last snapshot in the selected detail period. |
+| **Engagement** | Current rate, percent. |
+| **Views/Day** | Cumulative views divided by lifetime age; not last-24-hour velocity. |
 
-### Performance score
+`20% growth` is relative to the starting value. If engagement moves from `4.0%` to `5.0%`, the difference is **1 percentage point**, while relative growth is **25%**. When the UI reports a difference versus channel average in points, do not call it percent growth.
 
-The circular indicator in the top-right corner shows the video's overall performance grade. The score ranges from 0 to 100 with a letter grade (A+ through F).
+### Performance grade and subscores
 
-| Sub-score | Description |
-|-----------|-------------|
-| **View Performance** | How the video's views compare to the channel average. |
-| **Engagement** | Like, comment, and share ratio. |
-| **Velocity** | The video's view momentum in its first days. |
-| **SEO Score** | Title, description, and tag optimization for search. |
+The overall 0–100 score and **A+–F** grade are a product heuristic combining:
 
-Each sub-score is shown with a colored bar: green for strong, yellow for average, red for weak.
+| Subscore | Input |
+|---|---|
+| **View Performance** | Current views relative to channel average. |
+| **Engagement** | Video engagement rate relative to channel average. |
+| **Velocity** | Available 24/48-hour movement and trend. |
+| **SEO** | Title, description, tag, and thumbnail subscores. |
 
-### Overview metrics
+This is not a YouTube algorithm quality score. Formula and thresholds can change; read the raw metric with the subscore. A new or sparsely tracked video can have limited velocity evidence.
 
-Below the performance score, 4 summary cards appear:
+### Daily performance chart
 
-| Card | Description |
-|------|-------------|
-| **Views** | Total view count. |
-| **Likes** | Total like count. |
-| **Comments** | Total comment count. |
-| **Engagement** | Engagement rate — percentage of interactions per 100 views. |
+- **X-axis:** date.
+- **Left Y-axis / area:** view count.
+- **Right Y-axis / bars:** like and comment counts.
+- **Dashed reference:** average views when enough days exist.
+- **Tooltip:** date, views, likes, and comments.
 
-If a yellow highlight banner appears, the video ranks among the channel's best in a specific metric (e.g., "This video is among the channel's best in engagement").
+With fewer than two daily records, channel-average comparison replaces the chart. Missing days are not connected. Do not compare area and bar heights directly because they use different axes.
 
 ### Video vs channel average
 
-Each metric is compared against the channel's overall average. You see what percentage of the channel average the video's views, likes, and comments represent.
+Each row shows video value and channel average. The middle marker is the average; the text ratio is `video value ÷ channel average × 100`. `150%` means 1.5 times the average, not “150% more.” The channel average can mix ages and formats.
 
-### Channel ranking
+### View velocity and 48-hour availability
 
-The video's rank among all videos on the channel is shown. Badges like **"Top 10%"** summarize the video's position. Separate rankings by views, likes, and comments are listed.
+| Field | Unit / prerequisite |
+|---|---|
+| **Last 24h / Last 48h** | View gain derived from eligible snapshots, count. |
+| **Daily Rate** | Views/day normalized from observed hours. |
+| **Trend** | Accelerating/decelerating/stable when two comparable windows exist. |
 
-<ProTip>
-Videos with a low performance score but high engagement sub-score have reached a small but highly interested audience. Carry those topics forward into future content.
-</ProTip>
+The card is hidden when all values are zero or unavailable. Use the tooltip and video age to separate no data from true zero. For a video younger than 48 hours, the 48-hour field is not a completed outcome.
 
----
+### Channel rank and percentile
+
+In `#rank / total videos`, **#1 is best**. Views, likes, comments, and engagement have separate ranks. The displayed percentage follows `rank ÷ total × 100`; therefore a **lower percentage means a better rank**. A `0%` or very small value is not a poor score. Always report percentage with rank and total.
+
+### SEO score
+
+The 0–100 SEO score is a product heuristic using visible factors:
+
+- title length;
+- description presence/length;
+- tag count;
+- custom thumbnail use.
+
+The card shows category, a subset of tags, and each factor's current ideal text. It does not guarantee search rank or views and does not measure topic demand, audience intent, title quality, or watch behavior.
+
+## States and troubleshooting
+
+| State | Action |
+|---|---|
+| **List loading** | Wait for the skeleton before selecting. |
+| **No results** | Clear or widen search, channel, format, and period filters. |
+| **Error** | Refresh; retry later if it persists. |
+| **Detail missing/inaccessible** | Confirm the video belongs to an active tracked channel. |
+| **No chart** | Wait for at least two snapshots; use channel comparison meanwhile. |
+| **No velocity** | Check video age and 24/48-hour snapshot availability. |
+| **Compare disabled** | Select at least two and no more than the live plan limit. |
+
+## Practice — Coğrafyanın Kodları
+
+**Verified July 17, 2026.**
+
+1. In **Videos → List**, select Coğrafyanın Kodları and record period, Regular/Shorts, and sort direction.
+2. Sort the same set by Views and Engagement; explain why leaders can differ.
+3. Select two videos, record the live plan limit in the selection bar, and keep them selected.
+4. In one detail page, explain cumulative views, period change, and views/day with three distinct units/scopes.
+5. Validate the strongest and weakest performance subscores against raw metrics.
+6. Read channel rank, total videos, and percentile together; explain why lower percent is better here.
+7. Turn one SEO subscore into an improvement hypothesis, not an outcome guarantee.
+
+## Interpretation limits
+
+- A period filter can select the cohort without truncating cumulative card values.
+- Comparing videos with very different ages or formats by raw totals is not fair.
+- Grade, SEO, and percentile are product definitions, not official YouTube quality signals.
+- Private YouTube Studio traffic-source and retention data is not present.
 
 ## What's next?
 
 | Guide | Topic |
-|-------|-------|
-| [Video Comparison](/academy/en/video-comparison) | Compare two or more videos side by side. |
-| [Rankings](/academy/en/rankings) | Rank channels by metrics and view the podium. |
+|---|---|
+| [Video Comparison](/academy/en/video-comparison) | Compare selected videos with fair context and normalized charts. |
+| [Advanced Analytics](/academy/en/advanced-analytics) | Explore channel-level benchmarks, trends, and anomalies. |

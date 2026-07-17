@@ -18,141 +18,199 @@ blog:
 academy:
   tr:
     - slug: getting-started
+      guideId: getting-started
       published: true
       order: 1
       title: "Başlangıç Rehberi"
-      description: "Kayıt, e-posta doğrulama, onboarding ve ilk kanal ekleme adımları."
+      description: "Hesabınızı oluşturun, e-postanızı doğrulayın, ilk kanalınızı doğru sahiplik seçimiyle ekleyin ve YTScope Paneli'ne güvenle ulaşın."
 
     - slug: dashboard-kullanimi
+      guideId: dashboard
       published: true
       order: 2
-      title: "Dashboard Kullanımı"
-      description: "Genel bakış, Health Score, Quick Wins, AI günlük özet ve uyarılar."
+      title: "Panel Kullanımı"
+      description: "Panelde kanal seçin; Kanal Sağlığı, Creator DNA, haftalık kartlar, AI analizleri ve rakip sinyallerini doğru yorumlayın."
 
     - slug: kanal-yonetimi
+      guideId: channel-management
       published: true
       order: 3
       title: "Kanal Yönetimi"
-      description: "Kanal ekleme/çıkarma, liste görünümü ve çoklu kanal karşılaştırma."
+      description: "Kanalları doğru rolle ekleyin, filtreleyin veya kaldırın; hazırlık ve limit durumlarını anlayıp iki kanalı karşılaştırın."
 
     - slug: kanal-analizi
+      guideId: channel-analysis
       published: true
       order: 4
       title: "Kanal Analizi"
-      description: "Abone büyümesi, performans grafikleri, günlük metrikler ve video özeti."
+      description: "Tek bir kanalın dönemsel büyümesini, toplam metriklerini, performans grafiklerini, videolarını ve günlük değişimlerini okuyun."
 
     - slug: gelismis-analitik
+      guideId: advanced-analytics
       published: true
       order: 5
       title: "Gelişmiş Analitik"
-      description: "Yükleme heatmap'i, engagement benchmark, mevsimsel trendler, başlık analizi ve korelasyon."
+      description: "Pazar payı, yoğunlaşma, yükleme zamanı, benchmark, aykırı video, içerik desenleri ve tahmini geliri sınırlarıyla okuyun."
 
     - slug: tahminler
+      guideId: predictions
       published: true
       order: 6
       title: "Tahminler"
-      description: "Momentum skoru, abone kaybı analizi, ilk 48 saat performansı ve velocity decay."
+      description: "Momentum, volatilite, abone kaybı vekili, ilk 48 saat, izlenme hız azalması ve korelasyonu belirsizlikleriyle okuyun."
 
     - slug: video-analizi
+      guideId: video-analysis
       published: true
       order: 7
       title: "Video Analizi"
-      description: "Video listesi, en iyi videolar, video detay sayfası ve performans notu (A+ → F)."
+      description: "Video listesini, filtreleri, lider tablolarını ve video detayındaki skor, grafik, 48 saat, sıra, yüzdelik ve SEO alanlarını okuyun."
 
     - slug: video-karsilastirma
+      guideId: video-comparison
       published: true
       order: 8
       title: "Video Karşılaştırma"
-      description: "İki veya daha fazla videoyu yan yana karşılaştırın ve performans farklarını görün."
+      description: "Seçili videoları benchmark, grafik, normalize radar, 24/48 saat hızı, SEO ve 30 günlük projeksiyonla adil karşılaştırın."
 
     - slug: studio-kullanimi
+      guideId: studio
       published: true
       order: 9
       title: "Studio Kullanımı"
-      description: "Rakip sinyallerini, içerik fırsatlarını ve AI üretim araçlarını nasıl kullanacağınızı öğrenin."
+      description: "Studio'da rakip sinyallerini keşfedin, kanal geçmişinizi analiz edin ve AI araçlarıyla doğrulanabilir bir yayın taslağı hazırlayın."
 
     - slug: siralamalar
+      guideId: rankings
       published: true
       order: 10
       title: "Sıralamalar"
-      description: "Kanalları metrik bazlı sıralayın, podyumu görün ve sonuçları paylaşın."
+      description: "Kanalları aynı metrik ve dönemde sıralayın; özet, podyum, kendi konumunuz, paylaşım ve dışa aktarma sonuçlarını güvenle okuyun."
 
     - slug: ai-asistan
+      guideId: ai-assistant
       published: true
       order: 11
       title: "AI Asistan"
-      description: "AI chat panelini, sayfa bağlamını, örnek soru akışlarını ve çoklu ajan yanıtlarını nasıl kullanacağınızı öğrenin."
+      description: "AI Asistanı doğru sayfa bağlamıyla kullanın; veri kapsamını, kredi kullanımını, doğruluk ve gizlilik sınırlarını anlayın."
 
-    - slug: abonelik-ve-ayarlar
-      published: false
+    - slug: raporlar
+      guideId: reports
+      published: true
       order: 12
-      title: "Abgonelik ve Ayarlar"
-      description: "Plan karşılaştırma, yükseltme, API anahtarları, dil ve tema ayarları."
+      title: "Raporlar"
+      description: "Müşteri raporu oluşturun, kapsamı doğrulayın ve indirilen PDF'yi güvenli biçimde paylaşın."
+
+    - slug: abonelik
+      guideId: subscription
+      published: true
+      order: 13
+      title: "Abonelik"
+      description: "Planınızı, kullanımınızı, plan değişikliklerini ve faturalandırma geçmişini güvenle yönetin."
+
+    - slug: ayarlar
+      guideId: settings
+      published: true
+      order: 14
+      title: "Ayarlar"
+      description: "Profilinizi, tercihlerinizi, parolanızı, kullanımınızı ve API anahtarlarınızı güvenle yönetin."
 
 
   en:
     - slug: getting-started
+      guideId: getting-started
       published: true
       order: 1
       title: "Getting Started"
-      description: "Registration, email verification, onboarding and adding your first channel."
+      description: "Create your account, verify your email, add your first channel with the right role, and reach the YTScope Dashboard safely."
 
     - slug: dashboard-guide
+      guideId: dashboard
       published: true
       order: 2
       title: "Dashboard Guide"
-      description: "Overview, Health Score, Quick Wins, AI daily summary and alerts."
+      description: "Select a channel and read Channel Health, Creator DNA, weekly cards, AI analysis, and competitor signals on the Dashboard."
 
     - slug: channel-management
+      guideId: channel-management
       published: true
       order: 3
       title: "Channel Management"
-      description: "Add/remove channels, list view and multi-channel comparison."
+      description: "Add channels with the right role, filter or remove them, understand preparation and limit states, and compare two channels."
 
     - slug: channel-analysis
+      guideId: channel-analysis
       published: true
       order: 4
       title: "Channel Analysis"
-      description: "Subscriber growth, performance charts, daily metrics and video summary."
+      description: "Read one channel's period growth, lifetime totals, performance charts, videos, and daily changes without confusing scope or units."
 
     - slug: advanced-analytics
+      guideId: advanced-analytics
       published: true
       order: 5
       title: "Advanced Analytics"
-      description: "Upload heatmap, engagement benchmark, seasonal trends, title analysis and correlation."
+      description: "Read market share, concentration, upload timing, benchmarks, outliers, content patterns, and estimated revenue with their limits."
 
     - slug: predictions
+      guideId: predictions
       published: true
       order: 6
       title: "Predictions"
-      description: "Momentum score, churn analysis, first 48-hour performance and velocity decay."
+      description: "Read momentum, volatility, subscriber-loss proxy, first-48-hour forecasts, view decay, and correlation with their uncertainty."
 
     - slug: video-analysis
+      guideId: video-analysis
       published: true
       order: 7
       title: "Video Analysis"
-      description: "Video list, top performers, video detail page and performance grade (A+ to F)."
+      description: "Use the video list, filters, leaderboards, and detail score, chart, 48-hour velocity, rank, percentile, and SEO fields correctly."
 
     - slug: video-comparison
+      guideId: video-comparison
       published: true
       order: 8
       title: "Video Comparison"
-      description: "Compare two or more videos side by side and see performance differences."
+      description: "Compare selected videos fairly using benchmarks, raw charts, normalized radar, 24/48-hour velocity, SEO, and 30-day projections."
+
+    - slug: studio-guide
+      guideId: studio
+      published: true
+      order: 9
+      title: "Studio Guide"
+      description: "Discover competitor signals, analyze your channel history, and use AI tools to prepare a publishing draft you can verify."
 
     - slug: rankings
-      published: false
-      order: 9
+      guideId: rankings
+      published: true
+      order: 10
       title: "Rankings"
-      description: "Rank channels by metrics, view the podium and share results."
+      description: "Rank channels using the same metric and period, then read summary statistics, your position, sharing, and exports safely."
 
     - slug: ai-assistant
-      published: false
-      order: 10
-      title: "AI Assistant"
-      description: "AI chat panel, example questions, context-aware suggestions and multi-agent responses."
-
-    - slug: subscription-and-settings
-      published: false
+      guideId: ai-assistant
+      published: true
       order: 11
-      title: "Subscription & Settings"
-      description: "Plan comparison, upgrade, API keys, language and theme settings."
+      title: "AI Copilot"
+      description: "Use AI Copilot with the right page context and understand its data scope, credits, accuracy, privacy, and action limits."
+
+    - slug: reports
+      guideId: reports
+      published: true
+      order: 12
+      title: "Reports"
+      description: "Create a client report, verify its scope, and share the downloaded PDF safely."
+
+    - slug: subscription
+      guideId: subscription
+      published: true
+      order: 13
+      title: "Subscription"
+      description: "Manage your plan, usage, plan changes, and billing history safely."
+
+    - slug: settings
+      guideId: settings
+      published: true
+      order: 14
+      title: "Settings"
+      description: "Manage your profile, preferences, password, usage, and API keys safely."

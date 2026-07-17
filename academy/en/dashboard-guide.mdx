@@ -1,224 +1,176 @@
 ---
 title: "Dashboard Guide"
-description: "Learn about the YTScope dashboard: Health Score, Creator DNA, KPI cards, AI summary, and competitor analysis."
-lastUpdated: "2026-03-08"
+description: "Select a channel and read Channel Health, Creator DNA, weekly cards, AI analysis, and competitor signals on the Dashboard."
+lastUpdated: "2026-07-17"
 order: 2
 ---
 
-# Dashboard Guide
-
-The dashboard summarizes the performance of all your tracked channels on a single screen. Channel health, competitor status, new videos, and AI-powered insights are all here.
+By the end of this guide, you can select the correct channel on the Dashboard, read its weekly performance summary, and move to the right detail screen.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/dashboard-panel.webp"
-  alt="Dashboard overview"
-  caption="Dashboard main screen — channel health, Creator DNA, KPI cards, and AI summary."
+  alt="YTScope Dashboard with Coğrafyanın Kodları selected"
+  caption="Dashboard — the selected channel, Channel Health, Creator DNA, and weekly metric cards share the opening view."
 />
 
 ---
+
+## Before you begin
+
+- At least one channel must be tracked. Use [Channel Management](/academy/en/channel-management) to add one.
+- To see competitor comparisons, confirm that channel roles are correctly set to **My Channel** and **Competitor**.
+- Some cards may be empty or pending while data for a newly added channel is prepared.
+- AI cards and some analysis features may depend on your account's current access.
+
+## How to reach this screen
+
+After logging in, select **Dashboard** from the left navigation. Use the channel selector at the top to choose the channel you want to inspect. Changing the selection also changes the channel header, analysis cards, and channel-specific recommendations.
+
+<Callout type="warning">
+Confirm the selected channel before interpreting a result. You can select a competitor on the Dashboard; doing so does not make it your channel.
+</Callout>
+
+## Screen map
+
+The Dashboard follows this decision sequence:
+
+| Section | Question it answers |
+|---|---|
+| **Channel Health** and **Creator DNA** | What is the selected channel's overall status and content profile? |
+| Weekly cards | How did subscribers, views, and engagement change this week? |
+| **AI-Powered Insights** | What short summary and actions do the visible signals support? |
+| **How Did This Week Go?** | How did my channel and competitors finish the week? |
+| **How's My Channel?** and **Competitor Score** | Where is my reference channel relative to its competitor group? |
+| **New Releases** | Which new videos are being observed in their first 48 hours? |
+| **Top Performers**, **Needs Attention**, **Opportunities** | Where should I investigate or act next? |
 
 ## Channel Health and Creator DNA
 
-The top section of the dashboard contains two main cards: **Channel Health** score on the left and **Creator DNA** profile on the right.
+### Channel Health
 
-### Channel Health (Health Score)
+**Channel Health** shows a 0–100 summary score and a letter level for the selected channel. The visible **Growth**, **Engagement**, and **Consistency** bars let you read the displayed dimensions separately.
 
-The Health Score condenses your channel's last 7 days of performance into a single number using a weighted average of five factors. The score ranges from 0 to 100 and receives a letter grade (A+ through F).
+- Do not use the total score as the only decision; also read the lowest dimension and its information tooltip.
+- If a percentage or rank comparison is present, check the card text to learn whether it refers to competitors or a previous period.
+- Color supports quick scanning. The number, letter level, and text label carry the meaning together.
 
-| Factor | What it measures |
-|--------|-----------------|
-| **Growth** | Subscriber growth rate and direction. |
-| **Engagement** | Like, comment, and share ratio. |
-| **Consistency** | How regularly you publish content. |
-| **Momentum** | Direction of growth — accelerating or slowing? |
-| **Competitive** | Your position relative to competitors. |
-
-Each factor scores 0-100 and displays as a progress bar. The text below indicates whether you're ahead of or behind the competitor average.
-
-| Score Range | Grade | Meaning |
-|------------|-------|---------|
-| **80-100** | A+ / A | Your channel shows strong performance. |
-| **60-79** | B | Above average — room for improvement exists. |
-| **40-59** | C | Average — focus on specific factors. |
-| **0-39** | D / F | Critical — immediate action needed. |
-
-<Callout type="tip">
-Track your Health Score weekly. A single viral video can temporarily inflate it; a consistent downward trend signals a strategy change is needed.
-</Callout>
+This guide does not assume hidden score weights. If the calculation changes, the card's information tooltip is the current source.
 
 ### Creator DNA
 
-Creator DNA analyzes your content production identity across five dimensions and assigns a "creator type."
-
-| Dimension | What it measures |
-|-----------|-----------------|
-| **Content Type** | Your content variety and format preference. |
-| **Consistency** | Upload frequency and regularity. |
-| **Engagement** | Viewer interaction rate. |
-| **Growth** | Subscriber acquisition speed. |
-| **Loyalty** | Viewer return rate. |
-
-The total score is calculated out of 100. Your creator type badge appears in the top right (e.g., "Viral Hunter," "Community Builder," "Rising Star").
+**Creator DNA** displays the channel profile across **Content Type**, **Consistency**, **Engagement**, **Growth**, and **Loyalty**. The badge plus strong- and weak-dimension labels are diagnostic signals, not guarantees of publishing success.
 
 <ProTip>
-Use the share button in the top right corner of the Creator DNA card to share your results on social media.
+Channel Health focuses on recent performance while Creator DNA describes profile dimensions. Do not compare the two scores as if they used the same scale or purpose.
 </ProTip>
 
----
-
-## KPI cards
-
-Below the Health section, four key metric cards appear. Each card shows the 7-day change and the trend compared to the previous week.
+## Weekly metric cards
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/dashboard-ai-analysis.webp"
-  alt="KPI cards and AI summary"
-  caption="Four KPI cards: Subscribers, Views, Engagement, and Wins."
+  alt="Weekly Subscribers, Views, Engagement, and Wins cards on the Dashboard"
+  caption="Weekly cards — the large value describes the current period; supporting text compares it with the previous week."
 />
 
-| Card | Value Shown | Trend |
-|------|-------------|-------|
-| **Subscribers** | Net subscribers gained/lost in the last 7 days. | Green arrow = growth, red arrow = loss. |
-| **Views** | Total view change over the last 7 days. | Percentage difference vs. previous week. |
-| **Engagement** | Engagement rate — likes, comments, and shares per 100 views. | Change compared to previous week. |
-| **Wins** | Metrics won against competitor average (e.g., 2/4). | Compares subscribers, views, engagement, and video count. |
+| Card | Large value | Supporting text and sparkline |
+|---|---|---|
+| **Subscribers** | Net subscriber change in the displayed week | Direction and difference from the previous week; the sparkline shows movement within the period. |
+| **Views** | View change in the displayed week | Previous-week comparison and direction within the period. |
+| **Engagement** | The engagement rate defined by the screen | Difference from the previous week. Check the tooltip to distinguish a percent change from a percentage-point difference. |
+| **Wins** | Count of visible comparison metrics where the reference is ahead | Dots or status indicators summarize the distribution of comparisons. |
 
-<Callout type="note">
-The Wins card only appears when you've added competitor channels. Without competitors, this card is hidden.
-</Callout>
+A sparkline is an axis-free direction cue; use the card number for the exact value. Do not confuse weekly cards with lifetime subscriber or view totals.
 
----
-
-## AI-powered insights
-
-Below the KPI cards, two AI-powered sections appear: **AI Summary** and **Quick Wins**.
+## AI-Powered Insights
 
 ### AI Summary
 
-AI analyzes your channel's last 7 days of data and generates a natural-language summary. It covers your channel's strengths, weak areas, and recommended actions.
-
-The summary is truncated to 3 lines by default. Click **"Read more"** to see the full text. Click **"Generate AI Analysis"** to request a fresh analysis.
+**AI Summary** turns Dashboard signals into a readable assessment. Its badge or summary may identify a strength, concern, and possible action. If a generate action is available, creating a new analysis may use AI credits.
 
 ### Quick Wins
 
-Quick Wins lists immediately actionable recommendations sorted by importance.
+**Quick Wins** lists short-term suggestions with impact labels. Before acting, open the related card or detail page and verify the underlying measurement.
 
-| Type | Example Message |
-|------|----------------|
-| **Upload needed** | "You haven't uploaded in X days." |
-| **Low engagement** | "Your engagement rate is X% below average." |
-| **Competitor weakness** | "Competitor [name] is losing subscribers." |
+<Callout type="note">
+AI output supports a decision; it does not replace the measured value. Do not treat a claim as conclusive if you cannot verify it in a card, chart, or detail table.
+</Callout>
 
-Each recommendation's impact level (High/Medium/Low) is indicated with a colored dot.
-
----
-
-## My Channel and competitors
-
-The middle section of the dashboard shows your channel's weekly summary and competitor information.
+## Weekly summary and competitor comparison
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/dashboard-channel-health.webp"
-  alt="My Channel and competitor cards"
-  caption="My Channel card, Competitors This Week, and competition comparison section."
+  alt="My Channel and competitor comparison sections on the Dashboard"
+  caption="Weekly summary — your own channel, competitor movement, and comparison cards answer different questions."
 />
 
-### My Channel
+### How Did This Week Go?
 
-The **My Channel** card on the left summarizes your channel's weekly performance:
+This section summarizes weekly movement. Confirm from the section labels that a value is a period change rather than a lifetime total.
 
-| Metric | Description |
-|--------|-------------|
-| **Subscriber change** | Net subscribers gained/lost in the last 7 days. |
-| **View change** | Total view increase/decrease over the last 7 days. |
-| **Video count** | Number of videos uploaded this week. |
+### How's My Channel?
 
-Click **"Channel Details"** to go to the channel analysis page.
+**How's My Channel?** shows the weekly state of the channel assigned the **My Channel** role. A **View Channel Details** action opens its Overview screen.
 
-### Competitors This Week
+### Competitors This Week and Competitor Score
 
-The card on the right lists your tracked competitors' weekly subscriber changes. Each row shows the channel name, current subscriber count, and this week's change. Click **"All Competitors"** for the full list.
+**Competitors This Week** lists recent movement for channels assigned the Competitor role. **Competitor Score** compares your reference channel with the visible competitor average. When reading an “ahead” count, check the rows to see which metrics are included.
 
-### Competitor Score
+**Detailed Comparison** opens the **My Channels > Compare** flow for a same-period, same-metric comparison.
 
-The **Competitor Score** card compares your channel against the competitor average across four metrics:
-
-| Metric | Your Value | Competitor Average | Status |
-|--------|-----------|-------------------|--------|
-| **Subscribers** | Your current subscriber count. | Competitors' average. | Green = ahead, red = behind. |
-| **Views** | Your total views. | Competitors' average. | Gap closing/widening shown. |
-| **Engagement** | Your engagement rate. | Competitors' average. | Percentage difference noted. |
-| **Videos** | Your total video count. | Competitors' average. | Difference shown as a count. |
-
-The badge at the top (e.g., **"2/4 ahead"**) summarizes your overall competitive standing. Click **"Detailed Comparison"** to visit the channel comparison page.
-
-### Competitors list
-
-Next to the Competitor Score, a ranked list shows all competitor channels sorted by subscriber count. Each row displays the rank, channel name, subscriber count, and weekly change trend.
-
----
-
-## Recent activity
-
-The bottom section of the dashboard contains three cards: new videos, top performers, and alerts.
+## New videos, top performance, and alerts
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/dashboard-my-channel.webp"
-  alt="New videos, top performers, and alerts"
-  caption="Videos published in the last 48 hours, top performing channels, and opportunities."
+  alt="New Releases, Top Performers, and alert cards"
+  caption="Lower Dashboard — first-48-hour signals for new content, highlighted performers, and items that need review."
 />
 
-### New releases
+### New Releases
 
-Lists videos published in the last 48 hours. Each row includes:
+This card shows signals for new content in a **First 48h performance** context. A video younger than 48 hours has incomplete values. Select its title or card to inspect daily performance on Video Detail.
 
-| Field | Description |
-|-------|-------------|
-| **Thumbnail and title** | Video preview and full title. |
-| **Channel name and time** | Which channel uploaded it and how long ago. |
-| **Views** | Current view count and hourly growth rate. |
-| **Engagement** | Like-to-view ratio (%). |
-| **Performance badge** | "Normal," "Inconsistent," or status vs. channel average. |
+### Top Performers
 
-<Callout type="tip">
-If your own video appears in the list and performs below 50% of your channel average, the system automatically provides a suggestion.
-</Callout>
+**Top Performers** highlights channels in the categories defined on screen. Read the category before interpreting rank: “most active” and “highest engagement” measure different outcomes.
 
-### Top performers
+### Needs Attention and Opportunities
 
-Highlights channels in three categories:
+These cards summarize signals that deserve investigation. An alert does not establish a cause. Open the related channel or video and confirm the period, data coverage, and comparison group.
 
-| Category | What it measures |
-|----------|-----------------|
-| **Fastest Growing** | Channel that gained the most subscribers recently. |
-| **Most Active** | Channel that uploaded the most videos in the last 30 days. |
-| **Highest Engagement** | Channel with the highest engagement rate. |
+## Practice with Coğrafyanın Kodları
 
-### Alerts and opportunities
+**Verified July 17, 2026.** Values may change, but the reading order remains the same.
 
-The **Alerts** section lists warnings that require immediate action:
+1. Select **Coğrafyanın Kodları** from the channel selector at the top.
+2. Read the **Channel Health** score, then note the highest and lowest visible dimensions.
+3. Read the **Creator DNA** badge together with its strong- and weak-dimension labels.
+4. On **Subscribers**, **Views**, and **Engagement**, separate the large value from the previous-week comparison.
+5. Verify one statement from **AI Summary** against a measured card above it.
+6. Choose an item from **New Releases** and open Video Detail.
+7. Remember that the selected channel does not belong to you; read **How's My Channel?** and **Competitor Score** in the context of your own reference channel.
 
-| Alert Type | Example |
-|------------|---------|
-| **Subscriber loss** | Subscriber count is dropping. |
-| **Views dropping** | Views decreased by X% week-over-week. |
-| **Competitor passed** | X competitor channels passed you in subscribers. |
+## Loading, empty, error, and locked states
 
-The **Opportunities** section shows competitor weaknesses:
+| State | What it means | What to do |
+|---|---|---|
+| Channel selector is empty | No channel is tracked | Add the first channel on **My Channels**. |
+| Collecting data | There is not enough prepared data for the channel or section | Keep the channel and period unchanged and check again later. |
+| Competitor section is empty | No Competitor role exists or comparison data is not ready | Review channel roles and add a competitor if needed. |
+| No new releases | No content falls in the first-48-hour window | Use Videos for a broader period. |
+| AI card is locked | The account does not currently have the required feature or credits | Read the locked-card explanation and check **Subscription**. |
+| Card failed to load | A network or data request did not complete | Refresh; if it continues, contact support with the visible error message. |
 
-| Opportunity Type | Example |
-|-----------------|---------|
-| **Competitor losing subs** | "[Channel name] lost X subscribers." |
-| **Competitor inactive** | "[Channel name] hasn't uploaded in X days." |
-| **Low engagement** | "[Channel name] engagement rate is only X%." |
+## Troubleshooting and limits
 
----
+- If cards show an unexpected channel, check the channel selector again.
+- Do not compare a weekly change with a lifetime channel value; read the period label.
+- A percentage can look large when the starting value is small; inspect the absolute value too.
+- Public YouTube data is prepared periodically; do not treat the Dashboard as real-time YouTube Studio data.
+- Verify an AI recommendation against measured evidence on the relevant detail screen.
 
-## What's next?
+## Related guides
 
-Now that you know the dashboard, learn about channel management:
-
-| Guide | Topic |
-|-------|-------|
-| [Channel Management](/academy/en/channel-management) | Add/remove channels, list view, and multi-channel comparison. |
-| [Channel Analysis](/academy/en/channel-analysis) | Subscriber growth, performance charts, and daily metrics. |
+| Guide | Next task |
+|---|---|
+| [Channel Management](/academy/en/channel-management) | Manage roles and filters, then start a two-channel comparison. |
+| [Channel Analysis](/academy/en/channel-analysis) | Open period charts and the daily table for a selected channel. |

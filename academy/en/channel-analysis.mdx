@@ -1,182 +1,153 @@
 ---
 title: "Channel Analysis"
-description: "Examine a single channel's subscriber growth, performance charts, video stats, and daily metrics."
-lastUpdated: "2026-03-08"
+description: "Read one channel's period growth, lifetime totals, performance charts, videos, and daily changes without confusing scope or units."
+lastUpdated: "2026-07-17"
 order: 4
 ---
 
-# Channel analysis
-
-The channel detail page brings together all performance data for a single channel. From subscriber growth to video performance, daily metrics to AI-powered analysis, examine every aspect of the channel in one place.
+The channel detail **Overview** helps you separate a channel's current size from movement during the selected period. This guide shows how to combine cards, charts, and the daily table into a bounded decision.
 
 <Screenshot
-  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/channel-overview-header.webp"
-  alt="Channel detail page top section"
-  caption="Channel detail page — summary metrics, tabs, and growth analysis."
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channel-overview-header.webp"
+  alt="Top of the channel detail page"
+  caption="Channel detail — summary metrics, period selector, and Overview tab."
 />
 
----
+## Outcome, prerequisites, and path
 
-## Channel header
+- **Path:** **Channels → a channel card → Overview**.
+- The channel must be tracked and have at least one successful sync.
+- Period comparisons and lines need at least two dated channel-stat records. With one record, current totals may appear while period change remains unavailable.
+- Period options depend on your plan. Use the enabled options on screen instead of assuming a fixed plan limit.
 
-The top section displays the channel's identity and summary metrics.
+## Screen map
 
-| Field | Description |
-|-------|-------------|
-| **Avatar and name** | Channel profile image and name. |
-| **Rank badge** | The channel's rank among your tracked channels (e.g., **#2**). |
-| **Trend percentage** | Growth percentage for the selected period (e.g., **+0.3%**). |
-| **Handle and description** | YouTube username and channel description. |
-| **Compare button** | Adds the channel directly to the comparison page. |
-| **Open on YouTube** | Opens the channel's YouTube page in a new tab. |
+1. Channel header and identity.
+2. Period selector and four summary cards.
+3. **Overview / Advanced / Predictions** tabs.
+4. Growth analysis and daily subscriber change.
+5. Performance chart.
+6. Video performance analysis and period videos.
+7. Daily performance table.
 
-### Overview cards
+## Channel header and summary cards
 
-Below the header, 4 summary cards appear. Use the period selector in the top-right corner to change the time range (7, 30, 90, or 365 days).
+The header shows the channel name, handle, rank within your tracked set, period-growth indicator, **Compare**, and **Open on YouTube**. The rank is not a global YouTube rank.
 
-| Card | Value shown |
-|------|-------------|
-| **Subscribers** | Current subscriber count and period change percentage. |
-| **Views** | Total view count and period change percentage. |
-| **Video Count** | The channel's total number of videos. |
-| **Recent Videos** | Number of videos published in the selected period. |
+| Card | Unit and scope | How to read it |
+|---|---|---|
+| **Subscribers** | Current lifetime subscriber total; period change below | The total describes size; the percentage compares the first and last record in the period. |
+| **Views** | Current cumulative views; period change below | Do not confuse the cumulative total with views gained during the period. |
+| **Videos** | Current lifetime video count | This inventory is not limited to the selected period. |
+| **Recent Videos** | Videos found in the selected period | Zero does not mean the channel has never published. |
 
-<Callout type="tip">
-A green arrow and positive percentage indicate growth. When you change the period selector, all cards and sections below update automatically.
-</Callout>
-
----
-
-## Tabs
-
-The channel detail page has 3 tabs:
-
-| Tab | Content |
-|-----|---------|
-| **Overview** | Growth analysis, performance chart, video stats, and daily table. |
-| **Advanced** | Upload time analysis, engagement benchmark, seasonal trends, and more. |
-| **Predictions** | Momentum score, churn analysis, and velocity decay forecasts. |
-
-This guide covers the **Overview** tab. For the other tabs, see [Advanced Analytics](/academy/en/advanced-analytics) and [Predictions](/academy/en/predictions).
-
----
+Sparklines show the direction of dated totals. If the first value is zero or fewer than two records exist, do not interpret `0%` as confirmed stability without checking the data window.
 
 ## Growth analysis
 
-The Growth Analysis section summarizes the channel's subscriber and view gains.
+This card summarizes the first and last channel records plus daily changes in the selected period.
 
-| Metric | Description |
-|--------|-------------|
-| **Positive Days** | Number of days with subscriber gains in the period. |
-| **Negative Days** | Number of days with subscriber losses in the period. |
-| **Net Change** | Total net subscribers gained or lost. |
-| **Views Gained** | Total views gained during the period. |
+| Metric | Definition |
+|---|---|
+| **Subscribers Gained / Net Change** | Last subscriber total minus first; it can be negative. |
+| **Views Gained** | Last cumulative view total minus first. |
+| **Daily Average** | Period gain distributed across available dated records; missing calendar days are not full observations. |
+| **Best / Worst Day** | Highest and lowest observed daily subscriber change. |
+| **Positive / Negative Days** | Records with subscriber change above or below zero. Zero and missing changes belong to neither group. |
 
-The status badge at the top indicates the channel's growth health:
-
-| Badge | Meaning |
-|-------|---------|
-| **Excellent** | Strong and steady growth. |
-| **Good** | Positive trend with minor fluctuations. |
-| **Attention** | Growth is slowing or volatile. |
-| **Critical** | Sustained subscriber loss. |
-
-Below the badge, a bar chart shows daily subscriber changes. Sudden spikes may indicate viral content.
-
----
+On the daily subscriber chart, the x-axis is date and the y-axis is observed **subscriber change**. Values above zero are gains; values below zero are losses. Hover for the date and raw change. The health badge is the product's current classification, not a causal diagnosis or forecast.
 
 ## Performance chart
 
 <Screenshot
-  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/channel-overview-mid.webp"
-  alt="Performance chart and video performance analysis"
-  caption="Performance chart — growth trend, video upload markers, and AI analysis button."
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channel-overview-mid.webp"
+  alt="Channel performance chart and video analysis"
+  caption="Performance chart — metric, view mode, moving average, and upload markers."
 />
 
-The performance chart visualizes the channel's changes over time. It offers three controls:
+| Control | Effect |
+|---|---|
+| **Subscribers / Views** | Changes the metric being charted. |
+| **Change** | Percentage change from the period's first record; the tooltip also shows raw change. |
+| **Total** | Cumulative subscriber or view count. |
+| **7-day moving average** | Toggles the dashed smoothing line. |
 
-| Control | Options |
-|---------|---------|
-| **Metric** | Subscribers or Views. |
-| **Mode** | **Growth** (daily percentage change) or **Absolute** (raw numbers). |
-| **Moving average** | Toggles a 7-day moving average line. Smooths out daily fluctuations. |
+- **X-axis:** date.
+- **Y-axis:** percentage in Change mode; subscriber or view count in Total mode.
+- **Main series:** area line for the selected metric.
+- **Legend:** dashed line is the 7-day moving average; dots mark upload dates.
+- **Tooltip:** date, selected value, raw change when relevant, subscriber/view totals, moving average, and videos published that day.
 
-Orange dots on the chart mark video upload dates. Visually track the relationship between uploads and view spikes.
-
-<Callout type="note">
-Click the **"Generate AI Analysis"** button to get automated commentary and recommendations about this chart.
-</Callout>
-
----
+The zero line makes negative movement visible. The moving average does not invent missing days and reacts later than the daily line. A rise after an upload marker is an association, not proof that the upload caused the rise.
 
 ## Video performance analysis
 
-This section displays aggregated stats for videos published in the selected period.
+This section includes only videos published during the selected period.
 
-| Metric | Description |
-|--------|-------------|
-| **Avg. Views** | Average view count per video. |
-| **Avg. Likes** | Average likes per video. |
-| **Avg. Comments** | Average comments per video. |
-| **Engagement Rate** | Engagement rate — the number of likes, comments, and shares per 100 views. |
+| Metric | Definition and unit |
+|---|---|
+| **Avg. Views / Likes / Comments** | Arithmetic mean count per period video. |
+| **Engagement Rate** | Total likes plus comments divided by total views for the period-video set, as a percentage. Zero views produce a zero rate. |
+| **Shorts / Regular Videos** | Count, share, and average views for each format. |
+| **Best Video** | Highest-viewed video in this period set, not necessarily the lifetime leader. |
+| **Average Duration** | Average duration of regular videos; hidden when none qualify. |
 
-### Content distribution
-
-A horizontal bar shows the split between **Shorts** and **Long-form** videos in the period. Video count and average views are listed separately for each category.
-
-### Top performer
-
-The most-viewed video of the period is highlighted with its title, thumbnail, and view count.
-
-<ProTip>
-Compare Shorts and long-form averages. If short videos have higher average views, it may be worth increasing your Shorts output.
-</ProTip>
-
----
+Interpret format averages only with adequate sample counts. One large result can dominate a small group.
 
 ## Period videos
 
 <Screenshot
-  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/en/channel-overview-bottom.webp"
-  alt="Period videos grid view"
-  caption="Period videos — thumbnails and metrics for videos published in the selected period."
+  src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/channel-overview-bottom.webp"
+  alt="Period video cards"
+  caption="Period videos — videos in the selected window, sorting, and pagination."
 />
 
-All videos published in the selected period appear as thumbnail cards. Each card shows the video title, views, and likes.
-
-Sort options:
-
-| Sort by | Description |
-|---------|-------------|
-| **Views** | Highest to lowest views. |
-| **Likes** | Most to fewest likes. |
-| **Comments** | Most to fewest comments. |
-| **Engagement** | By engagement rate. |
-| **Publish date** | Newest to oldest. |
-
----
+Cards show title, format, publish age, views, likes, and comments. Sort by **Views**, **Likes**, **Comments**, or **Engagement** in descending order. A podium appears when enough videos qualify; remaining videos are paginated. An empty state means no qualifying video in this period, not an empty channel.
 
 ## Daily performance table
 
-At the bottom of the page, a table shows the last 14 days of metrics.
+The table uses a fixed short-period context and displays the newest available records.
 
-| Column | Description |
-|--------|-------------|
-| **Date** | Day (e.g., Mar 7). |
-| **Subscribers** | Total subscriber count for that day. |
-| **Sub Change** | Subscriber gain or loss vs. previous day. Green for gains, red for losses. |
-| **Views** | Total view count for that day. |
-| **View Change** | View gain or loss vs. previous day. |
+| Column | Unit |
+|---|---|
+| **Date** | Localized day and month. |
+| **Subscribers / Views** | Cumulative total at that record. |
+| **Change** | Raw count from the previous record; `+` is gain, `-` is loss, and zero or missing is `—`. |
 
-<Callout type="tip">
-Use the daily table to spot sudden spikes in views or subscribers. Check which video was published on days with high view increases.
-</Callout>
+A missing calendar day is not zero performance. For a spike, check the upload marker, sync interval, and availability of the prior record.
 
----
+## States and troubleshooting
+
+| State | What to do |
+|---|---|
+| **Loading** | Wait for the skeleton to finish before comparing values. |
+| **Channel not found / no data** | Confirm the channel is active and tracked; refresh after sync completes. |
+| **Error** | Use **Retry**; if it persists, try again later. |
+| **Empty chart** | Wait for at least two dated channel records or widen the period. |
+| **No period videos** | Widen the period and distinguish recent videos from lifetime video count. |
+| **Locked period or feature** | The on-screen plan message is authoritative; do not assume a fixed limit. |
+
+## Practice — Coğrafyanın Kodları
+
+**Verified July 17, 2026.** Learn the reading method rather than memorizing values:
+
+1. Open **Channels → Coğrafyanın Kodları → Overview** and record the selected period.
+2. Write separate sentences for the current Subscriber/View totals and their period changes.
+3. Read one metric in **Change**, then **Total** mode; record one date and raw change from the tooltip.
+4. Toggle the moving average and explain why the daily and smoothed lines answer different questions.
+5. Match one upload marker to the period-video list. Say “observed on the same date,” not “caused.”
+6. Find a negative or `—` cell in the daily table and distinguish loss, zero, and missing data.
+
+## Interpretation limits
+
+- YTScope uses synced public YouTube data; it does not expose private traffic, revenue, or unsubscribe reasons from YouTube Studio.
+- Do not directly compare different periods, formats, or channel sizes.
+- Averages are sensitive to small samples and unusually large videos.
+- Validate AI commentary against the data scope, period, and tooltip values.
 
 ## What's next?
 
 | Guide | Topic |
-|-------|-------|
-| [Advanced Analytics](/academy/en/advanced-analytics) | Upload heatmap, engagement benchmark, seasonal trends, and title analysis. |
-| [Predictions](/academy/en/predictions) | Momentum score, churn analysis, and velocity decay forecasts. |
+|---|---|
+| [Advanced Analytics](/academy/en/advanced-analytics) | Share of views, outliers, upload timing, and revenue assumptions. |
+| [Predictions](/academy/en/predictions) | Momentum, subscriber-loss proxy, first 48 hours, and correlation. |

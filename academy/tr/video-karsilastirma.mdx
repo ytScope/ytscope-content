@@ -1,107 +1,155 @@
 ---
 title: "Video Karşılaştırma"
-description: "İki veya daha fazla videoyu yan yana karşılaştırın, radar grafik ve SEO analizi ile farkları görün."
-lastUpdated: "2026-03-08"
+description: "Seçili videoları benchmark, grafik, normalize radar, 24/48 saat hızı, SEO ve 30 günlük projeksiyonla adil karşılaştırın."
+lastUpdated: "2026-07-17"
 order: 8
 ---
 
-# Video karşılaştırma
-
-Video Karşılaştırma sekmesi, seçtiğiniz videoları yan yana analiz etmenizi sağlar. Performans metriklerinden SEO skoruna, yayın zamanlamasından izlenme projeksiyonuna kadar videoları birçok boyutta karşılaştırın.
+**Karşılaştır** sekmesi, Liste'de seçtiğiniz videoları aynı analiz setinde gösterir. En yüksek değeri bulmanın yanında video yaşı, format, dönem ve normalizasyonun sonucu nasıl etkilediğini kontrol edeceksiniz.
 
 <Screenshot
   src="https://raw.githubusercontent.com/ytScope/ytscope-content/main/images/academy/tr/videos-compare.webp"
   alt="Video Karşılaştır sekmesi"
-  caption="Karşılaştır sekmesi — Liste sekmesinden video seçerek karşılaştırmaya ekleyin."
+  caption="Karşılaştır — Liste sekmesindeki seçimlerden oluşan karşılaştırma."
 />
 
-Videolar sayfasında **Karşılaştır** sekmesine tıklayın. En az 2 video seçtiğinizde karşılaştırma bölümleri görünür.
+## Sonuç, ön koşullar ve yol
 
----
+1. **Videolar → Liste** yolunda karşılaştırılabilir videoları seçin.
+2. Alt çubukta en az iki seçiminiz olduğunu doğrulayın.
+3. **Karşılaştır** eylemini veya sekmesini açın.
 
-## Video seçimi
+Maksimum seçim sabit değildir; planınızın ekranda gösterilen canlı limitidir. Limit aşılırsa karşılaştırma devre dışı kalır. Karşılaştırma yalnız takip ettiğiniz kanallardaki, veritabanında bulunan videolarla çalışır.
 
-Karşılaştırmak istediğiniz videoları **Liste** sekmesinden seçin. Seçilen videolar Karşılaştır sekmesinde otomatik listelenir.
+## Adil karşılaştırma kontrol listesi
 
-| Bilgi | Açıklama |
-|-------|----------|
-| **Minimum** | Karşılaştırma için en az **2 video** gerekir. |
-| **Maksimum** | Planınıza bağlı olarak en fazla **3 video** (veya daha fazla) seçebilirsiniz. |
-| **Video sayacı** | Üst kısımdaki gösterge seçili video sayısını gösterir (ör. 0/25). |
+Sonuç okumadan önce mümkün olduğunca eşleyin:
 
----
+- benzer yayın yaşı veya aynı yaşam evresi;
+- aynı dönem seçimi ve yeterli snapshot;
+- Shorts ile Shorts, normal video ile benzer uzunluktaki normal video;
+- benzer konu/izleyici niyeti;
+- aynı kanal veya kanal büyüklüğü farkını açıkça belirten bağlam.
 
-## Karşılaştırma bölümleri
+Ham toplamda eski video, günlük hızda yeni video avantajlı olabilir. Farklı formatları karşılaştırabilirsiniz; sonucu format hipotezi olarak yazın, tek videodan genellemeyin.
 
-Video seçildikten sonra aşağıdaki analiz bölümleri görünür:
+## Seçim ve ortak durumlar
 
-### Benchmark metrikleri
+Seçici kart her videonun küçük resmi, başlığı, kanal adı ve görüntülenmesini gösterir; **X** ile kaldırabilirsiniz. Seçim Liste sekmesinden yönetilir.
 
-Seçilen videoların temel metriklerini tablo halinde yan yana gösterir.
+| Durum | Eylem |
+|---|---|
+| **Video seçilmedi / yetersiz seçim** | Liste'ye dönün ve en az iki video seçin. |
+| **Yükleniyor** | İskelet bitmeden kazanan kaydetmeyin. |
+| **Veri yok** | Videoların takip edilen kanallarda ve senkronlanmış olduğunu doğrulayın. |
+| **Hata** | Yenileyin; devam ederse daha sonra deneyin. |
+| **Eksik metrik / `—`** | Sıfırla değiştirmeyin; video yaşı, yayın tarihi veya snapshot eksik olabilir. |
+| **Limit** | Seçimi ekrandaki plan limitine indirin; eski sayaç değerlerini limit saymayın. |
 
-| Metrik | Açıklama |
-|--------|----------|
-| **Ortalama izlenme** | Videoların ortalama izlenme sayısı. |
-| **Medyan izlenme** | Aşırı değerlerden etkilenmeyen orta değer. |
-| **Ortalama beğeni** | Video başına ortalama beğeni. |
-| **Ortalama etkileşim** | Ortalama etkileşim oranı (%). |
-| **Günlük izlenme** | Video başına günlük ortalama izlenme. |
+## Görsel özet ve benchmark kartları
 
-### Radar grafik
+Üst kartlar temel metriklerde kazananı rozetle vurgular. Benchmark kartları yalnız **seçtiğiniz videoların** ortalamasıdır.
 
-7 boyutlu radar grafik, videoların güçlü ve zayıf yönlerini görsel olarak karşılaştırır:
+| Alan | Tanım |
+|---|---|
+| **Ort. İzlenme / Beğeni / Etkileşim** | Seçili videoların aritmetik ortalaması; etkileşim yüzde, diğerleri adet. |
+| **Medyan İzlenme** | Sıralı seçili görüntülenmelerin orta değeri; uç videoya ortalamadan daha dayanıklıdır. |
+| **Günlük İzlenme** | Kümülatif görüntülenme ÷ video yaşı, görüntülenme/gün. |
 
-| Boyut | Açıklama |
-|-------|----------|
-| **İzlenme** | Toplam izlenme sayısı. |
-| **Beğeni** | Toplam beğeni sayısı. |
-| **Yorum** | Toplam yorum sayısı. |
-| **Etkileşim** | Etkileşim oranı (%). |
-| **Günlük izlenme** | Günlük ortalama izlenme. |
-| **SEO skoru** | Arama optimizasyonu puanı. |
-| **Hız** | İzlenme ivmesi (velocity). |
+İki videoluk ortalama/medyan genelleme değildir. Kartlarda “en iyi” yalnız seçili kümede ilgili metriğin en yüksek değeridir.
 
-Kesikli çizgi kanal ortalamasını temsil eder. Bu çizginin dışında kalan alanlar kanalın üstünde performans gösterir.
+## Performans karşılaştırma grafiği
 
-### Performans grafiği
+### Çubuk görünümü
 
-Videoların izlenme trendini çubuk veya çizgi grafik olarak görürsünüz. Dönem seçicisiyle zaman aralığını değiştirin.
+- **X ekseni:** Görüntülenme, Beğeni, Yorum metrikleri.
+- **Y ekseni:** ham adet.
+- **Seriler/legend:** her renk bir seçili videodur; vurgu görüntülenme kazananını gösterir.
+- **Tooltip:** ham değer ve video başlığı.
 
-### İzlenme hızı
+Metriklerin ölçekleri farklıdır; büyük görüntülenme çubuğu beğeni farkını görsel olarak bastırabilir.
 
-Her videonun son 24 ve 48 saatteki izlenme hızı, günlük oran ve trend yönü gösterilir.
+### Çizgi görünümü
 
-### SEO karşılaştırması
+- **X ekseni:** seçili dönem içindeki tarih.
+- **Y ekseni:** kümülatif görüntülenme.
+- **Seriler/legend:** her video için ayrı çizgi.
+- **Tooltip:** o tarihteki görüntülenme ve video başlığı.
 
-| Metrik | Açıklama |
-|--------|----------|
-| **SEO skoru** | Her videonun arama optimizasyonu puanı (ilerleme çubuğu ile). |
-| **Etiket sayısı** | Her videonun kullandığı etiket adedi. |
-| **Ortak etiketler** | Tüm seçili videolarda bulunan ortak etiketler. |
-| **Benzersiz etiketler** | Her videoya özgü etiketler. |
-| **Açıklama uzunluğu** | Açıklama metin uzunluğu karşılaştırması. |
+Eksik tarihte çizgi bağlanmaz. Bir videonun daha erken yayınlanması aynı takvim grafiğinde daha uzun iz oluşturabilir; video yaşını ayrıca okuyun.
 
-### Yayın zamanlaması
+## Normalize radar grafik
 
-Videoların yayınlandığı gün ve saat yan yana gösterilir. Hangi zamanlamanın daha iyi performans sağladığını değerlendirin.
+Radarın yedi ekseni **İzlenme, Beğeni, Yorum, Etkileşim, Günlük Ortalama, SEO ve Hız**dır. Her eksende seçili kümenin en yüksek değeri `100` kabul edilir; diğer videolar buna oranlanır.
 
-### İzlenme projeksiyonu
+- 100 mutlak kalite veya YouTube benchmark'ı değildir.
+- Farklı eksenlerdeki 50 değerleri farklı ham birimlere dayanır.
+- Kesikli **Kanal Ortalaması** etiketi teknik olarak seçili videoların o eksendeki normalize ortalamasıdır; tüm kanal arşivinin ortalaması değildir.
+- Legend renkleri videoları, tooltip normalize 0–100 değerini gösterir.
 
-30 günlük tahmini izlenme sayısını güven seviyesi ile birlikte gösterir.
+Ham fark küçükken normalize şekil belirgin görünebilir. Kararı benchmark kartı veya tablo ham değeriyle doğrulayın.
 
-<Callout type="tip">
-Radar grafikte kanal ortalamasının altında kalan boyutları tespit edin. Bu alanlar iyileştirilmesi gereken noktaları gösterir.
-</Callout>
+## İzlenme hızı
 
-<ProTip>
-Aynı konuda farklı formatlarda (Shorts vs uzun video) yayınlanmış içerikleri karşılaştırın. Format farkının performansa etkisini ölçün.
-</ProTip>
+Her video için **Son 24 Saat**, **Son 48 Saat**, **Günlük Hız** ve varsa trend gösterilir. Birimler görüntülenme adedi ve görüntülenme/gündür. 24/48 saat alanları uygun snapshot penceresine ihtiyaç duyar; yeni videoda pencere tamamlanmamış, eski videoda ayrıntılı snapshot eksik olabilir. “En iyi hız” yalnız kullanılabilir günlük hızlar arasındadır.
 
----
+## 30 günlük görüntülenme projeksiyonu
+
+| Alan | Okuma |
+|---|---|
+| **Mevcut / Tahmini İzlenme** | Güncel kümülatif adet ve modelin 30 günlük olası toplamı. |
+| **Tahmini Büyüme** | Tahmini toplamın güncel değere göre göreli farkı, yüzde. |
+| **Dayandığı Gün** | Modelin video yaşından aldığı gözlem miktarı. |
+| **Güvenilirlik** | Düşük / Orta / Yüksek veri-yaşı sınıfı; olasılık yüzdesi değildir. |
+
+Model yeterli düşüş sinyali varsa hızı azalan eğriyi, yoksa mevcut hızı uzatan daha basit yaklaşımı kullanabilir. Çok genç video ve kısa gözlem yüksek projeksiyon üretebilir. **Yüksek güvenilirlik** gerçekleşme garantisi veya hata aralığı değildir; tahmini karar bütçesi gibi kullanmayın.
+
+## Yayın zamanlaması
+
+Kart yayın tarihi, saat ve haftanın gününü yan yana verir; en yeni/en eski seçimi işaretler. Bu bir performans deneyi değildir. En yüksek görüntülenmeli videonun saatini “en iyi saat” ilan etmeden konu, format, video yaşı ve kanal büyüklüğünü kontrol edin.
+
+## SEO karşılaştırması
+
+SEO paneli her videonun 0–100 ürün skorunu, etiket/hashtag/link sayısını, açıklama uzunluğunu, ortak ve benzersiz etiketleri gösterir. En yüksek skor seçili küme içindeki kazananı belirtir. Skor YouTube arama sırası garantisi değildir; ortak etiket de başarı nedeni değildir.
+
+## Detay tablosu ve mobil kartlar
+
+Masaüstü tablo, mobil kartlarla aynı karşılaştırmayı sunar:
+
+- görüntülenme, beğeni, yorum ve etkileşim;
+- görüntülenme/gün;
+- beğeni oranı;
+- **1K görüntülenme başına beğeni/yorum**;
+- video yaşı, süre, format, hız, SEO ve sıralar.
+
+`1K başına` metrikler farklı görüntülenme ölçeklerini normalize eder; küçük görüntülenmede oynak olabilir. Etkileşim yüzdesi ile yüzde puan farkını, ham adetle 1K başına oranı karıştırmayın.
+
+## İçgörüler ve AI analizi
+
+**Öne Çıkan Bulgular** ve stratejik AI kartı seçili videolardan türetilir. “Kazanan” etiketi yalnız tanımlı metrik içindir. Öneriyi uygulamadan önce dönemi, adil karşılaştırma kontrol listesini, ham değeri ve eksik veri durumunu doğrulayın.
+
+## Uygulama — Coğrafyanın Kodları
+
+**Doğrulama tarihi: 17 Temmuz 2026.**
+
+1. Coğrafyanın Kodları'ndan benzer yaşta ve aynı formatta iki video seçin; canlı plan limitini not edin.
+2. Benchmark kartlarında ortalama ile medyanı karşılaştırın; fark varsa olası uç videoyu bulun.
+3. Çubukta ham adet, çizgide tarihsel iz okuyun; aynı sonucu verdiklerini varsaymayın.
+4. Radarda bir ekseni seçin, normalize değeri ham tablo değeriyle doğrulayın ve paydanın seçili maksimum olduğunu yazın.
+5. 24/48 saat hız alanında tamamlanmamış veya eksik pencere olup olmadığını kontrol edin.
+6. Projeksiyonda dayandığı gün ve güvenilirliği tahminin yanına ekleyin.
+7. Yayın saati veya SEO kazananı için nedensellik değil, bir sonraki videoda test edilecek hipotez yazın.
+
+## Yorum sınırları
+
+- Seçili küme değişince ortalama, radar, kazanan ve projeksiyon karşılaştırması değişir.
+- Farklı yaş/format/kanal büyüklüğü adil karşılaştırmayı bozar.
+- Normalize radar ham büyüklüğü, güvenilirlik belirsizlik aralığını göstermez.
+- Projeksiyon, SEO ve AI önerisi gerçekleşme garantisi değildir.
 
 ## Sırada ne var?
 
 | Rehber | Konu |
-|--------|------|
-| [Sıralamalar](/academy/tr/siralamalar) | Kanalları metrik bazlı sıralayın ve podyumu görün. |
-| [Video Analizi](/academy/tr/video-analizi) | Video listesi ve video detay sayfasına dönün. |
+|---|---|
+| [Kanal Analizi](/academy/tr/kanal-analizi) | Kanal düzeyinde büyüme ve dönem bağlamına dönün. |
+| [Video Analizi](/academy/tr/video-analizi) | Liste seçimi ve tek video detayını yeniden inceleyin. |
